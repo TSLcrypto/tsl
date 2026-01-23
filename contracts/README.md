@@ -37,3 +37,18 @@ Smart contract source code and verification details will be published after fina
 ## Disclaimer
 This documentation does not constitute financial advice.
 TSL is a digital asset intended for utility and ecosystem development.
+## Token Parameters
+
+The following parameters describe the current configuration of the TSL token.
+Some values may be updated or finalized prior to public deployment.
+
+- **Token Name:** TSL
+- **Symbol:** TSL
+- **Standard:** BEP-20
+- **Network:** BNB Smart Chain
+- **Decimals:** To be defined
+- **Total Supply:** To be defined
+- **Contract Address:** Not yet published
+
+> The official contract address will be disclosed publicly after deployment and verification.
+
