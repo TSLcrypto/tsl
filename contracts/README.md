@@ -16,6 +16,20 @@ The smart contract is designed with transparency, upgrade readiness, and long-te
 - Public balance and allowance tracking
 - Compatibility with BNB Smart Chain wallets and explorers
 
+## Security Guarantees (Current)
+
+- No hidden minting is enabled in the current version (no public/external mint functions).
+- No blacklist / freeze / confiscation functions are enabled by default.
+- No auto-tax / fee-on-transfer logic is included.
+- No rebasing or elastic supply mechanism is included.
+- Standard BEP-20 style `transfer`, `approve`, `transferFrom` behaviors are intended.
+
+## Security Notes
+
+- Final security guarantees apply to the verified on-chain source code after deployment.
+- Any upgradeability (if used) will be disclosed clearly with proxy + implementation addresses.
+- Any future admin permissions or privileged operations will be documented publicly.
+
 ## Ownership & Control
 - Contract ownership is defined and managed by the project administrator
 - No hidden minting or backdoor mechanisms
