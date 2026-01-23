@@ -29,7 +29,9 @@ The smart contract is designed with transparency, upgrade readiness, and long-te
 - Final security guarantees apply to the verified on-chain source code after deployment.
 - Any upgradeability (if used) will be disclosed clearly with proxy + implementation addresses.
 - Any future admin permissions or privileged operations will be documented publicly.
-
+- The contract follows standard BEP-20 patterns
+- No experimental or high-risk logic is included
+- External audits may be conducted in later phases
 ## Ownership & Control
 - Contract ownership is defined and managed by the project administrator
 - No hidden minting or backdoor mechanisms
@@ -38,11 +40,6 @@ The smart contract is designed with transparency, upgrade readiness, and long-te
 ## Upgrade Policy
 - The current deployment is considered stable
 - Future upgrades (if any) will be announced transparently and documented
-
-## Security Notes
-- The contract follows standard BEP-20 patterns
-- No experimental or high-risk logic is included
-- External audits may be conducted in later phases
 
 ## Transparency Statement
 This repository is intended for public documentation and transparency purposes.
