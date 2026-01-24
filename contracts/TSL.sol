@@ -1,35 +1,29 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/*
-TSL (BEP-20 / ERC-20 compatible)
-- Fixed supply (1,000,000,000)
-- Decimals: 18
-- No mint / burn
-- No tax / blacklist / pause
-- Owner only for safe admin utilities
-*/
-
+/// @title TSL Token (BEP-20 / ERC-20 compatible) - Fixed Supply
+/// @notice Fixed supply, no mint/burn, no tax, no blacklist, no pause.
 contract TSL {
     // --- ERC20 Metadata ---
     string public constant name = "TSL";
     string public constant symbol = "TSL";
-    uint8  public constant decimals = 18;
+    uint8 public constant decimals = 18;
 
-    // --- Supply ---
+    // --- Fixed Supply ---
+    uint256 public constant TOTAL_SUPPLY = 1_000_000_000 * 1e18;
+
+    // --- ERC20 Storage ---
     uint256 public totalSupply;
-
-    // --- Ownership ---
-    address public owner;
-
-    // --- Balances / Allowances ---
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
+
+    // Optional owner (only for admin housekeeping, NOT for mint/burn)
+    address public owner;
 
     // --- Events ---
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    event OwnershipTransferred(address indexed oldOwner, address indexed newOwner);
 
     modifier onlyOwner() {
         require(msg.sender == owner, "NOT_OWNER");
@@ -38,12 +32,10 @@ contract TSL {
 
     constructor() {
         owner = msg.sender;
+        totalSupply = TOTAL_SUPPLY;
+        balanceOf[msg.sender] = TOTAL_SUPPLY;
 
-        uint256 initialSupply = 1_000_000_000 * (10 ** uint256(decimals));
-        totalSupply = initialSupply;
-        balanceOf[msg.sender] = initialSupply;
-
-        emit Transfer(address(0), msg.sender, initialSupply);
+        emit Transfer(address(0), msg.sender, TOTAL_SUPPLY);
         emit OwnershipTransferred(address(0), msg.sender);
     }
 
@@ -81,33 +73,23 @@ contract TSL {
             balanceOf[from] = bal - value;
             balanceOf[to] += value;
         }
-
         emit Transfer(from, to, value);
     }
 
-    // --- Owner Utilities ---
+    // --- Ownership (optional) ---
     function transferOwnership(address newOwner) external onlyOwner {
         require(newOwner != address(0), "NEW_OWNER_ZERO");
         emit OwnershipTransferred(owner, newOwner);
         owner = newOwner;
     }
 
+    // --- Rescue (optional) ---
     function rescueERC20(address token, address to, uint256 amount) external onlyOwner {
         require(token != address(this), "CANNOT_RESCUE_SELF");
         require(to != address(0), "TO_ZERO");
 
-        (bool ok, bytes memory data) = token.call(
-            abi.encodeWithSignature("transfer(address,uint256)", to, amount)
-        );
+        (bool ok, bytes memory data) =
+            token.call(abi.encodeWithSignature("transfer(address,uint256)", to, amount));
         require(ok && (data.length == 0 || abi.decode(data, (bool))), "RESCUE_FAILED");
     }
-
-    function recoverBNB(address payable to, uint256 amount) external onlyOwner {
-        require(to != address(0), "TO_ZERO");
-        require(address(this).balance >= amount, "INSUFFICIENT_BNB");
-        (bool ok, ) = to.call{value: amount}("");
-        require(ok, "BNB_TRANSFER_FAILED");
-    }
-
-    receive() external payable {}
 }
