@@ -1,0 +1,19 @@
+{
+  "name": "TSL Token List",
+  "timestamp": "2026-05-04T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "name": "TSL",
+      "symbol": "TSL",
+      "address": "0xD12ECbD5f508106ec242881530767FF15A6A7549",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://tslcrypto.com/assets/logo.png"
+    }
+  ]
+}
