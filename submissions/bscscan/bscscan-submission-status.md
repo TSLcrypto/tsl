@@ -26,3 +26,10 @@ tslcrypto2025@gmail.com
 
 Action:
 Do not submit duplicate BscScan requests. Wait for BscScan review response.
+
+Domain Email Ticket:
+Ticket ID: 825637
+Received at: info@tslcrypto.com
+Sender: Etherscan.io / BscScan Freshdesk
+Status: Received / Waiting for review
+Note: This ticket was received on the project domain email and may be stronger for BscScan email verification than the earlier Gmail-based ticket #824628.

@@ -127,3 +127,9 @@ Sent to Ticket #824628
 
 BscScan Reply Included:
 Official TokenOne page, official contact email, 32x32 SVG logo, verified proxy, verified implementation, disclaimer, and social links.
+
+BscScan Domain Email Ticket:
+Ticket ID: 825637
+Received at: info@tslcrypto.com
+Status: Received / Waiting for review
+Note: Earlier Gmail-based ticket #824628 also exists. Do not submit duplicate requests; track both tickets and prefer replying inside existing ticket threads.
