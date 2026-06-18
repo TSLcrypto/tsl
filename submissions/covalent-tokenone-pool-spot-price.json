@@ -1,0 +1,26 @@
+﻿{
+    "data":  [
+                 {
+                     "updated_at":  "2026-06-18T19:20:07.819955488Z",
+                     "pool_address":  "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
+                     "token_0_address":  "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
+                     "token_0_name":  "Tether USD",
+                     "token_0_ticker":  "USDT",
+                     "token_0_price":  "1.006716918092655784",
+                     "token_0_price_24h":  "1.047037140300618633",
+                     "token_0_price_quote":  null,
+                     "token_0_price_24h_quote":  null,
+                     "token_1_address":  "0x55d398326f99059ff775485246999027b3197955",
+                     "token_1_ticker":  "USDT",
+                     "token_1_name":  "Tether USD",
+                     "token_1_price":  "0.993327897870851540",
+                     "token_1_price_24h":  "0.955075958158357563",
+                     "token_1_price_quote":  "0.9993161602372832162807",
+                     "token_1_price_24h_quote":  "0.9988928637404096334516",
+                     "quote_currency":  "USD"
+                 }
+             ],
+    "error":  false,
+    "error_message":  null,
+    "error_code":  null
+}

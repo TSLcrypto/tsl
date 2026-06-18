@@ -1,0 +1,29 @@
+﻿{
+    "contract_decimals":  18,
+    "contract_name":  "Tether USD",
+    "contract_ticker_symbol":  "USDT",
+    "contract_address":  "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
+    "supports_erc":  [
+                         "erc20",
+                         "erc721"
+                     ],
+    "contract_display_name":  "Tether USD",
+    "logo_urls":  {
+                      "token_logo_url":  "https://logos.covalenthq.com/tokens/56/0x5591a8e9a5001f6052d9d749518ae1e6287b7955.png",
+                      "protocol_logo_url":  null,
+                      "chain_logo_url":  "https://www.datocms-assets.com/86369/1670003808-binance-smart-chain-icon-white.svg?fm=png"
+                  },
+    "last_transferred_at":  "2026-06-17T14:43:09Z",
+    "block_height":  104776159,
+    "type":  "cryptocurrency",
+    "is_spam":  false,
+    "balance":  "99977499000000000000000000",
+    "balance_24h":  "99977499000000000000000000",
+    "quote_rate":  null,
+    "quote_rate_24h":  null,
+    "quote":  null,
+    "pretty_quote":  null,
+    "quote_24h":  null,
+    "pretty_quote_24h":  null,
+    "is_native_token":  false
+}
