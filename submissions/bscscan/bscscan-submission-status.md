@@ -12,3 +12,17 @@ Do not submit duplicate BscScan token update requests.
 
 Pending:
 Waiting for BscScan email / Ticket ID.
+Reply Sent:
+Yes
+
+Reply Details:
+A follow-up reply was sent to BscScan ticket #824628 with the official TokenOne page, official contact email, SVG logo, verified proxy, verified implementation, project description, disclaimer, and social links.
+
+Official TokenOne Page:
+https://tslcrypto.com/tokenone.html
+
+Official Contact Email:
+tslcrypto2025@gmail.com
+
+Action:
+Do not submit duplicate BscScan requests. Wait for BscScan review response.
