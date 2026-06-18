@@ -1,0 +1,16 @@
+﻿.env
+.env.*
+node_modules/
+cache/
+artifacts/
+typechain-types/
+coverage/
+.history/
+.snapshots/
+.vscode/
+registry/
+verify-output.txt
+*.log
+.DS_Store
+
+*.txt
