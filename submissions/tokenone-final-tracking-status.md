@@ -119,3 +119,6 @@ Moralis has not yet synced updated logo, links, description, or registry metadat
 
 Official TokenOne Page:
 https://tslcrypto.com/tokenone.html
+
+Official Contact Email Published On TokenOne Page:
+Yes - tslcrypto2025@gmail.com
