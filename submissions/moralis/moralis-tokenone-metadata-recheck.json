@@ -1,0 +1,31 @@
+﻿{
+    "address":  "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
+    "address_label":  null,
+    "name":  "Tether USD",
+    "symbol":  "USDT",
+    "decimals":  "18",
+    "logo":  null,
+    "logo_hash":  null,
+    "thumbnail":  null,
+    "total_supply":  "1000000000000000000000000000",
+    "total_supply_formatted":  "1000000000",
+    "fully_diluted_valuation":  "1013199419.69",
+    "block_number":  "103894593",
+    "validated":  1,
+    "created_at":  "2026-06-13T00:29:40.000Z",
+    "possible_spam":  false,
+    "verified_contract":  false,
+    "categories":  [
+
+                   ],
+    "links":  {
+
+              },
+    "security_score":  22,
+    "description":  null,
+    "circulating_supply":  "1000000000",
+    "market_cap":  "1013199419.69",
+    "implementations":  [
+
+                        ]
+}
