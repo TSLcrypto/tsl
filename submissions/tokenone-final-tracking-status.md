@@ -116,3 +116,6 @@ Moralis has not yet synced updated logo, links, description, or registry metadat
 4. Re-check Moralis after external registry updates propagate.
 5. Do not submit duplicate requests.
 6. Do not pay DexScreener Enhanced Token Info yet unless logo/socials still do not appear after upstream updates.
+
+Official TokenOne Page:
+https://tslcrypto.com/tokenone.html
