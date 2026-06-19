@@ -151,3 +151,8 @@ TokenOneBEP20Upgradeable token information update was resubmitted after strength
 Status:
 Submitted / Waiting for review within 5 working days
 Submission used official TokenOne page, GitHub README verification, BscScan, DexScreener pool, PNG logo, and domain email info@tslcrypto.com.
+
+GeckoTerminal New Ticket:
+Ticket ID GTIU1906260002 was received at info@tslcrypto.com and is currently being evaluated.
+Expected response: within 5 business days.
+Do not submit duplicate GeckoTerminal requests while this ticket is under review.

@@ -63,3 +63,15 @@ Official GitHub README: https://github.com/TSLcrypto/tsl/blob/main/README.md
 BscScan: https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955
 DexScreener Pool: https://www.geckoterminal.com/bsc/pools/0x46d776a2f759718a9f86642f52a7fbb2b475b22f
 Domain Email: info@tslcrypto.com
+
+New GeckoTerminal Request Received:
+Ticket ID:
+GTIU1906260002
+Received at:
+info@tslcrypto.com
+Status:
+Received / Currently being evaluated
+Expected Response:
+Within 5 business days
+Note:
+This is the resubmission after the earlier rejected request GTIU1706260035. Verification sources were strengthened before resubmission.
