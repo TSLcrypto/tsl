@@ -34,3 +34,12 @@ Submitted
 
 Notes:
 Do not submit a duplicate GeckoTerminal token info request unless GeckoTerminal rejects the current request or asks for updated information.
+
+Rejected:
+Yes
+Ticket ID:
+GTIU1706260035
+Reason:
+Token contract cannot be verified on website/social provided.
+Action Required:
+Strengthen website and social verification before resubmitting. Use official TokenOne page and publish the contract address on official social/GitHub sources.

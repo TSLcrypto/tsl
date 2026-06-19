@@ -133,3 +133,10 @@ Ticket ID: 825637
 Received at: info@tslcrypto.com
 Status: Received / Waiting for review
 Note: Earlier Gmail-based ticket #824628 also exists. Do not submit duplicate requests; track both tickets and prefer replying inside existing ticket threads.
+
+GeckoTerminal Update:
+Ticket GTIU1706260035 was rejected.
+Reason:
+Token contract cannot be verified on website/social provided.
+Next Action:
+Strengthen verification on TokenOne official page, GitHub, Telegram/X if possible, then resubmit with corrected official links.
