@@ -1,0 +1,36 @@
+{
+  "name": "TokenOne BEP20 Token List",
+  "timestamp": "2026-06-20T00:00:00.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": [
+    "tokenone",
+    "bep20",
+    "bnb-chain",
+    "educational",
+    "research"
+  ],
+  "logoURI": "https://tslcrypto.com/assets/tokenone-logo-32x32.svg",
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 18,
+      "logoURI": "https://tslcrypto.com/assets/tokenone-logo-32x32.svg",
+      "extensions": {
+        "website": "https://tslcrypto.com/tokenone.html",
+        "bscscan": "https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
+        "dexscreener": "https://dexscreener.com/bsc/0x46d776a2f759718a9f86642f52a7Fbb2B475b22f",
+        "github": "https://github.com/TSLcrypto/tsl/blob/main/README.md",
+        "telegram": "https://t.me/TSLcrypt",
+        "twitter": "https://x.com/tsl_token",
+        "disclaimer": "Educational blockchain research token. Not affiliated with, endorsed by, or issued by Tether Limited, Tether Operations Limited, or any official USDT issuer."
+      }
+    }
+  ]
+}
