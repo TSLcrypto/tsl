@@ -43,3 +43,10 @@ Reason:
 Token contract cannot be verified on website/social provided.
 Action Required:
 Strengthen website and social verification before resubmitting. Use official TokenOne page and publish the contract address on official social/GitHub sources.
+
+GitHub Verification Strengthened:
+Official GitHub README updated with TokenOneBEP20Upgradeable contract verification details.
+GitHub README:
+https://github.com/TSLcrypto/tsl/blob/main/README.md
+Official Contract:
+0x5591a8E9a5001f6052D9d749518AE1e6287b7955

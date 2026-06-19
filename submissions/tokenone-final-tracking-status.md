@@ -140,3 +140,8 @@ Reason:
 Token contract cannot be verified on website/social provided.
 Next Action:
 Strengthen verification on TokenOne official page, GitHub, Telegram/X if possible, then resubmit with corrected official links.
+
+GitHub Verification Update:
+Official GitHub README now includes TokenOneBEP20Upgradeable verification details, contract address, official page, BscScan, DexScreener, verified proxy/implementation, contacts, and disclaimer.
+README URL:
+https://github.com/TSLcrypto/tsl/blob/main/README.md
