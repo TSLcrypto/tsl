@@ -145,3 +145,9 @@ GitHub Verification Update:
 Official GitHub README now includes TokenOneBEP20Upgradeable verification details, contract address, official page, BscScan, DexScreener, verified proxy/implementation, contacts, and disclaimer.
 README URL:
 https://github.com/TSLcrypto/tsl/blob/main/README.md
+
+GeckoTerminal Resubmission:
+TokenOneBEP20Upgradeable token information update was resubmitted after strengthening website and GitHub verification.
+Status:
+Submitted / Waiting for review within 5 working days
+Submission used official TokenOne page, GitHub README verification, BscScan, DexScreener pool, PNG logo, and domain email info@tslcrypto.com.
