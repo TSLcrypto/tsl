@@ -73,3 +73,60 @@ This repository contains official information, assets, and documentation related
 ## ⚠️ Disclaimer
 
 TSL is not an investment product or financial advice. Cryptocurrency involves risk. Users are responsible for their own decisions.
+
+
+
+
+---
+
+## TokenOneBEP20Upgradeable Verification
+
+TokenOneBEP20Upgradeable is an educational BEP20 token on BNB Smart Chain created for academic blockchain research, smart contract deployment practice, metadata testing, DEX indexing, wallet metadata propagation, and registry verification studies.
+
+### Official Token Contract
+
+`0x5591a8E9a5001f6052D9d749518AE1e6287b7955`
+
+### Network
+
+BNB Smart Chain
+
+### Token Information
+
+Name: Tether USD
+Symbol: USDT
+Decimals: 18
+Standard: BEP20
+
+### Official TokenOne Page
+
+https://tslcrypto.com/tokenone.html
+
+### BscScan Token Page
+
+https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955
+
+### DexScreener Pair
+
+https://dexscreener.com/bsc/0x46d776a2f759718a9f86642f52a7fbb2b475b22f
+
+### Verified Contracts
+
+Proxy:
+`0x5591a8E9a5001f6052D9d749518AE1e6287b7955`
+
+Implementation:
+`0x87313388276a317539BB96297523353Ed3eF5149`
+
+### Official Contact
+
+[info@tslcrypto.com](mailto:info@tslcrypto.com)
+[tslcrypto2025@gmail.com](mailto:tslcrypto2025@gmail.com)
+
+### Registry Verification Note
+
+This GitHub repository and the official TokenOne page are used to verify the TokenOneBEP20Upgradeable contract address for token information update requests on explorers, DEX indexers, wallet registries, and token metadata platforms.
+
+### Disclaimer
+
+TokenOneBEP20Upgradeable is not affiliated with, endorsed by, or issued by Tether Limited, Tether Operations Limited, or any official USDT issuer. It is an educational blockchain research token.
