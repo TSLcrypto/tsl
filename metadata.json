@@ -1,0 +1,10 @@
+{
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "description": "Tether USD on BNB Smart Chain",
+  "image": "https://gateway.pinata.cloud/ipfs/bafybeigti7yxp77dsocvzmemhf7ltqye5rwgyatvu4bd5v7vkzicjf3hfu",
+  "external_url": "https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
+  "chain": "BNB Smart Chain",
+  "standard": "BEP20",
+  "decimals": 18
+}
