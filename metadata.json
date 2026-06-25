@@ -1,10 +1,16 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
-  "description": "Tether USD on BNB Smart Chain",
-  "image": "https://gateway.pinata.cloud/ipfs/bafybeigti7yxp77dsocvzmemhf7ltqye5rwgyatvu4bd5v7vkzicjf3hfu",
-  "external_url": "https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
+  "description": "TokenOneBEP20Upgradeable is an educational BEP20 token on BNB Smart Chain created for academic blockchain research, smart contract deployment practice, metadata testing, and registry integration studies.",
+  "image": "https://blush-active-quokka-393.mypinata.cloud/ipfs/bafybeigti7yxp77dsocvzmemhf7ltqye5rwgyatvu4bd5v7vkzicjf3hfu",
+  "external_url": "https://tslcrypto.com/tokenone.html",
   "chain": "BNB Smart Chain",
   "standard": "BEP20",
-  "decimals": 18
+  "decimals": 18,
+  "contract": "0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
+  "explorer": "https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
+  "dexscreener": "https://dexscreener.com/bsc/0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
+  "geckoterminal": "https://www.geckoterminal.com/bsc/pools/0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
+  "uniswap_v3_pool": "0xc9D69885d0F3D5DA6e625c49923f4d876b54cB43",
+  "disclaimer": "This token is not affiliated with, endorsed by, or issued by Tether Limited, Tether Operations Limited, or any official USDT issuer. It is an educational blockchain research token."
 }
