@@ -1,11 +1,11 @@
-import "dotenv/config";
+﻿import "dotenv/config";
 import { ethers } from "ethers";
 import fs from "fs";
 
 const RPC_URL = process.env.BSC_MAINNET_RPC || "https://bsc-dataseed.binance.org/";
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
 
-const FACTORY_ADDRESS = "0x5715Ea371B11EE0BD2Ea217A881097eC18169936";
+const FACTORY_ADDRESS = "0x26220eb76eB679E72617fb482788ec4bF825e663";
 const IMPLEMENTATION_ADDRESS = "0x87313388276a317539BB96297523353Ed3eF5149";
 
 const SALT =

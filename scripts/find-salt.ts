@@ -1,7 +1,7 @@
-import { ethers } from "ethers";
+﻿import { ethers } from "ethers";
 import fs from "fs";
 
-const FACTORY_ADDRESS = "0x5715Ea371B11EE0BD2Ea217A881097eC18169936";
+const FACTORY_ADDRESS = "0x26220eb76eB679E72617fb482788ec4bF825e663";
 const IMPLEMENTATION_ADDRESS = "0x87313388276a317539BB96297523353Ed3eF5149";
 
 const TARGET_PREFIX = "0x55";
