@@ -1,90 +1,72 @@
-﻿import { ethers } from "ethers";
-import dotenv from "dotenv";
-
-dotenv.config();
-
-const RPC = process.env.BSC_MAINNET_RPC || "";
-const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
-const EXECUTE = process.env.EXECUTE_SET_META_URI === "true";
+﻿import "dotenv/config";
+import { ethers } from "ethers";
 
 const TOKEN = "0x5591a8E9a5001f6052D9d749518AE1e6287b7955";
 
 const NEW_META_URI =
-  "https://blush-active-quokka-393.mypinata.cloud/ipfs/bafkreiewcwmeatwa4bnzrfjlsqjdrcz664gos2o27uc4v2ispamfmgvsz4";
+  "https://blush-active-quokka-393.mypinata.cloud/ipfs/bafkreicjzfext2gh5zry3mg2q7zl7ejsjvpngu5ybq7qv63e56fzmbhvni";
+
+const RPC_URL =
+  process.env.BSC_RPC_URL ||
+  process.env.RPC_URL ||
+  process.env.BNB_RPC_URL ||
+  process.env.MAINNET_RPC_URL;
+
+const PRIVATE_KEY =
+  process.env.PRIVATE_KEY ||
+  process.env.OWNER_PRIVATE_KEY ||
+  process.env.DEPLOYER_PRIVATE_KEY;
+
+if (!RPC_URL) {
+  throw new Error("Missing RPC URL in .env");
+}
+
+if (!PRIVATE_KEY) {
+  throw new Error("Missing PRIVATE_KEY / OWNER_PRIVATE_KEY / DEPLOYER_PRIVATE_KEY in .env");
+}
 
 const ABI = [
-  "function setMetaURI(string newURI) external",
+  "function owner() view returns (address)",
   "function metaURI() view returns (string)",
-  "function owner() view returns (address)"
+  "function setMetaURI(string newURI) external",
 ];
 
 async function main() {
-  if (!RPC) throw new Error("BSC_MAINNET_RPC missing in .env");
-  if (!PRIVATE_KEY || !PRIVATE_KEY.startsWith("0x")) {
-    throw new Error("PRIVATE_KEY missing or invalid in .env");
-  }
-
-  const provider = new ethers.JsonRpcProvider(RPC);
+  const provider = new ethers.JsonRpcProvider(RPC_URL);
   const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
   const token = new ethers.Contract(TOKEN, ABI, wallet);
 
-  const chain = await provider.getNetwork();
+  console.log("Token:", TOKEN);
+  console.log("Signer:", wallet.address);
+
   const owner = await token.owner();
-  const current = await token.metaURI();
+  console.log("Owner:", owner);
 
-  console.log("chainId:", chain.chainId.toString());
-  console.log("wallet:", wallet.address);
-  console.log("owner:", owner);
-  console.log("EXECUTE_SET_META_URI:", EXECUTE);
-  console.log("");
-  console.log("Current metaURI:");
-  console.log(current);
-  console.log("");
-  console.log("New metaURI:");
-  console.log(NEW_META_URI);
-  console.log("");
-
-  if (owner.toLowerCase() !== wallet.address.toLowerCase()) {
-    throw new Error("Connected wallet is not token owner. Do not continue.");
+  if (wallet.address.toLowerCase() !== owner.toLowerCase()) {
+    throw new Error("Signer is not token owner");
   }
 
-  if (current === NEW_META_URI) {
-    console.log("metaURI is already updated. No transaction needed.");
+  const before = await token.metaURI();
+  console.log("metaURI before:", before);
+  console.log("metaURI new:", NEW_META_URI);
+
+  if (before === NEW_META_URI) {
+    console.log("Already updated.");
     return;
   }
 
-  console.log("Simulating setMetaURI...");
-  await token.setMetaURI.staticCall(NEW_META_URI);
-  console.log("staticCall OK");
-
-  const gas = await token.setMetaURI.estimateGas(NEW_META_URI);
-  const gasLimit = (gas * 150n) / 100n;
-
-  console.log("gas estimate:", gas.toString());
-  console.log("gas limit:", gasLimit.toString());
-
-  if (!EXECUTE) {
-    console.log("");
-    console.log("DRY RUN ONLY. No transaction sent.");
-    console.log("To execute, set EXECUTE_SET_META_URI=true in .env");
-    return;
-  }
-
-  console.log("");
-  console.log("Sending transaction...");
-  const tx = await token.setMetaURI(NEW_META_URI, { gasLimit });
-  console.log("tx:", tx.hash);
+  const tx = await token.setMetaURI(NEW_META_URI);
+  console.log("Tx hash:", tx.hash);
 
   const receipt = await tx.wait();
-  console.log("confirmed block:", receipt?.blockNumber);
-  console.log("gas used:", receipt?.gasUsed?.toString());
+  console.log("Confirmed block:", receipt.blockNumber);
 
-  console.log("");
-  console.log("Updated metaURI:");
-  console.log(await token.metaURI());
+  const after = await token.metaURI();
+  console.log("metaURI after:", after);
 }
 
 main().catch((err) => {
   console.error(err);
-  process.exitCode = 1;
+  process.exit(1);
 });
+

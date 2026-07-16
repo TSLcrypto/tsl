@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-06-28T23:01:04.820Z",
+  "checkedAt": "2026-07-08T12:51:24.300Z",
   "token": "0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
   "chain": "bsc",
   "endpoints": {
@@ -19,7 +19,7 @@
           "thumbnail": null,
           "total_supply": "1000000000000000000000000000",
           "total_supply_formatted": "1000000000",
-          "fully_diluted_valuation": "1003123712.66",
+          "fully_diluted_valuation": "1006713580.31",
           "block_number": "103894593",
           "validated": 1,
           "created_at": "2026-06-13T00:29:40.000Z",
@@ -27,10 +27,10 @@
           "verified_contract": false,
           "categories": [],
           "links": {},
-          "security_score": 24,
+          "security_score": 45,
           "description": null,
           "circulating_supply": "1000000000",
-          "market_cap": "1003123712.66",
+          "market_cap": "1006713580.31",
           "implementations": []
         }
       ]
@@ -45,28 +45,28 @@
         "tokenLogo": null,
         "tokenDecimals": "18",
         "nativePrice": {
-          "value": "NaN",
+          "value": "1785849043653352.6332020844",
           "decimals": 18,
           "name": "Binance Chain Native Token",
           "symbol": "BNB",
           "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
         },
-        "usdPrice": 1.0031237126587207,
-        "usdPriceFormatted": "1.0031237126587207146908678389",
+        "usdPrice": 1.0067135803092542,
+        "usdPriceFormatted": "1.0067135803092541738241414347",
         "exchangeName": "PancakeSwap v2",
         "exchangeAddress": "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
         "tokenAddress": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-        "priceLastChangedAtBlock": "106953296",
-        "blockTimestamp": "1782687591000",
+        "priceLastChangedAtBlock": "108790745",
+        "blockTimestamp": "1783515027000",
         "possibleSpam": false,
         "verifiedContract": false,
-        "securityScore": 24,
+        "securityScore": 45,
         "pairAddress": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
-        "pairTotalLiquidityUsd": "4925.11",
-        "usdPrice24hrPercentChange": 0.212577775342947,
-        "usdPrice24hrUsdChange": 0.002127894641217543,
-        "usdPrice24hr": 1.0009958180175031,
-        "24hrPercentChange": "0.212577775342947"
+        "pairTotalLiquidityUsd": "4948.80",
+        "usdPrice24hrPercentChange": 0.162394953930435,
+        "usdPrice24hrUsdChange": 0.001632201442174575,
+        "usdPrice24hr": 1.0050813788670796,
+        "24hrPercentChange": "0.162394953930435"
       }
     },
     "pairs": {
@@ -83,17 +83,17 @@
             "exchange_logo": null,
             "pair_label": "USDT/USDT",
             "pair_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
-            "usd_price": 1.0031237126587207,
-            "usd_price_24hr": 0.9949997835575776,
-            "usd_price_24hr_percent_change": 0.8164754641550148,
-            "usd_price_24hr_usd_change": 0.008123929101143124,
-            "liquidity_usd": 4925.108920114024,
-            "liquidity_skew": 0.9977869459714591,
-            "inactive_pair": true,
+            "usd_price": 1.0067135803092542,
+            "usd_price_24hr": 1.0065906364090382,
+            "usd_price_24hr_percent_change": 0.012213892695698026,
+            "usd_price_24hr_usd_change": 0.0001229439002159438,
+            "liquidity_usd": 4948.799409371706,
+            "liquidity_skew": 0.998094163377335,
+            "inactive_pair": false,
             "base_token": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
             "quote_token": "0x55d398326f99059ff775485246999027b3197955",
-            "volume_24h_native": 0,
-            "volume_24h_usd": 797.032872696507,
+            "volume_24h_native": 1.9228240574108804,
+            "volume_24h_usd": 1100.3810488243905,
             "pair": [
               {
                 "token_address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
@@ -102,7 +102,7 @@
                 "token_logo": null,
                 "token_decimals": "18",
                 "pair_token_type": "token0",
-                "liquidity_usd": 2459.8265585261106
+                "liquidity_usd": 2476.7598545039828
               },
               {
                 "token_address": "0x55d398326f99059ff775485246999027b3197955",
@@ -111,7 +111,7 @@
                 "token_logo": "https://logo.moralis.io/0x38_0x55d398326f99059ff775485246999027b3197955_9bf346dd90e62f526aea13c06edcf2cc.webp",
                 "token_decimals": "18",
                 "pair_token_type": "token1",
-                "liquidity_usd": 2465.2823615879133
+                "liquidity_usd": 2472.039554867723
               }
             ]
           },
@@ -121,17 +121,17 @@
             "exchange_logo": null,
             "pair_label": "USDT/USDT",
             "pair_address": "0xc9d69885d0f3d5da6e625c49923f4d876b54cb43",
-            "usd_price": 1.0073038331519863,
-            "usd_price_24hr": 1.0107295070787368,
-            "usd_price_24hr_percent_change": -0.33893083191480955,
-            "usd_price_24hr_usd_change": -0.0034256739267504166,
-            "liquidity_usd": 20.116215599472433,
-            "liquidity_skew": 0.9982244876404766,
+            "usd_price": 1.006589334957103,
+            "usd_price_24hr": 0,
+            "usd_price_24hr_percent_change": 0,
+            "usd_price_24hr_usd_change": 0,
+            "liquidity_usd": 20.118350199465773,
+            "liquidity_skew": 0.9987341760852122,
             "inactive_pair": true,
             "base_token": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
             "quote_token": "0x55d398326f99059ff775485246999027b3197955",
             "volume_24h_native": 0,
-            "volume_24h_usd": 0.3621272564867596,
+            "volume_24h_usd": 0,
             "pair": [
               {
                 "token_address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
@@ -140,7 +140,7 @@
                 "token_logo": null,
                 "token_decimals": "18",
                 "pair_token_type": "token0",
-                "liquidity_usd": 10.0670448810413
+                "liquidity_usd": 10.065545703966622
               },
               {
                 "token_address": "0x55d398326f99059ff775485246999027b3197955",
@@ -149,7 +149,7 @@
                 "token_logo": "https://logo.moralis.io/0x38_0x55d398326f99059ff775485246999027b3197955_9bf346dd90e62f526aea13c06edcf2cc.webp",
                 "token_decimals": "18",
                 "pair_token_type": "token1",
-                "liquidity_usd": 10.049170718431133
+                "liquidity_usd": 10.052804495499151
               }
             ]
           }
@@ -161,10 +161,10 @@
       "status": 200,
       "url": "https://deep-index.moralis.io/api/v2.2/erc20/0x5591a8E9a5001f6052D9d749518AE1e6287b7955/holders?chain=bsc",
       "body": {
-        "totalHolders": 6798,
+        "totalHolders": 6803,
         "holdersByAcquisition": {
-          "swap": 7,
-          "transfer": 6791,
+          "swap": 8,
+          "transfer": 6795,
           "airdrop": 0
         },
         "holderChange": {
@@ -177,49 +177,49 @@
             "changePercent": 0
           },
           "6h": {
-            "change": 2,
-            "changePercent": 0.029
+            "change": 0,
+            "changePercent": 0
           },
           "24h": {
-            "change": 2,
-            "changePercent": 0.029
+            "change": 0,
+            "changePercent": 0
           },
           "3d": {
-            "change": 4,
-            "changePercent": 0.059
+            "change": 1,
+            "changePercent": 0.015
           },
           "7d": {
-            "change": 2,
-            "changePercent": 0.029
+            "change": 1,
+            "changePercent": 0.015
           },
           "30d": {
-            "change": 6786,
+            "change": 6805,
             "changePercent": 100
           }
         },
         "holderSupply": {
           "top10": {
-            "supply": "999975386.91",
+            "supply": "999975381.91",
             "supplyPercent": 100
           },
           "top25": {
-            "supply": "999999722.56",
+            "supply": "999999723.51",
             "supplyPercent": 100
           },
           "top50": {
-            "supply": "999999753.04",
+            "supply": "999999753",
             "supplyPercent": 100
           },
           "top100": {
-            "supply": "999999761.19",
+            "supply": "999999761.15",
             "supplyPercent": 100
           },
           "top250": {
-            "supply": "999999779.05",
+            "supply": "999999779",
             "supplyPercent": 100
           },
           "top500": {
-            "supply": "999999800.3",
+            "supply": "999999800.26",
             "supplyPercent": 100
           }
         },
@@ -229,8 +229,8 @@
           "dolphins": 0,
           "fish": 0,
           "octopus": 1,
-          "crabs": 12,
-          "shrimps": 6775
+          "crabs": 13,
+          "shrimps": 6779
         }
       }
     },
@@ -241,7 +241,7 @@
       "body": {
         "page": 0,
         "page_size": 10,
-        "cursor": "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0S2V5Ijp7ImJsb2NrVGltZXN0YW1wIjoxNzgyNjg3NDU4MDAwLCJibG9ja051bWJlciI6MTA2OTUzMDAwLCJ0cmFuc2FjdGlvbkluZGV4Ijo0OSwibG9nSW5kZXgiOjI1M30sInBhZ2UiOjAsInJlcXVlc3QiOnsiY2hhaW5JZCI6IjB4MzgiLCJmcm9tVGltZXN0YW1wIjoxMDAwMDAwMDAwMDAwLCJ0b1RpbWVzdGFtcCI6MTc4MjY4NzY2ODI2NCwibGltaXQiOjEwLCJpc0FzY2VuZGluZ09yZGVyIjpmYWxzZSwiY29udHJhY3RBZGRyZXNzIjoiMHg1NTkxYThlOWE1MDAxZjYwNTJkOWQ3NDk1MThhZTFlNjI4N2I3OTU1In19.qngF3QhR_vnWY84QjX0nS2H7g5ThJOpvLbTvhuMWeng",
+        "cursor": "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0S2V5Ijp7ImJsb2NrVGltZXN0YW1wIjoxNzgzNTE0ODE4MDAwLCJibG9ja051bWJlciI6MTA4NzkwMjgyLCJ0cmFuc2FjdGlvbkluZGV4Ijo1NiwibG9nSW5kZXgiOjI5OX0sInBhZ2UiOjAsInJlcXVlc3QiOnsiY2hhaW5JZCI6IjB4MzgiLCJmcm9tVGltZXN0YW1wIjoxMDAwMDAwMDAwMDAwLCJ0b1RpbWVzdGFtcCI6MTc4MzUxNTA4NzUxMiwibGltaXQiOjEwLCJpc0FzY2VuZGluZ09yZGVyIjpmYWxzZSwiY29udHJhY3RBZGRyZXNzIjoiMHg1NTkxYThlOWE1MDAxZjYwNTJkOWQ3NDk1MThhZTFlNjI4N2I3OTU1In19.7YyUa81hRPFb32kbCYsHcjqsi6npnw0eS7w4WicPIxo",
         "result": [
           {
             "token_name": "Tether USD",
@@ -250,24 +250,76 @@
             "token_decimals": "18",
             "from_address_entity": null,
             "from_address_entity_logo": null,
-            "from_address": "0x7ddaf2f614cb4f7f9862d24f7b196baad19f8e3e",
+            "from_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
+            "from_address_label": null,
+            "to_address_entity": null,
+            "to_address_entity_logo": null,
+            "to_address": "0x1251da79f13edd23e6bf5472b836d6e7a2f2192e",
+            "to_address_label": null,
+            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
+            "block_hash": "0x969f1c1812d1172de986461e0bd2e3ae394b626345f2599309d270c6c8d3c08d",
+            "block_number": "108790745",
+            "block_timestamp": "2026-07-08T12:50:27.000Z",
+            "transaction_hash": "0x56e27a18f6ad4311084a5dba6d7371187be82ff203f7872d77c9998c938939be",
+            "transaction_index": 50,
+            "log_index": 200,
+            "value": "1461786181078372383",
+            "value_decimal": "1.461786181078372383",
+            "possible_spam": false,
+            "verified_contract": false,
+            "security_score": 45
+          },
+          {
+            "token_name": "Tether USD",
+            "token_symbol": "USDT",
+            "token_logo": null,
+            "token_decimals": "18",
+            "from_address_entity": null,
+            "from_address_entity_logo": null,
+            "from_address": "0x48f4820fa02b958f5a695ad5f885cbd66e2063d0",
             "from_address_label": null,
             "to_address_entity": null,
             "to_address_entity_logo": null,
             "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
             "to_address_label": null,
             "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0xbc5a4eb29abed48b3fe5e7c29f7f5bde04a73d63ea84d46a6d50fbd6949c8d12",
-            "block_number": "106953296",
-            "block_timestamp": "2026-06-28T22:59:51.000Z",
-            "transaction_hash": "0xbcd5bb04ae84482cced92811669afc7f1f565d6320e504c087266c2c5c028b51",
-            "transaction_index": 63,
-            "log_index": 356,
-            "value": "705200000000000000",
-            "value_decimal": "0.7052",
+            "block_hash": "0x3616fad7f49ea53f26fd4e90403b9f6cf9a5864249d302e5948124592679646f",
+            "block_number": "108790692",
+            "block_timestamp": "2026-07-08T12:50:03.000Z",
+            "transaction_hash": "0x6877f5a01ef6911620a565a4c96cbc255af112d5625cff4cb2fd0009f55a8afb",
+            "transaction_index": 102,
+            "log_index": 425,
+            "value": "1000000000000000000",
+            "value_decimal": "1",
             "possible_spam": false,
             "verified_contract": false,
-            "security_score": 24
+            "security_score": 45
+          },
+          {
+            "token_name": "Tether USD",
+            "token_symbol": "USDT",
+            "token_logo": null,
+            "token_decimals": "18",
+            "from_address_entity": null,
+            "from_address_entity_logo": null,
+            "from_address": "0x023526b9cb8865ff48c5bfbae1e88cdee569e10c",
+            "from_address_label": null,
+            "to_address_entity": null,
+            "to_address_entity_logo": null,
+            "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
+            "to_address_label": null,
+            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
+            "block_hash": "0x9d92d01fa0f013da4d58f7eb8cbedf8a96df5d09e9c8981a0bd5e4f7378a7809",
+            "block_number": "108790690",
+            "block_timestamp": "2026-07-08T12:50:02.000Z",
+            "transaction_hash": "0xcc187d0c5957f5e89d3a13b3891efbe9ef4a20d3bf2ddb14eca3d63b63908276",
+            "transaction_index": 76,
+            "log_index": 393,
+            "value": "631300000000000000",
+            "value_decimal": "0.6313",
+            "possible_spam": false,
+            "verified_contract": false,
+            "security_score": 45
           },
           {
             "token_name": "Tether USD",
@@ -283,17 +335,17 @@
             "to_address": "0xf3643e7ef83504a62432651f80a38378b525ada1",
             "to_address_label": null,
             "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0x7aa72dd2726f6548b7c9a32535525c0d6a0ccc63d0a0438ddb59500b2918ac50",
-            "block_number": "106953271",
-            "block_timestamp": "2026-06-28T22:59:40.000Z",
-            "transaction_hash": "0x05a790188b53c3db4719f6bdbfebff802586e4a9055506090a8a53f6c05eae68",
-            "transaction_index": 47,
-            "log_index": 190,
-            "value": "503947619752122950",
-            "value_decimal": "0.50394761975212295",
+            "block_hash": "0xb827b651f897e8733276533676f21afb9cc034d859592822056e16b624afe93a",
+            "block_number": "108790667",
+            "block_timestamp": "2026-07-08T12:49:51.000Z",
+            "transaction_hash": "0x059c6b403709dfded966b312e76f539e8d29717d3cd15e18c664a314171ba520",
+            "transaction_index": 95,
+            "log_index": 296,
+            "value": "506631514098703491",
+            "value_decimal": "0.506631514098703491",
             "possible_spam": false,
             "verified_contract": false,
-            "security_score": 24
+            "security_score": 45
           },
           {
             "token_name": "Tether USD",
@@ -309,69 +361,17 @@
             "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
             "to_address_label": null,
             "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0xcf2d00c2a049514fb263b9136a7edaaa1bd60787c5235328e513b7442e347623",
-            "block_number": "106953267",
-            "block_timestamp": "2026-06-28T22:59:38.000Z",
-            "transaction_hash": "0x15902050d4dcdfeeb3705e91bd89223edf4acc37c1afa82ad2cb891a8a89f953",
-            "transaction_index": 62,
-            "log_index": 211,
+            "block_hash": "0xb9be1bc0d0edf8f4470ac529e60c9a9e195cf44032e56d8ac1eb83438fd14942",
+            "block_number": "108790559",
+            "block_timestamp": "2026-07-08T12:49:03.000Z",
+            "transaction_hash": "0xc428d278d1b19a835d655194afe4915ce5709c84db42c0fdf8ce40cf01e95715",
+            "transaction_index": 78,
+            "log_index": 305,
             "value": "1000000000000000000",
             "value_decimal": "1",
             "possible_spam": false,
             "verified_contract": false,
-            "security_score": 24
-          },
-          {
-            "token_name": "Tether USD",
-            "token_symbol": "USDT",
-            "token_logo": null,
-            "token_decimals": "18",
-            "from_address_entity": null,
-            "from_address_entity_logo": null,
-            "from_address": "0x48f4820fa02b958f5a695ad5f885cbd66e2063d0",
-            "from_address_label": null,
-            "to_address_entity": null,
-            "to_address_entity_logo": null,
-            "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
-            "to_address_label": null,
-            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0x712b3ebf7d89415e155aaa82b958c9414abd752f14339ec2ced0072f002596ee",
-            "block_number": "106953200",
-            "block_timestamp": "2026-06-28T22:59:08.000Z",
-            "transaction_hash": "0x4bc6c03d052e188ff70624e0ad56f2fc0534b30c2fbfc42335a0ea2f169fedd5",
-            "transaction_index": 54,
-            "log_index": 219,
-            "value": "1000000000000000000",
-            "value_decimal": "1",
-            "possible_spam": false,
-            "verified_contract": false,
-            "security_score": 24
-          },
-          {
-            "token_name": "Tether USD",
-            "token_symbol": "USDT",
-            "token_logo": null,
-            "token_decimals": "18",
-            "from_address_entity": null,
-            "from_address_entity_logo": null,
-            "from_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
-            "from_address_label": null,
-            "to_address_entity": null,
-            "to_address_entity_logo": null,
-            "to_address": "0x61935923752d416b0ba1229d9d3292ff15eab50c",
-            "to_address_label": null,
-            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0xa0a19916902a7fb8898473e9f97b6a62136314b11f184ac3bc7d105a2961c813",
-            "block_number": "106953198",
-            "block_timestamp": "2026-06-28T22:59:07.000Z",
-            "transaction_hash": "0xe1166b353d87c0ce76d2bf9a971f35c3e2e1aef628fcf0b16902ce02311407ac",
-            "transaction_index": 22,
-            "log_index": 54,
-            "value": "1229922839487036670",
-            "value_decimal": "1.22992283948703667",
-            "possible_spam": false,
-            "verified_contract": false,
-            "security_score": 24
+            "security_score": 45
           },
           {
             "token_name": "Tether USD",
@@ -387,17 +387,17 @@
             "to_address": "0xc547760a47f4f793d98e5a589b95bc12cb93f59f",
             "to_address_label": null,
             "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0x08f4e8bd901aba85ae03ab79b4fbbe4f2a719b645a06166082d55dcad7113515",
-            "block_number": "106953196",
-            "block_timestamp": "2026-06-28T22:59:06.000Z",
-            "transaction_hash": "0x1daeb15e594e40beac00c3024707000d3c5186c8a29c32bfc0ff7dabcef47089",
-            "transaction_index": 60,
-            "log_index": 222,
-            "value": "1213792833325762844",
-            "value_decimal": "1.213792833325762844",
+            "block_hash": "0x3112c969e15d98b0ce89d67fed9e3c1238e07597f39ea2dc1247016ef5d3bdbb",
+            "block_number": "108790456",
+            "block_timestamp": "2026-07-08T12:48:17.000Z",
+            "transaction_hash": "0x1c5b5fbb2986519cbc2e1cedd63a130876a2b1cd43f2f20a1d01512efff5833e",
+            "transaction_index": 78,
+            "log_index": 364,
+            "value": "1138096015716608963",
+            "value_decimal": "1.138096015716608963",
             "possible_spam": false,
             "verified_contract": false,
-            "security_score": 24
+            "security_score": 45
           },
           {
             "token_name": "Tether USD",
@@ -413,17 +413,69 @@
             "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
             "to_address_label": null,
             "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0xebac31924762e5920d95d253ba899119c3e95f7005c29e0052b94900b33d2346",
-            "block_number": "106953134",
-            "block_timestamp": "2026-06-28T22:58:39.000Z",
-            "transaction_hash": "0x06f137eec2b2fd2dc1f28eff74497e54b2b6f4915b1059fb0a2245ec9f487afa",
-            "transaction_index": 53,
-            "log_index": 168,
+            "block_hash": "0x6f35f29922102858e505303e598b2e301255bb98855587248046cf1623a4359d",
+            "block_number": "108790358",
+            "block_timestamp": "2026-07-08T12:47:32.000Z",
+            "transaction_hash": "0xeb1a08a79d7bd6533dcd3dfec72be17d186b776eef339a38a9977ab35a2ae62b",
+            "transaction_index": 69,
+            "log_index": 354,
             "value": "1000000000000000000",
             "value_decimal": "1",
             "possible_spam": false,
             "verified_contract": false,
-            "security_score": 24
+            "security_score": 45
+          },
+          {
+            "token_name": "Tether USD",
+            "token_symbol": "USDT",
+            "token_logo": null,
+            "token_decimals": "18",
+            "from_address_entity": null,
+            "from_address_entity_logo": null,
+            "from_address": "0xf3643e7ef83504a62432651f80a38378b525ada1",
+            "from_address_label": null,
+            "to_address_entity": null,
+            "to_address_entity_logo": null,
+            "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
+            "to_address_label": null,
+            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
+            "block_hash": "0x844cde06b58a1e32207f43129313b5044afa845f509ed74ea0deaefbf6ebecf0",
+            "block_number": "108790356",
+            "block_timestamp": "2026-07-08T12:47:32.000Z",
+            "transaction_hash": "0x77fc5e62f0ddaddb2b81b8db3e2f52de09fd94f03356b2fa0f5fa239bb9a09b9",
+            "transaction_index": 47,
+            "log_index": 331,
+            "value": "574000000000000000",
+            "value_decimal": "0.574",
+            "possible_spam": false,
+            "verified_contract": false,
+            "security_score": 45
+          },
+          {
+            "token_name": "Tether USD",
+            "token_symbol": "USDT",
+            "token_logo": null,
+            "token_decimals": "18",
+            "from_address_entity": null,
+            "from_address_entity_logo": null,
+            "from_address": "0x48f4820fa02b958f5a695ad5f885cbd66e2063d0",
+            "from_address_label": null,
+            "to_address_entity": null,
+            "to_address_entity_logo": null,
+            "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
+            "to_address_label": null,
+            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
+            "block_hash": "0x31c5b0e308b92fb033cd571a20d3b3693f162e2f8635854809f0ca89848fc802",
+            "block_number": "108790292",
+            "block_timestamp": "2026-07-08T12:47:03.000Z",
+            "transaction_hash": "0x3e9de277dd707089afb72cf175d84d6ef054d406d8a105c1e6487efd6231c214",
+            "transaction_index": 57,
+            "log_index": 284,
+            "value": "1000000000000000000",
+            "value_decimal": "1",
+            "possible_spam": false,
+            "verified_contract": false,
+            "security_score": 45
           },
           {
             "token_name": "Tether USD",
@@ -439,69 +491,17 @@
             "to_address": "0x1251da79f13edd23e6bf5472b836d6e7a2f2192e",
             "to_address_label": null,
             "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0x4ca3b8c3e88dc422e42be2ed0ec50235b7c0dc4e97422a1ee3958d0884e012ba",
-            "block_number": "106953093",
-            "block_timestamp": "2026-06-28T22:58:20.000Z",
-            "transaction_hash": "0x7aa96057cac4a3488238e4597abe6375420337dc96605aa33e91f35720474d67",
-            "transaction_index": 68,
-            "log_index": 207,
-            "value": "715738582444517307",
-            "value_decimal": "0.715738582444517307",
+            "block_hash": "0x2938933cb32e08b206385b9323b0b4f1c99f704add74f8dab3c050d184a02d98",
+            "block_number": "108790282",
+            "block_timestamp": "2026-07-08T12:46:58.000Z",
+            "transaction_hash": "0xb36f607c927a8fc5758c6f50a9b6b51458e262787f238913a298d42c0e6c1860",
+            "transaction_index": 56,
+            "log_index": 299,
+            "value": "510995418209700129",
+            "value_decimal": "0.510995418209700129",
             "possible_spam": false,
             "verified_contract": false,
-            "security_score": 24
-          },
-          {
-            "token_name": "Tether USD",
-            "token_symbol": "USDT",
-            "token_logo": null,
-            "token_decimals": "18",
-            "from_address_entity": null,
-            "from_address_entity_logo": null,
-            "from_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
-            "from_address_label": null,
-            "to_address_entity": null,
-            "to_address_entity_logo": null,
-            "to_address": "0x023526b9cb8865ff48c5bfbae1e88cdee569e10c",
-            "to_address_label": null,
-            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0x4dbeb25850007fb9c2d04186cdd46b7607bcfa7b64aca7c20a7675214a11d325",
-            "block_number": "106953015",
-            "block_timestamp": "2026-06-28T22:57:45.000Z",
-            "transaction_hash": "0x9bfb4f98adb68dc1dd46912d863a804abb7848f53e73cb531112a51f5e65f6a9",
-            "transaction_index": 30,
-            "log_index": 138,
-            "value": "909162586235843209",
-            "value_decimal": "0.909162586235843209",
-            "possible_spam": false,
-            "verified_contract": false,
-            "security_score": 24
-          },
-          {
-            "token_name": "Tether USD",
-            "token_symbol": "USDT",
-            "token_logo": null,
-            "token_decimals": "18",
-            "from_address_entity": null,
-            "from_address_entity_logo": null,
-            "from_address": "0x48f4820fa02b958f5a695ad5f885cbd66e2063d0",
-            "from_address_label": null,
-            "to_address_entity": null,
-            "to_address_entity_logo": null,
-            "to_address": "0x46d776a2f759718a9f86642f52a7fbb2b475b22f",
-            "to_address_label": null,
-            "address": "0x5591a8e9a5001f6052d9d749518ae1e6287b7955",
-            "block_hash": "0x2607dda3d97a9a3c7ee9546bf53e5326f240bdaed430d7e52d78761a2971db7b",
-            "block_number": "106953000",
-            "block_timestamp": "2026-06-28T22:57:38.000Z",
-            "transaction_hash": "0x98a1eb726461c7870c4df695146ccefb9c3bc40cc5ed36196a1a148f7484ff77",
-            "transaction_index": 49,
-            "log_index": 253,
-            "value": "1000000000000000000",
-            "value_decimal": "1",
-            "possible_spam": false,
-            "verified_contract": false,
-            "security_score": 24
+            "security_score": 45
           }
         ]
       }
@@ -518,13 +518,13 @@
           "logo": null,
           "thumbnail": null,
           "decimals": 18,
-          "balance": "99975386910365750867116626",
+          "balance": "99975381910365750867116626",
           "possible_spam": false,
           "verified_contract": false,
           "total_supply": "1000000000000000000000000000",
           "total_supply_formatted": "1000000000",
-          "percentage_relative_to_total_supply": 9.997538691036574,
-          "security_score": 24
+          "percentage_relative_to_total_supply": 9.997538191036575,
+          "security_score": 45
         }
       ]
     }
