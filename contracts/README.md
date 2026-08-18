@@ -1,65 +1,63 @@
-# TSL Smart Contract Documentation
+# TSL smart contract documentation
 
-## Overview
-This document describes the smart contract architecture of the TSL token deployed on BNB Smart Chain.
+## Deployment identity
 
-The smart contract is designed with transparency, upgrade readiness, and long-term sustainability in mind.
+| Field | Value |
+| --- | --- |
+| Contract | `0xD12ECbD5f508106ec242881530767FF15A6A7549` |
+| Network | BNB Smart Chain |
+| Chain ID | 56 |
+| Source | [`TSL.sol`](TSL.sol) |
+| Contract type | Fixed-supply fungible token |
+| Architecture | Direct deployment; not a proxy and not upgradeable |
+| On-chain name | TSL |
+| Symbol | TSL |
+| Decimals | 18 |
+| Total supply | 1,000,000,000 TSL |
 
-## Network
-- BNB Smart Chain (BEP-20)
+- Verified source: https://bscscan.com/address/0xD12ECbD5f508106ec242881530767FF15A6A7549#code
+- Token page: https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549
 
-## Contract Type
-- Fungible Token (BEP-20 compatible)
+## Token behavior
 
-## Core Features
-- Standard token transfers
-- Public balance and allowance tracking
-- Compatibility with BNB Smart Chain wallets and explorers
+The contract creates the complete supply in its constructor and assigns it to the deployer. It exposes the standard token functions `transfer`, `approve`, `transferFrom`, `balanceOf`, `allowance`, and `totalSupply`.
 
-## Security Guarantees (Current)
+The published source contains no function for:
 
-- No hidden minting is enabled in the current version (no public/external mint functions).
-- No blacklist / freeze / confiscation functions are enabled by default.
-- No auto-tax / fee-on-transfer logic is included.
-- No rebasing or elastic supply mechanism is included.
-- Standard BEP-20 style `transfer`, `approve`, `transferFrom` behaviors are intended.
+- minting or increasing total supply;
+- burning supply;
+- blacklisting, freezing, or confiscating balances;
+- pausing transfers;
+- transfer taxes or fee-on-transfer behavior;
+- rebasing;
+- restricting buys or sells;
+- changing a router or liquidity-pool address;
+- upgrading contract logic.
 
-## Security Notes
+## Ownership and privileged functions
 
-- Final security guarantees apply to the verified on-chain source code after deployment.
-- Any upgradeability (if used) will be disclosed clearly with proxy + implementation addresses.
-- Any future admin permissions or privileged operations will be documented publicly.
-- The contract follows standard BEP-20 patterns
-- No experimental or high-risk logic is included
-- External audits may be conducted in later phases
-## Ownership & Control
-- Contract ownership is defined and managed by the project administrator
-- No hidden minting or backdoor mechanisms
-- Any future upgrades or changes will be publicly disclosed
+The contract stores an `owner` address and exposes two owner-only functions:
 
-## Upgrade Policy
-- The current deployment is considered stable
-- Future upgrades (if any) will be announced transparently and documented
+1. `transferOwnership(address newOwner)` transfers ownership to a non-zero address.
+2. `rescueERC20(address token, address to, uint256 amount)` recovers unrelated ERC-20/BEP-20 tokens held by the contract.
 
-## Transparency Statement
-This repository is intended for public documentation and transparency purposes.
-Smart contract source code and verification details will be published after final deployment.
+`rescueERC20` explicitly rejects the TSL contract as the token being recovered, so it cannot be used to withdraw TSL held by the TSL contract. Ownership cannot be renounced through the published interface.
 
-## Disclaimer
-This documentation does not constitute financial advice.
-TSL is a digital asset intended for utility and ecosystem development.
-## Token Parameters
+## Build and verification record
 
-The following parameters describe the current configuration of the TSL token.
-Some values may be updated or finalized prior to public deployment.
+The source declares `pragma solidity ^0.8.20`. The exact compiler patch version, optimizer settings, EVM target, constructor transaction, and build artifacts used for the deployed bytecode are not currently recorded on the `main` branch.
 
-- **Token Name:** TSL
-- **Symbol:** TSL
-- **Standard:** BEP-20
-- **Network:** BNB Smart Chain
-- **Decimals:** To be defined
-- **Total Supply:** To be defined
-- **Contract Address:** Not yet published
+Do not infer byte-for-byte reproducibility from the pragma alone. For exact deployed compiler settings and bytecode verification, use the verified contract record on BscScan. A future reproducible-build record should add the following without changing the deployed contract:
 
-> The official contract address will be disclosed publicly after deployment and verification.
+- exact Solidity compiler version;
+- optimizer enabled/disabled state and run count;
+- EVM target and `viaIR` setting;
+- constructor/deployment transaction hash;
+- ABI, creation bytecode, and deployed bytecode hash;
+- deterministic compilation command and verification result.
 
+## Security status
+
+This repository publication is not a substitute for an independent audit. The source is intentionally small, but integrations should still test transfers, allowance changes, zero-value transfers, maximum allowance behavior, insufficient-balance reverts, ownership checks, and token rescue behavior.
+
+Security reports should follow [`../SECURITY.md`](../SECURITY.md).

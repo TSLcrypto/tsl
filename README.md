@@ -2,131 +2,79 @@
 
 **Technology · Sustainability · Liquidity**
 
-TSL is a BEP-20 digital asset deployed on the BNB Smart Chain, designed to provide a transparent and structured token with a sustainability-driven vision and scalable infrastructure.
+TSL Crypto is the public project brand for the TSL token on BNB Smart Chain. The canonical identity of the token is its on-chain contract address.
 
----
+## Official token identity
 
-## 🔗 Official Links
+| Field | Value |
+| --- | --- |
+| Project brand | TSL Crypto |
+| On-chain token name | TSL |
+| Symbol | TSL |
+| Network | BNB Smart Chain |
+| Chain ID | 56 |
+| Standard | BEP-20 / ERC-20 compatible |
+| Decimals | 18 |
+| Total supply | 1,000,000,000 TSL |
+| Contract | `0xD12ECbD5f508106ec242881530767FF15A6A7549` |
+| Architecture | Direct, non-upgradeable deployment |
 
-* Website: https://tslcrypto.com
-* Telegram: https://t.me/tsl_token
-* X (Twitter): https://x.com/tsl_token
+- [Verified contract on BscScan](https://bscscan.com/address/0xD12ECbD5f508106ec242881530767FF15A6A7549#code)
+- [Token page on BscScan](https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549)
 
----
+Always verify the full contract address before interacting with TSL. A name, symbol, logo, or social profile alone does not prove token identity.
 
-## 📊 Token Information
+## Contract properties
 
-* Name: TSL Crypto
-* Symbol: TSL
-* Network: BNB Smart Chain (BEP-20)
-* Decimals: 18
-* Contract Address:
-  `0xD12ECbD5f508106ec242881530767FF15A6A7549`
-* Explorer:
-  https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549
+The published [`contracts/TSL.sol`](contracts/TSL.sol) source implements a minimal fixed-supply token:
 
----
+- the full supply is created once in the constructor;
+- no mint or burn function;
+- no blacklist, freeze, confiscation, pause, transfer tax, or rebase logic;
+- no proxy or upgrade function;
+- standard transfer, approval, and allowance behavior;
+- ownership can be transferred to a non-zero address;
+- the owner can recover unrelated ERC-20/BEP-20 tokens sent to the contract, but cannot recover TSL from the TSL contract.
 
-## ⚙️ Key Features
+The repository source is provided for transparency. Final verification of deployed behavior must use the verified on-chain source and bytecode shown by BscScan.
 
-* Transparent on-chain smart contract
-* Fixed supply structure
-* No hidden mint or blacklist functions
-* Designed for integration with external price feeds (Oracle-ready)
+## Official project resources
 
----
+- Website: https://tslcrypto.com/
+- Telegram: https://t.me/TSLcrypt
+- X (Twitter): https://x.com/tsl_token
+- YouTube: https://www.youtube.com/@TSL_crypto
+- Facebook: https://www.facebook.com/profile.php?id=61579891263999
+- LinkedIn: https://www.linkedin.com/in/tslcrypto/
+- Contact: [info@tslcrypto.com](mailto:info@tslcrypto.com)
 
-## 🌍 Vision
+## Metadata and token lists
 
-TSL aims to build a reliable and transparent token ecosystem aligned with sustainability principles and long-term infrastructure development.
+- Logo: https://tslcrypto.com/assets/logo.png
+- Canonical metadata: https://tslcrypto.com/assets/tsl.metadata.json
+- Canonical hosted token list: https://tslcrypto.com/assets/tsl.tokenlist.json
+- Repository token list: [`tokenlist.json`](tokenlist.json)
 
----
+The hosted token list and repository token list should use the same contract address, name, symbol, decimals, logo, and official links.
 
-## 📈 Roadmap
+## Liquidity and access references
 
-### Phase 1
+- PancakeSwap route: https://pancakeswap.finance/swap?outputCurrency=0xD12ECbD5f508106ec242881530767FF15A6A7549
+- PancakeSwap V2 TSL/USDT pair: `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`
+- PancakeSwap V3 TSL/USDT 0.25% pool: `0xc147e16732ce090ca3ad22057a5914d1dc9bcde8`
+- GeckoTerminal: https://www.geckoterminal.com/bsc/tokens/0xD12ECbD5f508106ec242881530767FF15A6A7549
+- CoinMarketCap DEX page: https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/
 
-* Token Deployment
-* Website Launch
-* Initial Liquidity Setup
+Liquidity, prices, holders, and trading availability are external and can change. Verify current information directly on-chain before any transaction.
 
-### Phase 2
+## Repository scope
 
-* Trust Wallet Integration
-* CoinGecko Listing
-* Community Expansion
+This repository is dedicated to the TSL token and its official public documentation, source reference, metadata, and verification records. Unrelated research tokens and experiments should be maintained in separate repositories to keep TSL identity unambiguous.
 
-### Phase 3
+## Security
 
-* Oracle Integration
-* Utility Expansion
-* Exchange Listings
+See [`SECURITY.md`](SECURITY.md) for responsible disclosure guidance. Do not publish private keys, seed phrases, API keys, active exploits, or other sensitive material in Issues or Pull Requests.
 
----
+## Disclaimer
 
-## 📂 Repository Purpose
-
-This repository contains official information, assets, and documentation related to the TSL Crypto project.
-
----
-
-## ⚠️ Disclaimer
-
-TSL is not an investment product or financial advice. Cryptocurrency involves risk. Users are responsible for their own decisions.
-
-
-
-
----
-
-## TokenOneBEP20Upgradeable Verification
-
-TokenOneBEP20Upgradeable is an educational BEP20 token on BNB Smart Chain created for academic blockchain research, smart contract deployment practice, metadata testing, DEX indexing, wallet metadata propagation, and registry verification studies.
-
-### Official Token Contract
-
-`0x5591a8E9a5001f6052D9d749518AE1e6287b7955`
-
-### Network
-
-BNB Smart Chain
-
-### Token Information
-
-Name: Tether USD
-Symbol: USDT
-Decimals: 18
-Standard: BEP20
-
-### Official TokenOne Page
-
-https://tslcrypto.com/tokenone.html
-
-### BscScan Token Page
-
-https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955
-
-### DexScreener Pair
-
-https://dexscreener.com/bsc/0x46d776a2f759718a9f86642f52a7fbb2b475b22f
-
-### Verified Contracts
-
-Proxy:
-`0x5591a8E9a5001f6052D9d749518AE1e6287b7955`
-
-Implementation:
-`0x87313388276a317539BB96297523353Ed3eF5149`
-
-### Official Contact
-
-[info@tslcrypto.com](mailto:info@tslcrypto.com)
-[tslcrypto2025@gmail.com](mailto:tslcrypto2025@gmail.com)
-
-### Registry Verification Note
-
-This GitHub repository and the official TokenOne page are used to verify the TokenOneBEP20Upgradeable contract address for token information update requests on explorers, DEX indexers, wallet registries, and token metadata platforms.
-
-### Disclaimer
-
-TokenOneBEP20Upgradeable is not affiliated with, endorsed by, or issued by Tether Limited, Tether Operations Limited, or any official USDT issuer. It is an educational blockchain research token.
+TSL is not an investment product or financial advice. Digital assets involve technical, market, liquidity, and counterparty risks. Users are responsible for verifying addresses and making their own decisions.

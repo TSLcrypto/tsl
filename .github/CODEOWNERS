@@ -1,0 +1,8 @@
+# Default repository owner
+* @TSLcrypto
+
+# Security-sensitive identity and contract references
+/contracts/ @TSLcrypto
+/tokenlist.json @TSLcrypto
+/SECURITY.md @TSLcrypto
+/.github/ @TSLcrypto
