@@ -1,0 +1,59 @@
+name: Repository integrity
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate-public-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate token list and public identity
+        shell: python
+        run: |
+          import json
+          from datetime import datetime
+          from pathlib import Path
+
+          expected_address = "0xD12ECbD5f508106ec242881530767FF15A6A7549"
+          expected_telegram = "https://t.me/TSLcrypt"
+
+          token_list = json.loads(Path("tokenlist.json").read_text(encoding="utf-8"))
+          assert token_list["name"] == "TSL Token List"
+          assert token_list["version"] == {"major": 1, "minor": 0, "patch": 0}
+          datetime.fromisoformat(token_list["timestamp"].replace("Z", "+00:00"))
+          assert len(token_list["tokens"]) == 1
+
+          token = token_list["tokens"][0]
+          assert token["chainId"] == 56
+          assert token["address"] == expected_address
+          assert token["name"] == "TSL"
+          assert token["symbol"] == "TSL"
+          assert token["decimals"] == 18
+          assert token["logoURI"] == "https://tslcrypto.com/assets/logo.png"
+          assert token["extensions"]["telegram"] == expected_telegram
+
+          source = Path("contracts/TSL.sol").read_text(encoding="utf-8")
+          for required in (
+              'string public constant name = "TSL";',
+              'string public constant symbol = "TSL";',
+              'uint8 public constant decimals = 18;',
+              'uint256 public constant TOTAL_SUPPLY = 1_000_000_000 * 1e18;',
+              'require(token != address(this), "CANNOT_RESCUE_SELF");',
+          ):
+              assert required in source, f"Missing expected contract identity: {required}"
+
+          readme = Path("README.md").read_text(encoding="utf-8")
+          assert expected_address in readme
+          assert expected_telegram in readme
+          assert "TokenOneBEP20Upgradeable" not in readme
+
+          print("TSL repository identity checks passed.")
