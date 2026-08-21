@@ -66,3 +66,6 @@ Date: 2026-08-21
 
 
 
+- Top100Token: listed / live
+  - URL: https://top100token.com/binance/0xd12ecbd5f508106ec242881530767ff15a6a7549
+- Coinvote: submitted; under review / awaiting validation
