@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Status — TSL Crypto</title>
+  <style>
+    :root{color-scheme:dark}*{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#eaf2ff;background:linear-gradient(180deg,#050914,#07101f)}
+    .card{width:min(620px,100%);padding:28px;border:1px solid rgba(255,255,255,.1);border-radius:22px;background:rgba(10,18,36,.85);box-shadow:0 18px 60px rgba(0,0,0,.35)}
+    h1{margin-top:0}.muted{color:#9fb0d2;line-height:1.7}
+    code{display:block;margin:16px 0;padding:12px;border-radius:12px;overflow-wrap:anywhere;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+    a{display:inline-block;margin-top:14px;padding:11px 16px;border-radius:14px;text-decoration:none;font-weight:800;color:#04101a;background:linear-gradient(135deg,#20d7d2,#8de25b)}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Payment status</h1>
+    <p class="muted" id="message">Checking the payment notification...</p>
+    <code id="memo">Order ID: —</code>
+    <a href="/">Return to TSLcrypto.com</a>
+  </main>
+<script>
+  const params = new URLSearchParams(location.search);
+  const memo = params.get("memo");
+  const message = document.getElementById("message");
+  document.getElementById("memo").textContent = `Order ID: ${memo || "not available"}`;
+
+  async function checkOrder() {
+    if (!memo) {
+      message.textContent = "The redirect did not contain an order ID.";
+      return;
+    }
+    try {
+      const response = await fetch(`/api/hotpay/order/${encodeURIComponent(memo)}`);
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Status check failed.");
+      if (result.status === "PAID") {
+        message.textContent = "Payment confirmed successfully.";
+      } else if (result.status === "WEBHOOK_RECEIVED") {
+        message.textContent = "HOT Pay sent a notification. Final API verification is still required.";
+      } else {
+        message.textContent = "The payment is pending. Refresh this page after the transaction is confirmed.";
+      }
+    } catch (error) {
+      message.textContent = "The payment status could not be checked.";
+    }
+  }
+  checkOrder();
+</script>
+</body>
+</html>

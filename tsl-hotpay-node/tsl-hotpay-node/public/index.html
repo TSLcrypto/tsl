@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TSL Crypto (TSL) — Official Website</title>
+
+  <meta
+    name="description"
+    content="Official TSL Crypto website. Transparent BEP-20 token on BNB Smart Chain with public documentation, roadmap, and official links."
+  />
+  <meta name="theme-color" content="#050914" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png" />
+  <link rel="canonical" href="https://tslcrypto.com/" />
+  <link rel="token-metadata" type="application/json" href="https://tslcrypto.com/assets/tsl.metadata.json" />
+  <link rel="alternate" type="application/json" title="TSL Token List" href="https://tslcrypto.com/assets/tsl.tokenlist.json" />
+
+  <meta name="token:name" content="TSL" />
+  <meta name="token:symbol" content="TSL" />
+  <meta name="token:contract" content="0xD12ECbD5f508106ec242881530767FF15A6A7549" />
+  <meta name="token:chain" content="BNB Smart Chain" />
+  <meta name="token:chain_id" content="56" />
+  <meta name="token:decimals" content="18" />
+  <meta name="token:logo" content="https://tslcrypto.com/assets/logo.png" />
+
+  <style>
+    :root{
+      --bg:#050914;
+      --card:rgba(10,18,36,.78);
+      --text:#eaf2ff;
+      --muted:#9fb0d2;
+      --line:rgba(255,255,255,.09);
+      --accent:#20d7d2;
+      --accent2:#8de25b;
+      --accent3:#6ea8ff;
+      --shadow:0 18px 60px rgba(0,0,0,.35);
+      --radius:22px;
+      --max:1160px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(32,215,210,.08), transparent 26%),
+        radial-gradient(circle at top right, rgba(141,226,91,.08), transparent 24%),
+        linear-gradient(180deg, #050914 0%, #07101f 100%);
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    button{font:inherit}
+
+    .wrap{
+      width:min(var(--max), calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    .section{
+      margin-top:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(10px);
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(5,9,20,.72);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      min-height:78px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+
+    .brand img{
+      width:40px;
+      height:40px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.08);
+      background:#07111f;
+      flex:0 0 auto;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+
+    .brand strong{
+      font-size:28px;
+      line-height:1;
+      letter-spacing:.2px;
+    }
+
+    .brand span{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      margin-top:4px;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      flex-wrap:wrap;
+    }
+
+    .menu a{
+      color:var(--muted);
+      padding:10px 12px;
+      border-radius:12px;
+      transition:.2s ease;
+      font-size:15px;
+    }
+
+    .menu a:hover{
+      color:var(--text);
+      background:rgba(255,255,255,.05);
+    }
+
+    .top-links{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:44px;
+      padding:11px 16px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      transition:.2s ease;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      background:rgba(255,255,255,.07);
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#04101a;
+      border:none;
+      font-weight:800;
+      box-shadow:0 10px 28px rgba(32,215,210,.22);
+    }
+
+    .btn-primary:hover{
+      opacity:.97;
+    }
+
+    .btn-soft{
+      background:rgba(110,168,255,.12);
+      border-color:rgba(110,168,255,.25);
+    }
+
+    .hero-banner{
+      position:relative;
+      overflow:hidden;
+      border-radius:26px;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      margin-top:22px;
+    }
+
+    .hero-banner img{
+      width:100%;
+      height:auto;
+    }
+
+    /* دکمه هدر: کوچک‌تر و سمت راست */
+    .hero-cta{
+      position:absolute;
+      right:22px;
+      bottom:20px;
+      display:flex;
+      justify-content:flex-end;
+      pointer-events:none;
+    }
+
+    .hero-cta .btn{
+      pointer-events:auto;
+      min-width:unset;
+      min-height:38px;
+      padding:8px 14px;
+      font-size:13px;
+      border-radius:12px;
+      backdrop-filter:blur(8px);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .hero-main,
+    .hero-side{
+      padding:24px;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:13px;
+      margin-bottom:14px;
+    }
+
+    h1{
+      font-size:48px;
+      line-height:1.06;
+      margin:0 0 14px;
+      letter-spacing:-1px;
+    }
+
+    h2{
+      margin:0 0 12px;
+      font-size:28px;
+      letter-spacing:-.3px;
+    }
+
+    h3{
+      margin:0 0 8px;
+      font-size:18px;
+    }
+
+    p{
+      margin:0 0 14px;
+      color:var(--muted);
+      line-height:1.8;
+      font-size:16px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:20px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:18px;
+    }
+
+    .mini{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px;
+      background:rgba(255,255,255,.03);
+    }
+
+    .mini b{
+      display:block;
+      margin-bottom:6px;
+      font-size:13px;
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    .mini span{
+      display:block;
+      font-size:16px;
+      font-weight:700;
+      color:var(--text);
+      word-break:break-word;
+    }
+
+    .contract-box{
+      margin-top:16px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+      background:rgba(255,255,255,.03);
+      padding:16px;
+    }
+
+    .contract-label{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:10px;
+      display:block;
+    }
+
+    .contract-row{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    code{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      font-size:13px;
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      border:1px solid rgba(255,255,255,.08);
+      padding:10px 12px;
+      border-radius:12px;
+      word-break:break-all;
+      display:inline-block;
+    }
+
+    .copy-status{
+      min-height:18px;
+      margin-top:10px;
+      color:#93e8af;
+      font-size:13px;
+    }
+
+    .trust{
+      padding:22px 24px;
+    }
+
+    .trust-grid{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:12px;
+      margin-top:14px;
+    }
+
+    .trust-item{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(255,255,255,.03);
+      padding:16px;
+    }
+
+    .trust-item h3{
+      font-size:16px;
+      margin-bottom:8px;
+    }
+
+    .trust-item p{
+      font-size:14px;
+      margin-bottom:0;
+    }
+
+    .badges{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .content-card{
+      padding:24px;
+    }
+
+    .video-frame{
+      position:relative;
+      height:0;
+      padding-bottom:56.25%;
+      overflow:hidden;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.08);
+      background:#000;
+      margin-top:10px;
+    }
+
+    .video-frame iframe{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      border:0;
+      border-radius:18px;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:14px;
+    }
+
+    .feature{
+      padding:20px;
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:rgba(255,255,255,.03);
+    }
+
+    .feature p:last-child{
+      margin-bottom:0;
+    }
+
+    .team-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:14px;
+    }
+
+    .member{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:rgba(255,255,255,.03);
+    }
+
+    .member p{
+      margin:0;
+      font-size:14px;
+    }
+
+    .links-wrap{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    footer{
+      margin:26px 0 40px;
+      padding:24px;
+      border-radius:22px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+    }
+
+    footer p{
+      font-size:13px;
+      margin-bottom:10px;
+    }
+
+    .footer-bottom{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    @media (max-width:1080px){
+      .nav{
+        min-height:auto;
+        padding:14px 0;
+      }
+
+      .nav-right{
+        flex-direction:column;
+        align-items:flex-end;
+      }
+
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+
+      .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .grid-3{
+        grid-template-columns:1fr;
+      }
+
+      .team-grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media (max-width:760px){
+      .wrap{
+        width:min(var(--max), calc(100% - 20px));
+      }
+
+      .menu{
+        display:none;
+      }
+
+      .top-links{
+        display:none;
+      }
+
+      .brand strong{
+        font-size:22px;
+      }
+
+      .brand span{
+        display:none;
+      }
+
+      h1{
+        font-size:34px;
+      }
+
+      h2{
+        font-size:24px;
+      }
+
+      .hero-main,
+      .hero-side,
+      .trust,
+      .content-card{
+        padding:18px;
+      }
+
+      /* موبایل: دکمه کوچک و راست */
+      .hero-cta{
+        right:10px;
+        bottom:10px;
+        left:auto;
+      }
+
+      .hero-cta .btn{
+        width:auto;
+        min-width:unset;
+        max-width:none;
+        min-height:34px;
+        padding:6px 12px;
+        font-size:12px;
+        border-radius:10px;
+      }
+
+      .stats{
+        grid-template-columns:1fr;
+      }
+
+      .trust-grid{
+        grid-template-columns:1fr;
+      }
+
+      .team-grid{
+        grid-template-columns:1fr;
+      }
+
+      .contract-row{
+        align-items:stretch;
+      }
+
+      .contract-row .btn{
+        width:100%;
+      }
+    }
+</style>
+
+<meta property="og:title" content="TSL Crypto - Live Price & Chart">
+<meta property="og:description" content="Track TSL price in real-time on BNB Smart Chain.">
+<meta property="og:url" content="https://tslcrypto.com">
+<meta property="og:image" content="https://tslcrypto.com/assets/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TSL Crypto">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TSL Crypto - Live Price & Chart">
+<meta name="twitter:description" content="Track TSL price in real-time on BNB Smart Chain.">
+<meta name="twitter:image" content="https://tslcrypto.com/assets/logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "TSL",
+  "alternateName": "TSL Crypto",
+  "description": "TSL is a BEP-20 digital asset on BNB Smart Chain focused on transparent structure, simple on-chain usability, and long-term project direction.",
+  "url": "https://tslcrypto.com/",
+  "image": "https://tslcrypto.com/assets/logo.png",
+  "identifier": "0xD12ECbD5f508106ec242881530767FF15A6A7549",
+  "sameAs": [
+    "https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549",
+    "https://www.geckoterminal.com/bsc/tokens/0xD12ECbD5f508106ec242881530767FF15A6A7549",
+    "https://www.geckoterminal.com/bsc/pools/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1",
+    "https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/",
+    "https://pancakeswap.finance/swap?outputCurrency=0xD12ECbD5f508106ec242881530767FF15A6A7549",
+    "https://github.com/TSLcrypto/tsl",
+    "https://t.me/TSLcrypt",
+    "https://x.com/tsl_token",
+    "https://www.youtube.com/@TSL_crypto"
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#top">
+        <img src="/assets/logo.png" alt="TSL Crypto logo" />
+        <div class="brand-text">
+          <strong>TSL Crypto</strong>
+          <span>Technology • Sustainability • Liquidity</span>
+        </div>
+      </a>
+
+      <div class="nav-right">
+        <nav class="menu">
+          <a href="#about">About</a>
+          <a href="#verification">Verification</a>
+          <a href="#video">Video</a>
+          <a href="#get-tsl">Get TSL</a>
+          <a href="#utility">Utility</a>
+          <a href="#payments">Payments</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#team">Team</a>
+          <a href="#links">Links</a>
+        </nav>
+
+        <div class="top-links">
+          <a class="btn btn-soft" href="https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/" target="_blank" rel="noopener noreferrer">CoinMarketCap</a>
+          <a class="btn btn-soft" href="https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549" target="_blank" rel="noopener noreferrer">BscScan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <section class="hero-banner">
+    <img src="/assets/header.jpg" alt="TSL Header" />
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#get-tsl">Get TSL on PancakeSwap</a>
+    </div>
+  </section>
+
+  <section class="hero-grid section">
+    <div class="card hero-main">
+      <span class="eyebrow">Official Project Website</span>
+      <h1>Built on structure.<br>Not hype.</h1>
+      <p>
+        TSL is a BEP-20 digital asset on BNB Smart Chain designed with a focus on
+        transparent structure, simple on-chain usability, and long-term project direction.
+      </p>
+
+      <div class="hero-actions">
+		  <a class="btn" 
+   href="https://www.geckoterminal.com/bsc/tokens/0xD12ECbD5f508106ec242881530767FF15A6A7549" 
+   target="_blank">
+   View Live Price (GeckoTerminal)
+</a>
+        <a class="btn btn-primary" href="#get-tsl">Get TSL</a>
+        <a class="btn" href="/assets/whitepaper.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+        <a class="btn" href="/assets/roadmap.pdf" target="_blank" rel="noopener noreferrer">Roadmap</a>
+      </div>
+
+      <div class="stats">
+        <div class="mini">
+          <b>Network</b>
+          <span>BNB Smart Chain</span>
+        </div>
+        <div class="mini">
+          <b>Standard</b>
+          <span>BEP-20</span>
+        </div>
+        <div class="mini">
+          <b>Symbol</b>
+          <span>TSL</span>
+        </div>
+        <div class="mini">
+          <b>Status</b>
+          <span>Public Project Website</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card hero-side">
+      <h2>Quick Information</h2>
+      <p>
+        TSL is presented with a public-facing structure focused on clarity,
+        documentation, and official on-chain references.
+      </p>
+
+      <div class="contract-box">
+        <span class="contract-label">Official Contract Address</span>
+        <div class="contract-row">
+          <code id="contract">0xD12ECbD5f508106ec242881530767FF15A6A7549</code>
+          <button class="btn" type="button" onclick="copyContract()">Copy Address</button>
+        </div>
+        <div class="copy-status" id="copy-status"></div>
+      </div>
+
+      <div class="badges">
+        <span class="badge">BEP-20</span>
+        <span class="badge">Public Contract</span>
+        <span class="badge">Official Links</span>
+        <span class="badge">Project Docs</span>
+      </div>
+    </aside>
+  </section>
+
+  <section id="verification" class="card trust section">
+    <h2>Verification & Transparency</h2>
+    <p>
+      TSL is presented with publicly accessible references, official documentation,
+      and on-chain visibility through recognized platforms.
+    </p>
+
+    <div class="trust-grid">
+      <div class="trust-item">
+        <h3>Verified Contract</h3>
+        <p>Official contract reference is publicly accessible through BscScan.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Documentation</h3>
+        <p>Whitepaper and roadmap are available through the official website.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Official Media</h3>
+        <p>Project communication is linked through official social channels.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Public Access</h3>
+        <p>TSL can be accessed through the published PancakeSwap route.</p>
+      </div>
+    </div>
+
+        <div class="links-wrap">
+      <a class="btn" href="https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549" target="_blank" rel="noopener noreferrer">Verified Contract</a>
+      <a class="btn" href="https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/" target="_blank" rel="noopener noreferrer">CoinMarketCap</a>
+      <a class="btn" href="https://www.geckoterminal.com/bsc/pools/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1" target="_blank" rel="noopener noreferrer">GeckoTerminal Pool</a>
+      <a class="btn" href="/assets/tsl.metadata.json" target="_blank" rel="noopener noreferrer">Token Metadata</a>
+      <a class="btn" href="/assets/tsl.tokenlist.json" target="_blank" rel="noopener noreferrer">Token List</a>
+      <a class="btn" href="/assets/whitepaper.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+      <a class="btn" href="/assets/roadmap.pdf" target="_blank" rel="noopener noreferrer">Roadmap</a>
+    </div>
+  </section>
+
+  <section id="about" class="card content-card section">
+    <h2>About TSL</h2>
+    <p>
+      TSL is built as a clean and minimal token structure without hidden mechanics,
+      tax features, or artificial complexity in its public-facing presentation.
+      The project prioritizes clarity, verifiability, and disciplined development
+      over short-term noise.
+    </p>
+  </section>
+
+  <section id="video" class="card content-card section">
+    <h2>Official Introduction Video</h2>
+    <p>
+      Watch the official TSL introduction video for a quick overview of the project,
+      visual identity, and public presentation.
+    </p>
+
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/1UEmZec7FvM"
+        title="TSL Official Video"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section id="get-tsl" class="card content-card section">
+    <h2>Get TSL</h2>
+    <p>
+      TSL can be accessed through PancakeSwap on BNB Smart Chain.
+      Always verify the official contract address before interacting with the token.
+    </p>
+
+    <div class="hero-actions">
+      <a
+        class="btn btn-primary"
+        href="https://pancakeswap.finance/swap?outputCurrency=0xD12ECbD5f508106ec242881530767FF15A6A7549"
+        target="_blank"
+        rel="noopener noreferrer">
+        Buy on PancakeSwap
+      </a>
+
+      <a
+        class="btn"
+        href="https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549"
+        target="_blank"
+        rel="noopener noreferrer">
+        View on BscScan
+      </a>
+    </div>
+
+    <div class="contract-box">
+      <span class="contract-label">Contract Address</span>
+      <div class="contract-row">
+        <code>0xD12ECbD5f508106ec242881530767FF15A6A7549</code>
+      </div>
+      <div class="note">Network: BNB Smart Chain (BEP-20)</div>
+    </div>
+  </section>
+
+  <section id="utility" class="section grid-3">
+    <div class="feature card">
+      <h3>Payments & Transfers</h3>
+      <p>
+        Structured for simple on-chain token transfer visibility on BNB Smart Chain.
+      </p>
+    </div>
+    <div class="feature card">
+      <h3>Transparency</h3>
+      <p>
+        Public references, explorer visibility, and official documentation are prioritized.
+      </p>
+    </div>
+    <div class="feature card">
+      <h3>Roadmap Driven</h3>
+      <p>
+        Development communication follows documented milestones and controlled progression.
+      </p>
+    </div>
+  </section>
+
+  <section id="payments" class="card content-card section">
+    <h2>Payments</h2>
+    <p>
+      Secure crypto payments are available through HOT Pay. The checkout supports
+      multiple wallets, tokens, and networks, while settlement is received in USDT.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary" id="hotpay-button" type="button" onclick="startHotPayment()">
+        Pay with HOT Pay
+      </button>
+    </div>
+    <div class="copy-status" id="hotpay-status" aria-live="polite"></div>
+
+    <div class="grid-3">
+      <div class="feature">
+        <h3>Network</h3>
+        <p>BNB Smart Chain (BEP-20)</p>
+      </div>
+      <div class="feature">
+        <h3>Verification</h3>
+        <p>Contract reference and explorer visibility are publicly available.</p>
+      </div>
+      <div class="feature">
+        <h3>Access Route</h3>
+        <p>PancakeSwap and official project links only.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="card content-card section">
+    <h2>Roadmap</h2>
+    <p>
+      The TSL roadmap is published publicly and updated as the project advances.
+      Each phase is intended to reflect practical deliverables, public visibility,
+      and controlled development structure.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn" href="/assets/roadmap.pdf" target="_blank" rel="noopener noreferrer">View Roadmap PDF</a>
+      <a class="btn" href="/assets/whitepaper.pdf" target="_blank" rel="noopener noreferrer">View Whitepaper</a>
+    </div>
+  </section>
+
+  <section id="team" class="card content-card section">
+    <h2>Team</h2>
+
+    <div class="team-grid">
+      <div class="member">
+        <h3>Masoud Daniyali</h3>
+        <p>Founder</p>
+      </div>
+
+      <div class="member">
+        <h3>Shadmehr Daniyali</h3>
+        <p>Lead Developer</p>
+      </div>
+
+      <div class="member">
+        <h3>Daniyal Daniyali</h3>
+        <p>Technical Support</p>
+      </div>
+
+      <div class="member">
+        <h3>Ardalan Delavari</h3>
+        <p>Community & Operations</p>
+      </div>
+
+      <div class="member">
+        <h3>Majid Gafarzadeh</h3>
+        <p>Sponsor</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="links" class="card content-card section">
+    <h2>Official Links</h2>
+    <p>
+      Official project references and public channels.
+    </p>
+
+        <div class="links-wrap">
+      <a class="btn" href="https://tslcrypto.com" target="_blank" rel="noopener noreferrer">Website</a>
+      <a class="btn" href="https://github.com/TSLcrypto/tsl" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="btn" href="https://t.me/TSLcrypt" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a class="btn" href="https://x.com/tsl_token" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+      <a class="btn" href="https://www.youtube.com/@TSL_crypto" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a class="btn" href="https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549" target="_blank" rel="noopener noreferrer">BscScan</a>
+      <a class="btn" href="https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/" target="_blank" rel="noopener noreferrer">CoinMarketCap</a>
+      <a class="btn" href="https://www.geckoterminal.com/bsc/pools/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1" target="_blank" rel="noopener noreferrer">GeckoTerminal</a>
+      <a class="btn" href="/assets/tsl.metadata.json" target="_blank" rel="noopener noreferrer">Token Metadata</a>
+      <a class="btn" href="/assets/tsl.tokenlist.json" target="_blank" rel="noopener noreferrer">Token List</a>
+    </div>
+  </section>
+
+  <footer class="section">
+    <p>
+      Disclaimer: TSL is not an investment product or financial advice.
+      Cryptocurrency involves risk. Users are responsible for their own decisions.
+    </p>
+
+    <div class="footer-bottom">
+      © <span id="y"></span> TSL Crypto — Official Website
+    </div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  function copyContract() {
+    const text = document.getElementById("contract").innerText.trim();
+    const status = document.getElementById("copy-status");
+
+    navigator.clipboard.writeText(text).then(() => {
+      status.textContent = "Contract address copied.";
+      setTimeout(() => status.textContent = "", 2000);
+    }).catch(() => {
+      status.textContent = "Copy failed. Please copy it manually.";
+      setTimeout(() => status.textContent = "", 2500);
+    });
+  }
+
+  async function startHotPayment() {
+    const button = document.getElementById("hotpay-button");
+    const status = document.getElementById("hotpay-status");
+
+    button.disabled = true;
+    status.textContent = "Creating a secure payment session...";
+
+    try {
+      const response = await fetch("/api/hotpay/create-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({})
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.paymentUrl) {
+        throw new Error(result.error || "Unable to create the payment session.");
+      }
+
+      window.location.href = result.paymentUrl;
+    } catch (error) {
+      console.error(error);
+      status.textContent = "Payment session could not be created. Please try again.";
+      button.disabled = false;
+    }
+  }
+</script>
+
+</body>
+</html>
