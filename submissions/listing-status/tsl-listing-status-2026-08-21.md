@@ -14,6 +14,8 @@ Date: 2026-08-21
 
 - DropsTab: positive reply received; Google Form submitted successfully
 - LiveCoinWatch: submitted
+- CoinSniper: listed / live
+  - URL: https://coinsniper.net/coin/93515
 - CoinGabbar: account registered; listing submission received; awaiting review
 - CoinCarp: submitted
 - CoinCheckup: submitted
@@ -58,3 +60,4 @@ Date: 2026-08-21
 - Use CoinMooner and Coinscope listing URLs as supporting visibility proof in future submissions.
 - DropsTab form was submitted after their positive email reply.
 - Keep official X/Twitter and Telegram active during review windows.
+
