@@ -26,7 +26,9 @@ Date: 2026-08-21
   - Ticket ID: 2416201
 - CoinMarketCap: pending / no final response yet
 - CoinStats: generic Priority Service reply; follow-up needed
-- CryptoRank: request sent by email
+- CryptoRank: paid listing offer received; not paid; verification required
+  - Listing fee requested: 3000 USD
+  - Payment not approved until invoice, company identity, and wallet ownership are verified
 
 ## Needs Caution
 
@@ -60,4 +62,5 @@ Date: 2026-08-21
 - Use CoinMooner and Coinscope listing URLs as supporting visibility proof in future submissions.
 - DropsTab form was submitted after their positive email reply.
 - Keep official X/Twitter and Telegram active during review windows.
+
 
