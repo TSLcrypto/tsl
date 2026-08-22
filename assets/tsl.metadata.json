@@ -1,0 +1,30 @@
+{
+  "name": "TSL",
+  "symbol": "TSL",
+  "description": "TSL is a BEP-20 digital asset on BNB Smart Chain focused on transparent structure, simple on-chain usability, and long-term project direction.",
+  "image": "https://tslcrypto.com/assets/logo.png",
+  "external_url": "https://tslcrypto.com/",
+  "website": "https://tslcrypto.com/",
+  "chain": "BNB Smart Chain",
+  "chain_id": 56,
+  "standard": "BEP20",
+  "decimals": 18,
+  "contract": "0xD12ECbD5f508106ec242881530767FF15A6A7549",
+  "explorer": "https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549",
+  "pancakeswap": "https://pancakeswap.finance/swap?outputCurrency=0xD12ECbD5f508106ec242881530767FF15A6A7549",
+  "geckoterminal": "https://www.geckoterminal.com/bsc/tokens/0xD12ECbD5f508106ec242881530767FF15A6A7549",
+  "coinmarketcap_dex": "https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/",
+  "pools": {
+    "pancakeswap_v2_tsl_usdt": "0x47ea61fef003c1212fbcd3acc03208cb7a92cad1",
+    "pancakeswap_v3_tsl_usdt_025": "0xc147e16732ce090ca3ad22057a5914d1dc9bcde8"
+  },
+  "social": {
+    "telegram": "https://t.me/TSLcrypt",
+    "twitter": "https://x.com/tsl_token",
+    "github": "https://github.com/TSLcrypto/tsl",
+    "youtube": "https://www.youtube.com/@TSL_crypto",
+    "facebook": "https://www.facebook.com/profile.php?id=61579891263999",
+    "linkedin": "https://www.linkedin.com/in/tslcrypto/"
+  },
+  "owner_wallet": "0xdAb105a2DE91ACC4ee2c8b2CF40C44e88b9ec3b7"
+}
