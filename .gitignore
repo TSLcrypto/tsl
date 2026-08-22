@@ -1,0 +1,34 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+*API key*.txt
+*api-key*.txt
+*apikey*.txt
+
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+cache/
+artifacts/
+typechain-types/
+target/
+
+# Local IDE and history
+.vscode/
+.history/
+.snapshots/
+*.log
+logs/
+
+# Archives and generated bundles
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Local generated project folders
+registry/
+tsl-hotpay-node/
+tokenone-trustwallet-assets/
