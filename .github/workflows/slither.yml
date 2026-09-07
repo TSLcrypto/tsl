@@ -1,0 +1,36 @@
+name: Slither security
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'contracts/**/*.sol'
+      - '.github/workflows/slither.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'contracts/**/*.sol'
+      - '.github/workflows/slither.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  slither:
+    name: slither-analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Slither
+        uses: crytic/slither-action@v0.4.2
+        with:
+          target: contracts/TSL.sol
+          solc-version: '0.8.20'
+          slither-version: '0.11.6'
+          fail-on: high
+          slither-args: --exclude-dependencies
