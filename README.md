@@ -78,3 +78,23 @@ See [`SECURITY.md`](SECURITY.md) for responsible disclosure guidance. Do not pub
 ## Disclaimer
 
 TSL is not an investment product or financial advice. Digital assets involve technical, market, liquidity, and counterparty risks. Users are responsible for verifying addresses and making their own decisions.
+## Security & Transparency
+
+TSL maintains public security and transparency records to support independent verification by wallets, exchanges, security providers, and token-listing reviewers.
+
+### Security Evidence
+
+- [TSL Security & Transparency Evidence Index](docs/security/SECURITY-EVIDENCE-INDEX.md)
+- [Blockaid Security Review Record](docs/security/BLOCKAID-REVIEW-2026.md)
+- [Liquidity Lock Record](docs/TSL-LIQUIDITY-LOCK-RECORD.md)
+- [Major Wallet Allocation Record](docs/TSL-MAJOR-WALLET-ALLOCATIONS.md)
+
+### Key Verification Information
+
+- Primary liquidity pool: PancakeSwap V2 TSL/USDT
+- LP tokens locked: **99.02%**
+- Liquidity unlock date: **September 5, 2027**
+- Liquidity lock evidence is publicly verifiable on-chain.
+- Blockaid completed a further review after additional transparency evidence was provided.
+
+All blockchain-related claims should be independently verified using the public on-chain references contained in the evidence documents.
