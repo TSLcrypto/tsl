@@ -73,7 +73,7 @@ This repository is dedicated to the TSL token and its official public documentat
 
 ## Security
 
-See [`SECURITY.md`](SECURITY.md) for responsible disclosure guidance. Do not publish private keys, seed phrases, API keys, active exploits, or other sensitive material in Issues or Pull Requests.
+See [`SECURITY.md`](SECURITY.md) for responsible disclosure guidance and [`docs/AUTHENTICATION-AND-KEY-MANAGEMENT.md`](docs/AUTHENTICATION-AND-KEY-MANAGEMENT.md) for the repository's blockchain-native authentication, authorization, credential-handling, and key-management model. Do not publish private keys, seed phrases, API keys, active exploits, or other sensitive material in Issues or Pull Requests.
 
 ## Disclaimer
 
@@ -85,6 +85,7 @@ TSL maintains public security and transparency records to support independent ve
 ### Security Evidence
 
 - [TSL Security & Transparency Evidence Index](docs/security/SECURITY-EVIDENCE-INDEX.md)
+- [Authentication & Key Management](docs/AUTHENTICATION-AND-KEY-MANAGEMENT.md)
 - [Blockaid Security Review Record](docs/security/BLOCKAID-REVIEW-2026.md)
 - [Liquidity Lock Record](docs/TSL-LIQUIDITY-LOCK-RECORD.md)
 - [Major Wallet Allocation Record](docs/TSL-MAJOR-WALLET-ALLOCATIONS.md)

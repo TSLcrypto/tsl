@@ -6,6 +6,23 @@
 *api-key*.txt
 *apikey*.txt
 
+# Private keys, wallets, keystores, and local credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.wallet.json
+keystore/
+keystores/
+secrets/
+credentials/
+private-key*.txt
+private_key*.txt
+mnemonic.txt
+seed.txt
+
 # Dependencies and build outputs
 node_modules/
 dist/
