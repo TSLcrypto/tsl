@@ -4,15 +4,9 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - 'contracts/**/*.sol'
-      - '.github/workflows/slither.yml'
   push:
     branches:
       - main
-    paths:
-      - 'contracts/**/*.sol'
-      - '.github/workflows/slither.yml'
   workflow_dispatch:
 
 permissions:
