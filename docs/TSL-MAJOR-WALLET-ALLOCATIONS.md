@@ -6,7 +6,8 @@ Contract: 0xD12ECbD5f508106ec242881530767FF15A6A7549
 Primary PancakeSwap V2 Pool: 0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1
 Official Website: https://tslcrypto.com/
 Prepared by: TSL Crypto Team
-Date: 2026-09-03
+Original allocation record date: 2026-09-03
+Documentation reconciliation: 2026-10-02
 
 ## Purpose
 
@@ -20,16 +21,18 @@ This document provides a public transparency record for the major TSL allocation
 - The project does not claim that liquidity is locked or burned unless a separate verifiable lock/burn transaction or third-party locker URL is provided.
 - Wallet labels below are project allocation labels and should be verified against on-chain balances.
 
-## Current Review Context
+## Historical Review Context (Original Record: 2026-09-03)
 
 Blockaid identified two main issues requiring supporting documentation:
 
 1. Supply concentration among major wallets.
-2. Limited and currently unlocked liquidity on the primary PancakeSwap TSL/USDT pool.
+2. Limited liquidity and the absence of public liquidity-lock evidence for the primary PancakeSwap TSL/USDT pool at the time of the original review.
 
-This document is intended to address the supply-distribution transparency side. Liquidity lock or burn evidence should be provided separately if and when completed.
+This document addresses supply-distribution transparency. The original liquidity concern is historical: a separate liquidity-lock record was subsequently published. See [TSL Liquidity Lock Record](TSL-LIQUIDITY-LOCK-RECORD.md) and the dated evidence summary below. This revision does not assert a current Blockaid review outcome.
 
 ## Major Wallet Allocation Table
+
+The figures and labels below are retained from the original 2026-09-03 record; balances have not been remeasured in this documentation revision. They are not a current circulating-supply statement. Allocation labels and internal release policies do not prove enforceable on-chain vesting or locked TSL balances. Supply concentration remains a separate issue from LP locking.
 
 | Wallet | Approx. Share | Current Status | Purpose | Notes |
 |---|---:|---|---|---|
@@ -50,7 +53,20 @@ Primary PancakeSwap V2 TSL/USDT pool:
 
 0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1
 
-At this stage, the project does not claim that LP tokens are locked or burned unless separate public lock/burn evidence is provided.
+### Subsequent Published Lock Evidence
+
+The project liquidity-lock record, also included in the evidence dossier updated 2026-09-04, reports:
+
+- Locker: Mudra Liquidity Locker.
+- Locked LP tokens: 1052.215287947234081726.
+- Total LP token supply shown on the certificate: 1062.6559.
+- Locked percentage shown on that certificate: 99.02%.
+- Reported unlock date: 2027-09-05.
+- [Project liquidity-lock record](TSL-LIQUIDITY-LOCK-RECORD.md).
+- [Public Mudra certificate](https://mudra.website/?certificate=yes&type=0&lp=0x47ea61fef003c1212fbcd3acc03208cb7a92cad1).
+- [BscScan lock transaction](https://bscscan.com/tx/0xfdf1400e4543c61e2536b5889d2c05f5b0b33729824ea021c9f9694a0f705aa8).
+
+These are dated published evidence figures, not a fresh measurement of live lock status or current LP supply. Verify the certificate and transaction directly for current conditions. The percentage concerns LP tokens of this pair, not the total TSL supply or all holder wallets. No burn is asserted. An LP lock does not guarantee token value, liquidity depth or investment safety, and it does not resolve supply concentration by itself.
 
 ## Planned Transparency Improvements
 
@@ -58,7 +74,7 @@ At this stage, the project does not claim that LP tokens are locked or burned un
 - Verify and publish the exact major wallet addresses.
 - Provide a signed deployer-wallet confirmation if required.
 - Improve public liquidity depth over time.
-- Provide verifiable liquidity lock or burn proof if completed.
+- Maintain the published liquidity-lock references and disclose subsequent changes with dated evidence.
 - Keep website, metadata, repository records, and social verification consistent.
 
 ## Verification Links
