@@ -46,6 +46,7 @@ The repository source is provided for transparency. Final verification of deploy
 - YouTube: https://www.youtube.com/@TSL_crypto
 - Facebook: https://www.facebook.com/profile.php?id=61579891263999
 - LinkedIn: https://www.linkedin.com/in/tslcrypto/
+- Instagram: https://www.instagram.com/tsl.crp/
 - Contact: [info@tslcrypto.com](mailto:info@tslcrypto.com)
 
 ## Metadata and token lists
