@@ -27,6 +27,31 @@ The current public site responds from Microsoft IIS 10 / Plesk for Windows. Depl
 </rule>
 ```
 
+The current `httpdocs/web.config` has no `<rewrite>` section. Once a standalone API process is confirmed healthy on `127.0.0.1:8787` and URL Rewrite/ARR proxy are confirmed enabled, the site's existing configuration can be extended as follows. Preserve the existing compilation and module settings exactly; do not deploy this example before those checks:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.web>
+    <compilation tempDirectory="C:\\Inetpub\\vhosts\\tslcrypto.com\\tmp" />
+  </system.web>
+  <system.webServer>
+    <modules>
+      <remove name="ModSecurity IIS (64bits)" />
+      <remove name="ModSecurity IIS (32bits)" />
+    </modules>
+    <rewrite>
+      <rules>
+        <rule name="TSL API reverse proxy" stopProcessing="true">
+          <match url="^api/v1/(.*)$" />
+          <action type="Rewrite" url="http://127.0.0.1:8787/api/v1/{R:1}" appendQueryString="true" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
+```
+
 Check `http://127.0.0.1:8787/api/v1/health` and `/api/v1/tsl` locally on the host before applying the rule. Then check both public HTTPS endpoints and verify the `token.contractAddress`, `market.poolAddress`, `market.sourceUrl` and `market.fetchedAt` fields. Add an ingress rate limit, logs, and process restart monitoring. Do not expose the Node port publicly. On rollback, remove only this rule and stop the service. The API code or this GitHub repository alone cannot change the live website configuration.
 
 The fixed pool is `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`. This is a market quote from one pool, not a guaranteed redemption price or a wallet valuation. Thin liquidity can yield a quote far from execution price. Change the pool only after verifying the contract identity, pool tokens and liquidity. Public BSC RPC and GeckoTerminal endpoints have usage limits; use a suitable provider if traffic grows.
