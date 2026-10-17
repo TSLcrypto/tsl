@@ -47,6 +47,7 @@ The repository source is provided for transparency. Final verification of deploy
 - Facebook: https://www.facebook.com/profile.php?id=61579891263999
 - LinkedIn: https://www.linkedin.com/in/tslcrypto/
 - Contact: [info@tslcrypto.com](mailto:info@tslcrypto.com)
+- instagram: https://www.instagram.com/TSL.CRP/
 
 ## Metadata and token lists
 
