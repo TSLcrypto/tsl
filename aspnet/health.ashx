@@ -11,12 +11,12 @@ public class TslHealthHandler : IHttpHandler
     {
         var response = context.Response;
         response.ContentType = "application/json; charset=utf-8";
-        response.Headers["X-Content-Type-Options"] = "nosniff";
+        response.AddHeader("X-Content-Type-Options", "nosniff");
         response.Cache.SetCacheability(HttpCacheability.NoCache);
         if (context.Request.HttpMethod != "GET")
         {
             response.StatusCode = 405;
-            response.Headers["Allow"] = "GET";
+            response.AddHeader("Allow", "GET");
             response.Write("{\"error\":\"Method not allowed\"}");
             return;
         }
