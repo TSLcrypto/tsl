@@ -16,6 +16,12 @@ curl http://127.0.0.1:8787/api/v1/tsl
 
 Optional environment variables: `PORT` (default `8787`), `HOST` (default `127.0.0.1`), `BSC_RPC_URL` (default `https://bsc-dataseed-public.bnbchain.org`). Configure RPC credentials, if any, only in server environment, never in repository or front-end code.
 
+## Plesk ASP.NET Framework 4.8 deployment
+
+The current Plesk subscription shows ASP.NET Framework 4.8, but PHP is disabled and Node.js is not shown on the domain dashboard. The `aspnet/health.ashx` and `aspnet/tsl.ashx` handlers provide the same read-only JSON fields directly on IIS, without installing Node.js or changing the root `web.config`. This route is intended for this Windows host; the Node service below remains an alternative for a separate Node host.
+
+In Plesk Files, create `httpdocs/api/v1/` and upload the two `.ashx` files there. First upload only `health.ashx` and verify `https://tslcrypto.com/api/v1/health.ashx` returns `{"status":"ok"}`. Then upload `tsl.ashx` and verify `https://tslcrypto.com/api/v1/tsl.ashx` returns the expected contract and pool, source URL, and a recent `fetchedAt`. Both handlers allow GET only; the market handler caches upstream data for 60 seconds and returns 503 rather than fabricated data when a dependency fails. This deployment has not yet been verified on the live IIS host. Do not add URL Rewrite aliases or edit `web.config` until both direct `.ashx` URLs work.
+
 ## Production connection
 
 The current public site responds from Microsoft IIS 10 / Plesk for Windows. Deploy this service **outside the public `httpdocs` directory** on that server, run it as a managed process using Node.js 20+, and reverse proxy `https://tslcrypto.com/api/v1/*` to `http://127.0.0.1:8787/api/v1/*`. Confirm the actual website `web.config` and take a backup before editing. IIS URL Rewrite and Application Request Routing (ARR) must be installed, with proxy enabled at the IIS server level. Insert this rule near the top of the existing `<rewrite><rules>` collection, before catch-all/static-site rules; do not replace the entire `web.config`:
