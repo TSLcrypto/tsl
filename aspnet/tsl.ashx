@@ -30,11 +30,11 @@ public class TslApiHandler : IHttpHandler
     {
         var response = context.Response;
         response.ContentType = "application/json; charset=utf-8";
-        response.Headers["X-Content-Type-Options"] = "nosniff";
+        response.AddHeader("X-Content-Type-Options", "nosniff");
         if (context.Request.HttpMethod != "GET")
         {
             response.StatusCode = 405;
-            response.Headers["Allow"] = "GET";
+            response.AddHeader("Allow", "GET");
             response.Cache.SetCacheability(HttpCacheability.NoCache);
             response.Write("{\"error\":\"Method not allowed\"}");
             return;
@@ -62,7 +62,7 @@ public class TslApiHandler : IHttpHandler
             Trace.TraceError("TSL API upstream failure: " + ex.GetType().Name + ": " + ex.Message);
             response.StatusCode = 503;
             response.Cache.SetCacheability(HttpCacheability.NoCache);
-            response.Headers["Retry-After"] = "30";
+            response.AddHeader("Retry-After", "30");
             response.Write("{\"error\":\"Market data temporarily unavailable\"}");
         }
     }
@@ -93,7 +93,8 @@ public class TslApiHandler : IHttpHandler
         var fraction = (rawSupply % unit).ToString(CultureInfo.InvariantCulture).PadLeft(18, '0').TrimEnd('0');
         var supply = (rawSupply / unit).ToString(CultureInfo.InvariantCulture) + (fraction.Length == 0 ? "" : "." + fraction);
         var liquidity = Text(Get(attrs, "reserve_in_usd"));
-        var volume = Text(Get(ObjectMap(Get(attrs, "volume_usd")), "h24"));
+        var volumes = Get(attrs, "volume_usd") as Dictionary<string, object>;
+        var volume = volumes == null ? null : Text(Get(volumes, "h24"));
 
         return serializer.Serialize(new {
             token = new {
