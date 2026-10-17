@@ -1,5 +1,4 @@
 <%@ WebHandler Language="C#" Class="TslApiHandler" %>
-<%@ Assembly Name="System.Numerics" %>
 <%@ Assembly Name="System.Web.Extensions" %>
 
 using System;
@@ -8,7 +7,6 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Net;
-using System.Numerics;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
@@ -88,10 +86,12 @@ public class TslApiHandler : IHttpHandler
         if (Get(supplyJson, "error") != null) throw new InvalidDataException("RPC error");
         var hex = Text(Get(supplyJson, "result"));
         if (hex == null || !Regex.IsMatch(hex, "^0x[0-9a-fA-F]{1,64}$")) throw new InvalidDataException("Invalid supply");
-        var rawSupply = BigInteger.Parse("0" + hex.Substring(2), NumberStyles.AllowHexSpecifier, CultureInfo.InvariantCulture);
-        var unit = BigInteger.Pow(new BigInteger(10), 18);
-        var fraction = (rawSupply % unit).ToString(CultureInfo.InvariantCulture).PadLeft(18, '0').TrimEnd('0');
-        var supply = (rawSupply / unit).ToString(CultureInfo.InvariantCulture) + (fraction.Length == 0 ? "" : "." + fraction);
+        var rawSupply = HexToDecimal(hex);
+        var padded = rawSupply.PadLeft(19, '0');
+        var whole = padded.Substring(0, padded.Length - 18).TrimStart('0');
+        if (whole.Length == 0) whole = "0";
+        var fraction = padded.Substring(padded.Length - 18).TrimEnd('0');
+        var supply = whole + (fraction.Length == 0 ? "" : "." + fraction);
         var liquidity = Text(Get(attrs, "reserve_in_usd"));
         var volumes = Get(attrs, "volume_usd") as Dictionary<string, object>;
         var volume = volumes == null ? null : Text(Get(volumes, "h24"));
@@ -148,6 +148,32 @@ public class TslApiHandler : IHttpHandler
 
     private static string Text(object value) { return value as string; }
     private static bool Same(string a, string b) { return string.Equals(a, b, StringComparison.OrdinalIgnoreCase); }
+    private static string HexToDecimal(string hex)
+    {
+        // Little-endian base-10 digits avoid an extra assembly on shared IIS hosting.
+        var digits = new List<int>();
+        digits.Add(0);
+        for (var i = 2; i < hex.Length; i++)
+        {
+            var c = hex[i];
+            var carry = c >= '0' && c <= '9' ? c - '0' :
+                c >= 'a' && c <= 'f' ? c - 'a' + 10 : c - 'A' + 10;
+            for (var j = 0; j < digits.Count; j++)
+            {
+                var value = digits[j] * 16 + carry;
+                digits[j] = value % 10;
+                carry = value / 10;
+            }
+            while (carry > 0)
+            {
+                digits.Add(carry % 10);
+                carry /= 10;
+            }
+        }
+        var result = new StringBuilder(digits.Count);
+        for (var i = digits.Count - 1; i >= 0; i--) result.Append((char)('0' + digits[i]));
+        return result.ToString();
+    }
     private static bool DecimalString(string value)
     {
         return value != null && Regex.IsMatch(value, @"^(?:0|[1-9][0-9]*)(?:\.[0-9]+)?$");
