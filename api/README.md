@@ -33,7 +33,7 @@ The current `httpdocs/web.config` has no `<rewrite>` section. Once a standalone 
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <system.web>
-    <compilation tempDirectory="C:\\Inetpub\\vhosts\\tslcrypto.com\\tmp" />
+    <compilation tempDirectory="C:\Inetpub\vhosts\tslcrypto.com\tmp" />
   </system.web>
   <system.webServer>
     <modules>
