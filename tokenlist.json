@@ -1,10 +1,10 @@
 {
   "name": "TSL Token List",
-  "timestamp": "2026-07-05T18:45:00.000Z",
+  "timestamp": "2026-10-17T13:21:30.000Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   },
   "keywords": [
     "tsl",
@@ -33,6 +33,7 @@
         "youtube": "https://www.youtube.com/@TSL_crypto",
         "facebook": "https://www.facebook.com/profile.php?id=61579891263999",
         "linkedin": "https://www.linkedin.com/in/tslcrypto/",
+        "instagram": "https://www.instagram.com/tsl.crp/",
         "metadata": "https://tslcrypto.com/assets/tsl.metadata.json",
         "pancakeswap_v2_pool": "https://bscscan.com/address/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1",
         "pancakeswap_v3_pool": "https://bscscan.com/address/0xc147e16732ce090ca3ad22057a5914d1dc9bcde8"
