@@ -68,6 +68,12 @@ The hosted token list and repository token list should use the same contract add
 
 Liquidity, prices, holders, and trading availability are external and can change. Verify current information directly on-chain before any transaction.
 
+## Dated liquidity and wallet updates
+
+See the [2026-10-24 liquidity, wallet and listing status](submissions/listing-status/tsl-status-2026-10-24.md) for the project owner's new LP report and Binance logo/price visibility report. Pool transaction details and the exact Binance product are pending verification; no Binance exchange listing is claimed.
+
+Historical wallet observations and submission outcomes are recorded separately from current verified market data.
+
 ## Repository scope
 
 This repository is dedicated to the TSL token and its official public documentation, source reference, metadata, and verification records. Unrelated research tokens and experiments should be maintained in separate repositories to keep TSL identity unambiguous.
@@ -94,7 +100,7 @@ TSL maintains public security and transparency records to support independent ve
 ### Key Verification Information
 
 - Primary liquidity pool: PancakeSwap V2 TSL/USDT
-- LP tokens locked: **99.02%**
+- Historical certificate: **99.02%** of the referenced V2 pair's LP token supply; not a fresh measurement or coverage of additional liquidity.
 - Liquidity unlock date: **September 5, 2027**
 - Liquidity lock evidence is publicly verifiable on-chain.
 - Blockaid completed a further review after additional transparency evidence was provided.

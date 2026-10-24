@@ -1,6 +1,6 @@
 # TSL Security & Transparency Evidence Index
 
-Last updated: September 7, 2026
+Documentation updated: 2026-10-24. Historical review and lock evidence below retains its original dates.
 
 This document provides a consolidated index of public security, liquidity, allocation, and third-party review evidence for the TSL token on BNB Smart Chain.
 
@@ -31,7 +31,7 @@ A substantial portion of the LP tokens for the primary TSL/USDT PancakeSwap V2 p
 
 - Locked LP Tokens: `1052.215287947234081726`
 - Total LP Token Supply shown on certificate: `1062.6559`
-- Locked Percentage: `99.02%`
+- Historical certificate percentage: `99.02%` (not freshly remeasured).
 - Unlock Date: September 5, 2027
 
 Mudra public certificate:
@@ -87,3 +87,7 @@ TSL Crypto
 Website: https://tslcrypto.com/
 
 Email: info@tslcrypto.com
+
+## October liquidity and visibility update
+
+The project owner reported new LP/liquidity and Binance logo/price visibility on 2026-10-24. See the [dated evidence register](../../submissions/listing-status/tsl-status-2026-10-24.md) for the source and verification limits. The new LP transaction and exact Binance product remain unverified; this does not assert a Binance exchange listing. Historical lock figures cover the identified V2 pair only and must not be carried over to new liquidity without verification.
