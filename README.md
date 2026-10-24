@@ -68,6 +68,10 @@ The four Uniswap V4 pools identified in the [third-party pool notice](docs/TSL-P
 
 Team designation does not guarantee price, liquidity or returns. Check the actual route and fees before signing; a token-only swap link does not force the designated pool.
 
+## Liquidity update — October 24, 2026
+
+[Confirmed liquidity addition and CoinMarketCap DexScan visibility](docs/TSL-LIQUIDITY-UPDATE-2026-10-24.md): 1,000 USDT and 10,028.917896610772865490 TSL added to the designated V2 pool. New LP was received in the sender's wallet, not locked by this transaction. DexScan logo/price visibility is documented separately from a main CoinMarketCap listing.
+
 ## Liquidity and access references
 
 - PancakeSwap route: https://pancakeswap.finance/swap?outputCurrency=0xD12ECbD5f508106ec242881530767FF15A6A7549
@@ -104,7 +108,7 @@ TSL maintains public security and transparency records to support independent ve
 ### Key Verification Information
 
 - Primary liquidity pool: PancakeSwap V2 TSL/USDT
-- LP tokens locked: **99.02%**
+- Historical LP lock snapshot: **99.02%**; this is not current coverage after additional LP issuance.
 - Liquidity unlock date: **September 5, 2027**
 - Liquidity lock evidence is publicly verifiable on-chain.
 - Blockaid completed a further review after additional transparency evidence was provided.
