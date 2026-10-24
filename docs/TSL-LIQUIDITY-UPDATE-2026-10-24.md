@@ -26,6 +26,27 @@ These are actual transfer amounts in the receipt, not the earlier interface prev
 
 The newly minted LP was sent to the sender's wallet. This transaction does **not** lock that LP. The historical 99.02% lock figure must not be presented as current coverage after LP supply changes. Current lock coverage requires a fresh comparison of active locked LP and total LP supply at the same block. See the [lock record](TSL-LIQUIDITY-LOCK-RECORD.md).
 
+## Confirmed lock increase — 2026-10-24
+
+[Successful increase transaction](https://bscscan.com/tx/0xee04516fd634bbffec3c90b57918884aaa000ac1bba305d202366147649ab66f), block **129566124**, **2026-10-24 19:00:27 UTC** (22:30:27 Asia/Tehran).
+
+| Field | Amount / value |
+| --- | --- |
+| LP token | `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1` |
+| Existing locker | `0xAe7e6CAbad8d80f0b4E1C4DDE2a5dB7201eF1252` |
+| Gross LP submitted | 2787.451503386236003580 |
+| LP fee (0.5%, deducted from submitted LP) | 13.937257516931180017 |
+| Net LP added to existing lock | 2773.514245869304823563 |
+| Previously locked LP | 1052.215287947234081726 |
+| Total locked LP after increase | 3825.729533816538905289 |
+| BNB service fee | 0 |
+| Network transaction fee | 0.00000439175 BNB |
+| Existing unlock time, unchanged | 2027-09-04 22:16:01 UTC / 2027-09-05 01:46:01 Asia/Tehran |
+
+The receipt records the LP fee transfer to `0x5Bd1774063dA6836738fcAb9131E34AeadA4968f` and the net transfer to the existing locker. This is an increase to the existing lock, not a new pool or an extension of its unlock time.
+
+The [Mudra public certificate](https://mudra.website/?certificate=yes&type=0&lp=0x47ea61fef003c1212fbcd3acc03208cb7a92cad1), read after confirmation on 2026-10-24, displayed **3825.7295 locked LP / 6155.5009 total LP = 62.15%**. These rounded values and the percentage are a dated certificate snapshot, not a block-pinned independent supply calculation or a permanent coverage guarantee. The earlier 99.02% certificate figure is historical, not current. Liquidity locks do not prevent token sales or guarantee price.
+
 ## CoinMarketCap DexScan visibility
 
 [TSL on CoinMarketCap DexScan](https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/)
@@ -46,6 +67,6 @@ Market values vary with time, trading, pool selection and data-provider methodol
 
 ## خلاصه فارسی
 
-در ۲۴ اکتبر ۲۰۲۶، مقدار ۱٬۰۰۰ USDT و حدود ۱۰٬۰۲۸٫۹۱۷۹ TSL به استخر مورد تأیید تیم اضافه شد. حدود ۲٬۷۸۷٫۴۵۱۵ توکن LP به کیف پول فرستنده رسید؛ این تراکنش قفل نقدینگی نیست و درصد قفل قبلی باید دوباره محاسبه شود.
+در ۲۴ اکتبر ۲۰۲۶، مقدار ۱٬۰۰۰ USDT و حدود ۱۰٬۰۲۸٫۹۱۷۹ TSL به استخر مورد تأیید تیم اضافه شد. حدود ۲٬۷۸۷٫۴۵۱۵ توکن LP به کیف پول فرستنده رسید؛ این تراکنش به‌تنهایی قفل نقدینگی نبود. در تراکنش جداگانهٔ موفق ساعت ۲۲:۳۰:۲۷ تهران، پس از کسر کارمزد نیم‌درصدی، ۲٬۷۷۳٫۵۱۴۲۴۵۸۶۹۳ LP به قفل قبلی اضافه شد. مجموع قفل به ۳٬۸۲۵٫۷۲۹۵۳۳۸۱۶۵ LP رسید و گواهی همان روز ۶۲٫۱۵٪ را نشان داد. تاریخ آزادسازی همان ۵ سپتامبر ۲۰۲۷ ساعت ۰۱:۴۶:۰۱ تهران باقی ماند.
 
 تصویر ارائه‌شده در همان روز، لوگو، قیمت و نمودار TSL را در بخش DexScan کوین‌مارکت‌کپ نشان می‌دهد. این وضعیت با پذیرش در فهرست اصلی کوین‌مارکت‌کپ متفاوت است. ارقام بازار در این گزارش فقط مقادیر همان تصویر هستند.
