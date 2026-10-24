@@ -70,7 +70,7 @@ Team designation does not guarantee price, liquidity or returns. Check the actua
 
 ## Liquidity update — October 24, 2026
 
-[Confirmed liquidity addition and CoinMarketCap DexScan visibility](docs/TSL-LIQUIDITY-UPDATE-2026-10-24.md): 1,000 USDT and 10,028.917896610772865490 TSL added to the designated V2 pool. New LP was received in the sender's wallet, not locked by this transaction. DexScan logo/price visibility is documented separately from a main CoinMarketCap listing.
+[Confirmed liquidity addition and CoinMarketCap DexScan visibility](docs/TSL-LIQUIDITY-UPDATE-2026-10-24.md): 1,000 USDT and 10,028.917896610772865490 TSL added to the designated V2 pool. A separate [confirmed lock increase](docs/TSL-LIQUIDITY-LOCK-RECORD.md#confirmed-lock-increase--2026-10-24) subsequently added 2773.514245869304823563 net LP to the existing Mudra lock. Total locked LP became 3825.729533816538905289; the post-confirmation certificate displayed 62.15% coverage. DexScan logo/price visibility is documented separately from a main CoinMarketCap listing.
 
 ## Liquidity and access references
 
@@ -108,7 +108,7 @@ TSL maintains public security and transparency records to support independent ve
 ### Key Verification Information
 
 - Primary liquidity pool: PancakeSwap V2 TSL/USDT
-- Historical LP lock snapshot: **99.02%**; this is not current coverage after additional LP issuance.
+- LP lock certificate snapshot, October 24, 2026 after the confirmed increase: **62.15%**, with **3825.729533816538905289 LP** locked. The older 99.02% figure is historical.
 - Liquidity unlock date: **September 5, 2027**
 - Liquidity lock evidence is publicly verifiable on-chain.
 - Blockaid completed a further review after additional transparency evidence was provided.
