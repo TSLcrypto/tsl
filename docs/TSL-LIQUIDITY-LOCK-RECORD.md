@@ -61,6 +61,6 @@ https://github.com/TSLcrypto/tsl/blob/main/docs/TSL-MAJOR-WALLET-ALLOCATIONS.md
 
 ## Additional liquidity and scope of the certificate
 
-On 2026-10-24 the project owner reported new LP/liquidity. The transaction and pool identity remain unverified in this revision. See the [dated status report](../submissions/listing-status/tsl-status-2026-10-24.md).
+On 2026-10-24 the project owner reported new LP/liquidity. The owner subsequently supplied `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`, matching the existing V2 pair above. This identifies the reported pool, but does not independently verify an addition transaction, added amount or new lock. See the [dated status report](../submissions/listing-status/tsl-status-2026-10-24.md).
 
 Adding liquidity to the same V2 pair can change total LP supply and the locked percentage. A different pool or a V3 position requires its own lock evidence. The historical 99.02% must not be generalized to all TSL liquidity or to token-holder balances. The recorded unlock date is historical evidence, not a new lock confirmation.

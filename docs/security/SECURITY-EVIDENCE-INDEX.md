@@ -90,4 +90,4 @@ Email: info@tslcrypto.com
 
 ## October liquidity and visibility update
 
-The project owner reported new LP/liquidity and Binance logo/price visibility on 2026-10-24. See the [dated evidence register](../../submissions/listing-status/tsl-status-2026-10-24.md) for the source and verification limits. The new LP transaction and exact Binance product remain unverified; this does not assert a Binance exchange listing. Historical lock figures cover the identified V2 pair only and must not be carried over to new liquidity without verification.
+The project owner reported new LP/liquidity and Binance logo/price visibility on 2026-10-24. See the [dated evidence register](../../submissions/listing-status/tsl-status-2026-10-24.md) for the source and verification limits. The owner identified the existing V2 pair for the liquidity report; the addition transaction and exact Binance product remain unverified; this does not assert a Binance exchange listing. Historical lock figures cover the identified V2 pair only and must not be carried over to new liquidity without verification.

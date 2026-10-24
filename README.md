@@ -70,7 +70,7 @@ Liquidity, prices, holders, and trading availability are external and can change
 
 ## Dated liquidity and wallet updates
 
-See the [2026-10-24 liquidity, wallet and listing status](submissions/listing-status/tsl-status-2026-10-24.md) for the project owner's new LP report and Binance logo/price visibility report. Pool transaction details and the exact Binance product are pending verification; no Binance exchange listing is claimed.
+See the [2026-10-24 liquidity, wallet and listing status](submissions/listing-status/tsl-status-2026-10-24.md) for the project owner's new LP report and Binance logo/price visibility report. The owner identified the existing V2 pair for the liquidity report; transaction details and the exact Binance product are pending verification; no Binance exchange listing is claimed.
 
 Historical wallet observations and submission outcomes are recorded separately from current verified market data.
 

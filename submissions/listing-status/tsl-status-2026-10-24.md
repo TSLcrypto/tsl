@@ -12,13 +12,13 @@ Documentation date: 2026-10-24. This is a dated evidence register, not a live pr
 
 ## New liquidity report
 
-On 2026-10-24, the project owner reported new LP/liquidity. The evidence reviewed for this revision does not identify whether this is a new pool, an additional position, or liquidity added to an existing pool. No new pool address, transaction hash, amount, fee tier, or lock coverage is asserted.
+On 2026-10-24, the project owner reported new LP/liquidity. In a follow-up on the same date, the owner identified `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`, matching the existing PancakeSwap V2 TSL/USDT pair already recorded in this repository. The report therefore refers to the existing pair, not evidence of a newly created pool. The addition transaction, amount and any new lock coverage remain unverified.
 
 Existing repository references remain:
 - PancakeSwap V2 TSL/USDT: `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`.
 - PancakeSwap V3 TSL/USDT 0.25%: `0xc147e16732ce090ca3ad22057a5914d1dc9bcde8`.
 
-To close this evidence gap, record the transaction hash and pool address, verify both token contracts and the DEX/version, distinguish new liquidity from a new pool, and record any separate lock transaction. Public API checks were unavailable during this review; this does not establish that the reported liquidity is absent.
+To close this evidence gap, record the liquidity-addition transaction hash, verify its amounts and association with the identified V2 pair, and record any separate lock transaction. Public API checks were unavailable during this review; this does not establish that the reported liquidity is absent.
 
 The historical Mudra certificate percentage for the V2 pair must not be applied to additional liquidity, the V3 pool, or any new pool. See [the lock record](../../docs/TSL-LIQUIDITY-LOCK-RECORD.md).
 
@@ -59,7 +59,7 @@ A DEX data page or wallet display is not equivalent to a centralized-exchange li
 
 ## Evidence still required
 
-1. New LP transaction and pool identity; current liquidity and lock coverage.
+1. Liquidity-addition transaction for the owner-identified existing V2 pair; current liquidity and lock coverage.
 2. Exact Binance product/page and dated logo/price evidence.
 3. Fresh application checks for the unresolved MetaMask and Trust Wallet display issues.
 
