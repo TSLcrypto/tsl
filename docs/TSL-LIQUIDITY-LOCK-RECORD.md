@@ -30,7 +30,7 @@ This document records the public liquidity-lock evidence for the primary TSL/USD
 
 - DexScreener pair page: https://dexscreener.com/bsc/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1
 
-## Liquidity Lock
+## Historical initial liquidity lock
 
 - Locker platform: Mudra Liquidity Locker
 
@@ -46,11 +46,32 @@ This document records the public liquidity-lock evidence for the primary TSL/USD
 
 - BscScan lock transaction: https://bscscan.com/tx/0xfdf1400e4543c61e2536b5889d2c05f5b0b33729824ea021c9f9694a0f705aa8
 
+## Confirmed lock increase — 2026-10-24
+
+[Successful increase transaction](https://bscscan.com/tx/0xee04516fd634bbffec3c90b57918884aaa000ac1bba305d202366147649ab66f), block **129566124**, **2026-10-24 19:00:27 UTC** (22:30:27 Asia/Tehran).
+
+| Field | Amount / value |
+| --- | --- |
+| LP token | `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1` |
+| Existing locker | `0xAe7e6CAbad8d80f0b4E1C4DDE2a5dB7201eF1252` |
+| Gross LP submitted | 2787.451503386236003580 |
+| LP fee (0.5%, deducted from submitted LP) | 13.937257516931180017 |
+| Net LP added to existing lock | 2773.514245869304823563 |
+| Previously locked LP | 1052.215287947234081726 |
+| Total locked LP after increase | 3825.729533816538905289 |
+| BNB service fee | 0 |
+| Network transaction fee | 0.00000439175 BNB |
+| Existing unlock time, unchanged | 2027-09-04 22:16:01 UTC / 2027-09-05 01:46:01 Asia/Tehran |
+
+The receipt records the LP fee transfer to `0x5Bd1774063dA6836738fcAb9131E34AeadA4968f` and the net transfer to the existing locker. This is an increase to the existing lock, not a new pool or an extension of its unlock time.
+
+The [Mudra public certificate](https://mudra.website/?certificate=yes&type=0&lp=0x47ea61fef003c1212fbcd3acc03208cb7a92cad1), read after confirmation on 2026-10-24, displayed **3825.7295 locked LP / 6155.5009 total LP = 62.15%**. These rounded values and the percentage are a dated certificate snapshot, not a block-pinned independent supply calculation or a permanent coverage guarantee. The earlier 99.02% certificate figure is historical, not current. Liquidity locks do not prevent token sales or guarantee price.
+
 ## Notes
 
 This liquidity-lock record was created after Blockaid requested evidence addressing liquidity-lock or burn status for the primary TSL/USDT PancakeSwap V2 pool.
 
-The 99.02% figure above is a historical certificate snapshot, not a verified current percentage. On October 24, 2026, additional LP tokens were minted, including 2787.451503386236003580 LP sent to the project owner's wallet. That transaction did not lock the new LP. Current coverage must be recalculated using active locked LP and total LP supply at the same block; no updated percentage is asserted here.
+The initial 99.02% figure above is historical. The liquidity addition minted LP to the owner's wallet; a separate confirmed lock-increase transaction subsequently deposited the net new LP into the existing lock, as recorded above.
 
 See the [confirmed liquidity addition and DexScan report](TSL-LIQUIDITY-UPDATE-2026-10-24.md) for the transaction and exact amounts.
 
