@@ -1,6 +1,6 @@
 # TSL Reviewer Evidence Package
 
-Last updated: September 7, 2026
+Documentation updated: 2026-10-24. Historical review and lock evidence below retains its original dates.
 
 This document provides a concise verification package for exchanges, wallets, security providers, indexers, and token-listing reviewers evaluating TSL on BNB Smart Chain.
 
@@ -41,7 +41,7 @@ The primary TSL/USDT LP position has publicly verifiable liquidity-lock evidence
 
 - Locked LP tokens: `1052.215287947234081726`
 - Total LP supply shown on certificate: `1062.6559`
-- Locked percentage: **99.02%**
+- Historical certificate percentage: **99.02%** (not freshly remeasured).
 - Unlock date: **September 5, 2027**
 
 Mudra certificate:
@@ -105,3 +105,7 @@ Email: info@tslcrypto.com
 Reviewers should independently verify blockchain-related claims using the referenced contracts, transactions, liquidity-lock certificate, and other public records.
 
 This package is intended as a verification aid and does not constitute an endorsement by any third party or a guarantee of token value, liquidity, or future market activity.
+
+## October liquidity and visibility update
+
+The project owner reported new LP/liquidity and Binance logo/price visibility on 2026-10-24. See the [dated evidence register](../submissions/listing-status/tsl-status-2026-10-24.md) for the source and verification limits. The owner identified the existing V2 pair for the liquidity report; the addition transaction and exact Binance product remain unverified; this does not assert a Binance exchange listing. Historical lock figures cover the identified V2 pair only and must not be carried over to new liquidity without verification.

@@ -1,82 +1,66 @@
-\# TSL Liquidity Lock Record
+# TSL Liquidity Lock Record
 
-
+Documentation reconciliation: 2026-10-24.
 
 This document records the public liquidity-lock evidence for the primary TSL/USDT PancakeSwap V2 liquidity pool on BNB Smart Chain.
 
+## Token
 
+- Project: TSL Crypto
 
-\## Token
+- Token symbol: TSL
 
+- Network: BNB Smart Chain
 
+- Chain ID: 56
 
-\- Project: TSL Crypto
+- Token contract: `0xD12ECbD5f508106ec242881530767FF15A6A7549`
 
-\- Token symbol: TSL
+- Official website: https://tslcrypto.com/
 
-\- Network: BNB Smart Chain
+- Official GitHub repository: https://github.com/TSLcrypto/tsl
 
-\- Chain ID: 56
+## Primary Liquidity Pool
 
-\- Token contract: `0xD12ECbD5f508106ec242881530767FF15A6A7549`
+- DEX: PancakeSwap V2
 
-\- Official website: https://tslcrypto.com/
+- Pair: TSL/USDT
 
-\- Official GitHub repository: https://github.com/TSLcrypto/tsl
+- LP token / pair address: `0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1`
 
+- BscScan pair page: https://bscscan.com/address/0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1
 
+- DexScreener pair page: https://dexscreener.com/bsc/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1
 
-\## Primary Liquidity Pool
+## Liquidity Lock
 
+- Locker platform: Mudra Liquidity Locker
 
+- Locked LP tokens: `1052.215287947234081726`
 
-\- DEX: PancakeSwap V2
+- Total LP token supply shown on the Mudra certificate: `1062.6559`
 
-\- Pair: TSL/USDT
+- Locked percentage shown on the Mudra certificate: `99.02%`
 
-\- LP token / pair address: `0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1`
+- Unlock time: `Sep 05, 2027`
 
-\- BscScan pair page: https://bscscan.com/address/0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1
+- Public lock certificate: https://mudra.website/?certificate=yes&type=0&lp=0x47ea61fef003c1212fbcd3acc03208cb7a92cad1
 
-\- DexScreener pair page: https://dexscreener.com/bsc/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1
+- BscScan lock transaction: https://bscscan.com/tx/0xfdf1400e4543c61e2536b5889d2c05f5b0b33729824ea021c9f9694a0f705aa8
 
-
-
-\## Liquidity Lock
-
-
-
-\- Locker platform: Mudra Liquidity Locker
-
-\- Locked LP tokens: `1052.215287947234081726`
-
-\- Total LP token supply shown on the Mudra certificate: `1062.6559`
-
-\- Locked percentage shown on the Mudra certificate: `99.02%`
-
-\- Unlock time: `Sep 05, 2027`
-
-\- Public lock certificate: https://mudra.website/?certificate=yes\&type=0\&lp=0x47ea61fef003c1212fbcd3acc03208cb7a92cad1
-
-\- BscScan lock transaction: https://bscscan.com/tx/0xfdf1400e4543c61e2536b5889d2c05f5b0b33729824ea021c9f9694a0f705aa8
-
-
-
-\## Notes
-
-
+## Notes
 
 This liquidity-lock record was created after Blockaid requested evidence addressing liquidity-lock or burn status for the primary TSL/USDT PancakeSwap V2 pool.
 
-
-
-The Mudra certificate publicly shows that 99.02% of the total LP token supply is locked.
-
-
+The historical certificate recorded 99.02% of this V2 pair's LP token supply as locked. This is not a fresh measurement of current LP supply or lock status.
 
 This document is provided for transparency and public verification. It should be reviewed together with the major-wallet allocation transparency record:
 
-
-
 https://github.com/TSLcrypto/tsl/blob/main/docs/TSL-MAJOR-WALLET-ALLOCATIONS.md
 
+
+## Additional liquidity and scope of the certificate
+
+On 2026-10-24 the project owner reported new LP/liquidity. The owner subsequently supplied `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`, matching the existing V2 pair above. This identifies the reported pool, but does not independently verify an addition transaction, added amount or new lock. See the [dated status report](../submissions/listing-status/tsl-status-2026-10-24.md).
+
+Adding liquidity to the same V2 pair can change total LP supply and the locked percentage. A different pool or a V3 position requires its own lock evidence. The historical 99.02% must not be generalized to all TSL liquidity or to token-holder balances. The recorded unlock date is historical evidence, not a new lock confirmation.
