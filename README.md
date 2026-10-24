@@ -58,6 +58,16 @@ The repository source is provided for transparency. Final verification of deploy
 
 The hosted token list and repository token list should use the same contract address, name, symbol, decimals, logo, and official links.
 
+## Team-designated pool and third-party pools
+
+**The TSL team designates PancakeSwap V2 TSL/USDT on BNB Smart Chain as its published liquidity reference:**
+
+`0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`
+
+The four Uniswap V4 pools identified in the [third-party pool notice](docs/TSL-POOL-NOTICE.md) were not created or endorsed by the TSL team, as confirmed by the project owner. Their fees, prices and activity must not be attributed to the team. Pool creation is permissionless; use of the TSL token or logo does not establish affiliation. The notice includes full pool IDs and on-chain fee evidence.
+
+Team designation does not guarantee price, liquidity or returns. Check the actual route and fees before signing; a token-only swap link does not force the designated pool.
+
 ## Liquidity and access references
 
 - PancakeSwap route: https://pancakeswap.finance/swap?outputCurrency=0xD12ECbD5f508106ec242881530767FF15A6A7549
