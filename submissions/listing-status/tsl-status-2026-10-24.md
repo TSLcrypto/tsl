@@ -22,6 +22,20 @@ To close this evidence gap, record the liquidity-addition transaction hash, veri
 
 The historical Mudra certificate percentage for the V2 pair must not be applied to additional liquidity, the V3 pool, or any new pool. See [the lock record](../../docs/TSL-LIQUIDITY-LOCK-RECORD.md).
 
+## Screenshot evidence supplied on 2026-10-24
+
+The owner supplied a screenshot of PancakeSwap's liquidity positions page alongside the Trust Wallet browser extension. The receipt date is recorded here; the capture time and application versions are not established.
+
+- A TSL/USDT V2 0.25% position shows a displayed liquidity value of $828.75.
+- A separate TSL/USDT V3 0.25% position is also visible.
+- The screenshot is position-level UI evidence, not a transaction receipt, proof of total pool liquidity, or proof that $828.75 was newly deposited.
+- The pool contract is not visible in the screenshot; association with the existing V2 pair relies on the owner's separately supplied address.
+- The Trust Wallet panel visibly shows a TSL logo and a nonzero fiat holding value. This supersedes the earlier placeholder-icon/zero-value observation for the illustrated session.
+- The screenshot is not Binance evidence. It does not establish the provider of the wallet price, accuracy of its valuation, or acceptance of the Trust Wallet assets PR.
+- The V3 panel's displayed unit price and the valuation implied by the Trust Wallet holding do not align. These UI values must not be promoted as a single independently verified TSL market price.
+
+Only the relevant observations are transcribed. The full screenshot, including unrelated wallet holdings, is not published.
+
 ## Wallet and platform visibility
 
 Logo, chart, unit price, and fiat balance are separate observations. These rows describe evidence supplied by the project owner; they are not independently reproduced current application tests.
@@ -31,7 +45,7 @@ Logo, chart, unit price, and fiat balance are separate observations. These rows 
 | Binance (product not yet specified) | Owner report, 2026-10-24 | TSL logo and price displayed | Exact product, URL/app version, screenshot and contract mapping still needed; no Binance spot/futures listing or endorsement asserted |
 | SafePal | Screenshots supplied before this revision | Logo, unit price and fiat holding value displayed | Historical observation; price and sellable value are not guaranteed |
 | MetaMask | Screenshots supplied before this revision | Logo and chart displayed; fiat holding value displayed as zero | No verified root cause or resolution |
-| Trust Wallet | Screenshots supplied before this revision | Token quantity displayed; placeholder icon and zero fiat value | No verified root cause or resolution |
+| Trust Wallet browser extension | Screenshot supplied 2026-10-24 | TSL logo and nonzero fiat holding value now displayed | Improvement observed in this session; price accuracy, contract mapping within the app, provider and persistence still require verification |
 
 A zero fiat display does not by itself mean zero on-chain balance or zero market value. A displayed wallet valuation does not prove that the entire position can be sold at that price.
 
@@ -61,6 +75,6 @@ A DEX data page or wallet display is not equivalent to a centralized-exchange li
 
 1. Liquidity-addition transaction for the owner-identified existing V2 pair; current liquidity and lock coverage.
 2. Exact Binance product/page and dated logo/price evidence.
-3. Fresh application checks for the unresolved MetaMask and Trust Wallet display issues.
+3. Fresh MetaMask check; verify Trust Wallet price accuracy and in-app contract mapping. The new Trust Wallet screenshot establishes logo/fiat display in that session, not universal resolution.
 
 Private email headers, wallet credentials, API keys and payment details must not be added to this public record.
