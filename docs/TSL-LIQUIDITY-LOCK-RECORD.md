@@ -67,6 +67,26 @@ The receipt records the LP fee transfer to `0x5Bd1774063dA6836738fcAb9131E34Aead
 
 The [Mudra public certificate](https://mudra.website/?certificate=yes&type=0&lp=0x47ea61fef003c1212fbcd3acc03208cb7a92cad1), read after confirmation on 2026-10-24, displayed **3825.7295 locked LP / 6155.5009 total LP = 62.15%**. These rounded values and the percentage are a dated certificate snapshot, not a block-pinned independent supply calculation or a permanent coverage guarantee. The earlier 99.02% certificate figure is historical, not current. Liquidity locks do not prevent token sales or guarantee price.
 
+## Confirmed LP allowance revocation — 2026-10-24
+
+After the lock increase, the owner revoked Mudra's allowance to spend this pool's Cake-LP from the owner's wallet.
+
+- [Successful revocation receipt](https://bscscan.com/tx/0x726ecb6bde0bcbbaa55c19ee07c5673f152620e87741af610e99621ce8fb4aa8)
+- Status: **Success**; BscScan action: **Revoke Cake-LP**.
+- Block: **129567059**.
+- Timestamp: **2026-10-24 19:07:28 UTC** / **22:37:28 Asia/Tehran**.
+- Owner: `0xdAb105a2DE91ACC4ee2c8b2CF40C44e88b9ec3b7`.
+- LP token: `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`.
+- Spender whose allowance was revoked: `0xAe7e6CAbad8d80f0b4E1C4DDE2a5dB7201eF1252` (Mudra).
+- Network transaction fee: **0.0000012129 BNB**.
+- Evidence: BscScan transaction receipt supplied by the owner, showing the above status, action, block, timestamp and fee.
+
+This revocation removes the wallet's spending permission for this LP token and spender. It does not withdraw locked LP, change the locked amount, or change the unlock time. The previously recorded **3825.729533816538905289 locked LP** and **2027-09-04 22:16:01 UTC** unlock time remain the lock-increase record. A future lock increase may require a new LP approval. This receipt records the revocation at that time, not a guarantee that no later approval will be granted.
+
+### خلاصه فارسی
+
+پس از افزایش قفل نقدینگی، مجوز برداشت Cake-LP توسط Mudra از کیف‌پول مالک، در تراکنش موفق فوق در ساعت ۲۲:۳۷:۲۸ تهران لغو شد. کارمزد شبکه ۰٫۰۰۰۰۰۱۲۱۲۹ BNB بود. این لغو مجوز، برداشت نقدینگی از قفل نیست و مقدار قفل یا تاریخ آزادسازی را تغییر نمی‌دهد.
+
 ## Notes
 
 This liquidity-lock record was created after Blockaid requested evidence addressing liquidity-lock or burn status for the primary TSL/USDT PancakeSwap V2 pool.
