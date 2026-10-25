@@ -24,6 +24,17 @@
 - [Team-designated and third-party pool notice](TSL-POOL-NOTICE.md)
 - Official correspondence address: info@tslcrypto.com
 
+## Updated project documents
+
+English revision: **October 25, 2026**. The website PDFs and GitHub copies are identical and include the updated liquidity-lock evidence and allowance revocation receipt.
+
+| Document | Official website | GitHub copy |
+| --- | --- | --- |
+| Whitepaper | [Whitepaper PDF](https://tslcrypto.com/assets/whitepaper.pdf) | [Repository PDF](../assets/whitepaper.pdf) |
+| Roadmap | [Roadmap PDF](https://tslcrypto.com/assets/roadmap.pdf) | [Repository PDF](../assets/roadmap.pdf) |
+
+The [complete liquidity-lock record](TSL-LIQUIDITY-LOCK-RECORD.md) provides the underlying receipts and dated coverage figures.
+
 ## Published information versus outstanding work
 
 | Service | Last recorded public state | Submission / correspondence state | What remains unconfirmed |
