@@ -82,6 +82,10 @@ Team designation does not guarantee price, liquidity or returns. Check the actua
 
 Liquidity, prices, holders, and trading availability are external and can change. Verify current information directly on-chain before any transaction.
 
+## Platform information and follow-up status
+
+[Platform status report — October 25, 2026](docs/TSL-PLATFORM-STATUS-2026-10-25.md) distinguishes observed public information from submitted corrections, pending replies and unconfirmed integrations. It includes the evidence dates, support references and follow-up policy; submission acknowledgements are not treated as listing approvals.
+
 ## Repository scope
 
 This repository is dedicated to the TSL token and its official public documentation, source reference, metadata, and verification records. Unrelated research tokens and experiments should be maintained in separate repositories to keep TSL identity unambiguous.
