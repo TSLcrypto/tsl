@@ -1,6 +1,19 @@
 # TSL public assets
 
-This directory contains public metadata files for TSL on BNB Smart Chain.
+This directory contains public metadata files and English PDF documents for TSL on BNB Smart Chain.
+
+## Whitepaper and roadmap
+
+The **October 25, 2026** English revisions below are identical to the official website PDFs. They incorporate the October 24 liquidity addition, the confirmed increase of the existing Mudra lock, and the LP allowance revocation receipt.
+
+| Document | Repository file | Website file |
+| --- | --- | --- |
+| Whitepaper | [whitepaper.pdf](whitepaper.pdf) | [Official whitepaper](https://tslcrypto.com/assets/whitepaper.pdf) |
+| Roadmap | [roadmap.pdf](roadmap.pdf) | [Official roadmap](https://tslcrypto.com/assets/roadmap.pdf) |
+
+See the [liquidity-lock record](../docs/TSL-LIQUIDITY-LOCK-RECORD.md) for exact LP amounts, the unlock timestamp, transaction receipts, and dated coverage evidence. Keep the repository and website PDFs synchronized when publishing a new revision.
+
+## Logos and token identity
 
 Official token logo URL:
 
