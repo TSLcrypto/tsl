@@ -86,6 +86,17 @@ Liquidity, prices, holders, and trading availability are external and can change
 
 [Platform status report — October 25, 2026](docs/TSL-PLATFORM-STATUS-2026-10-25.md) distinguishes observed public information from submitted corrections, pending replies and unconfirmed integrations. It includes the evidence dates, support references and follow-up policy; submission acknowledgements are not treated as listing approvals.
 
+## Whitepaper and roadmap
+
+English revision: **October 25, 2026**. These PDFs are identical to the versions published on the official website.
+
+| Document | GitHub copy | Official website |
+| --- | --- | --- |
+| Whitepaper | [Whitepaper PDF](assets/whitepaper.pdf) | [Download from tslcrypto.com](https://tslcrypto.com/assets/whitepaper.pdf) |
+| Roadmap | [Roadmap PDF](assets/roadmap.pdf) | [Download from tslcrypto.com](https://tslcrypto.com/assets/roadmap.pdf) |
+
+Both documents reference the designated PancakeSwap V2 pool, the October 24 liquidity addition and Mudra lock increase, and the subsequent LP allowance revocation. The **3825.729533816538905289 LP** locked and **62.15%** coverage are dated October 24 evidence, not a live coverage claim. Unlock time: **September 4, 2027 at 22:16:01 UTC**, equivalent to **September 5, 2027 at 01:46:01 Asia/Tehran**. See the [complete liquidity-lock record](docs/TSL-LIQUIDITY-LOCK-RECORD.md) for transaction receipts and verification scope.
+
 ## Repository scope
 
 This repository is dedicated to the TSL token and its official public documentation, source reference, metadata, and verification records. Unrelated research tokens and experiments should be maintained in separate repositories to keep TSL identity unambiguous.
