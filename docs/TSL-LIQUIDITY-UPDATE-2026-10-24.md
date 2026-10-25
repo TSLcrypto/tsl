@@ -65,8 +65,8 @@ DexScan visibility is distinct from acceptance into CoinMarketCap's main tracked
 
 Market values vary with time, trading, pool selection and data-provider methodology. Do not attribute the displayed aggregate figures solely to this liquidity addition.
 
-## خلاصه فارسی
+## Summary
 
-در ۲۴ اکتبر ۲۰۲۶، مقدار ۱٬۰۰۰ USDT و حدود ۱۰٬۰۲۸٫۹۱۷۹ TSL به استخر مورد تأیید تیم اضافه شد. حدود ۲٬۷۸۷٫۴۵۱۵ توکن LP به کیف پول فرستنده رسید؛ این تراکنش به‌تنهایی قفل نقدینگی نبود. در تراکنش جداگانهٔ موفق ساعت ۲۲:۳۰:۲۷ تهران، پس از کسر کارمزد نیم‌درصدی، ۲٬۷۷۳٫۵۱۴۲۴۵۸۶۹۳ LP به قفل قبلی اضافه شد. مجموع قفل به ۳٬۸۲۵٫۷۲۹۵۳۳۸۱۶۵ LP رسید و گواهی همان روز ۶۲٫۱۵٪ را نشان داد. تاریخ آزادسازی همان ۵ سپتامبر ۲۰۲۷ ساعت ۰۱:۴۶:۰۱ تهران باقی ماند.
+On October 24, 2026, 1,000 USDT and approximately 10,028.9179 TSL were added to the team-designated pool. Approximately 2,787.4515 LP tokens were received by the sender's wallet; that transaction alone did not lock the liquidity. In a separate successful transaction at 22:30:27 Asia/Tehran, 2,773.5142458693 LP were added to the existing lock after the 0.5% fee. Total locked LP increased to 3,825.7295338165, and the certificate displayed 62.15% that day. The unlock time remained September 5, 2027 at 01:46:01 Asia/Tehran.
 
-تصویر ارائه‌شده در همان روز، لوگو، قیمت و نمودار TSL را در بخش DexScan کوین‌مارکت‌کپ نشان می‌دهد. این وضعیت با پذیرش در فهرست اصلی کوین‌مارکت‌کپ متفاوت است. ارقام بازار در این گزارش فقط مقادیر همان تصویر هستند.
+The screenshot supplied that day shows the TSL logo, price and chart in CoinMarketCap DexScan. This is distinct from acceptance into CoinMarketCap's main listings. Market figures in this report are only the values displayed in that screenshot.

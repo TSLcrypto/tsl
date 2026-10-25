@@ -83,9 +83,9 @@ After the lock increase, the owner revoked Mudra's allowance to spend this pool'
 
 This revocation removes the wallet's spending permission for this LP token and spender. It does not withdraw locked LP, change the locked amount, or change the unlock time. The previously recorded **3825.729533816538905289 locked LP** and **2027-09-04 22:16:01 UTC** unlock time remain the lock-increase record. A future lock increase may require a new LP approval. This receipt records the revocation at that time, not a guarantee that no later approval will be granted.
 
-### خلاصه فارسی
+### Revocation summary
 
-پس از افزایش قفل نقدینگی، مجوز برداشت Cake-LP توسط Mudra از کیف‌پول مالک، در تراکنش موفق فوق در ساعت ۲۲:۳۷:۲۸ تهران لغو شد. کارمزد شبکه ۰٫۰۰۰۰۰۱۲۱۲۹ BNB بود. این لغو مجوز، برداشت نقدینگی از قفل نیست و مقدار قفل یا تاریخ آزادسازی را تغییر نمی‌دهد.
+After the liquidity-lock increase, Mudra's allowance to spend Cake-LP from the owner's wallet was revoked in the successful transaction above at 22:37:28 Asia/Tehran. The network fee was 0.0000012129 BNB. This revocation does not withdraw locked liquidity or change the locked amount or unlock time.
 
 ## Notes
 

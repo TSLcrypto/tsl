@@ -54,14 +54,14 @@ Only new replies or meaningful published corrections should trigger an update. A
 
 Proposed responses require project-owner approval before sending. All TSL email correspondence must be sent from **info@tslcrypto.com**. This follow-up process does not authorize payments, paid plans, advertising orders or fee commitments.
 
-## خلاصه فارسی
+## Summary
 
-این گزارش با تاریخ **۲۵ اکتبر ۲۰۲۶، به وقت تهران** ثبت شده و جمع‌بندی آخرین شواهد موجود است، نه ادعای بررسی مجدد همه سرویس‌ها در لحظه انتشار.
+This report is dated **October 25, 2026, Asia/Tehran** and summarizes the latest available evidence. It does not claim that every service was checked again at publication time.
 
-- **نمایش تأییدشده در بررسی قبلی:** اطلاعات اصلی و لوگوی CoinPaprika؛ داده‌ها و برند TSL در GeckoTerminal؛ لوگو و قیمت در CoinMarketCap DexScan؛ استخر رسمی PancakeSwap و گزارش گیت‌هاب.
-- **اصلاحات ارسال‌شده، انتشار هنوز تأیید نشده:** شبکه و مشخصات Blockspot؛ لوگو و متادیتای DexPaprika از طریق CoinPaprika.
-- **منتظر پاسخ یا تصمیم:** دسته‌بندی CoinGecko، تیکت CoinMarketCap، بازگشایی و بررسی Trust Wallet، قیمت زنده CoinCodex و فعال‌سازی دوره آزمایشی Moralis.
-- نمایش در DexScan یا GeckoTerminal معادل پذیرش در فهرست اصلی CoinMarketCap یا CoinGecko نیست.
-- پیگیری هر روز ساعت ۱۰ تهران؛ ارسال پاسخ فقط از ایمیل رسمی پروژه و با تأیید مالک؛ بدون مجوز پرداخت هزینه.
+- **Visibility confirmed during earlier reviews:** CoinPaprika core information and logo; TSL branding and data on GeckoTerminal; logo and price on CoinMarketCap DexScan; the team-designated PancakeSwap pool and GitHub report.
+- **Corrections submitted, publication not yet confirmed:** Blockspot network and project details; DexPaprika logo and metadata through CoinPaprika.
+- **Awaiting a reply or decision:** CoinGecko category guidance, the CoinMarketCap ticket, Trust Wallet reopening and review, CoinCodex live pricing, and Moralis trial activation.
+- DexScan or GeckoTerminal visibility does not establish acceptance into CoinMarketCap's or CoinGecko's main listings.
+- Follow-up is scheduled daily at 10:00 Asia/Tehran. Replies must be sent only from the official project email address with the owner's approval; no fee payments are authorized.
 
 Future reports should record the new evidence date and distinguish partial corrections from full completion.

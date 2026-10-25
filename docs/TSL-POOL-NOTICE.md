@@ -43,12 +43,12 @@ Pool prices and liquidity change with trading. Adding liquidity does not prevent
 Official website: https://tslcrypto.com/  
 Questions or corrections: info@tslcrypto.com
 
-## اطلاعیه فارسی
+## Notice summary
 
-استخر مورد تأیید تیم TSL، جفت TSL/USDT در پنکیک‌سواپ نسخهٔ ۲ روی شبکهٔ BNB Smart Chain با آدرس زیر است:
+The TSL team's designated pool is the TSL/USDT pair on PancakeSwap V2 on BNB Smart Chain at:
 
 `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`
 
-چهار استخر یونی‌سواپ نسخهٔ ۴ که در جدول بالا آمده‌اند، به تأیید مالک پروژه توسط تیم TSL ایجاد نشده‌اند و مورد تأیید تیم نیستند. کارمزد، قیمت و فعالیت آن‌ها نباید صرفاً به دلیل استفاده از توکن TSL به تیم نسبت داده شود. ساخت استخر در یک پروتکل بدون نیاز به مجوز، به معنی همکاری با پروژه نیست.
+The project owner confirms that the four Uniswap V4 pools listed above were not created by the TSL team and are not endorsed by the team. Their fees, prices and activity must not be attributed to the team merely because they contain TSL. Creating a pool on a permissionless protocol does not establish an affiliation with the project.
 
-درصدهای جدول کارمزد استخر هستند، نه سود سالانه. این اطلاعیه ادعایی دربارهٔ هویت، قصد یا ارتباط سازندگان با رویدادهای دیگر مطرح نمی‌کند. تأیید یک استخر توسط تیم نیز تضمین قیمت، سود یا امنیت سرمایه نیست. پیش از تأیید معامله، آدرس‌ها، مسیر، کارمزد و حداقل مبلغ دریافتی را بررسی کنید.
+The percentages in the table are pool fees, not annual yields. This notice makes no allegation about the creators' identities, intent or connection to other events. Team designation of a pool does not guarantee price, returns or the safety of funds. Before confirming a trade, check the addresses, route, fees and minimum amount received.
