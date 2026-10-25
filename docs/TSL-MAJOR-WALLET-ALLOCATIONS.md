@@ -7,7 +7,7 @@ Primary PancakeSwap V2 Pool: 0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1
 Official Website: https://tslcrypto.com/
 Prepared by: TSL Crypto Team
 Original allocation record date: 2026-09-03
-Documentation reconciliation: 2026-10-02
+Documentation reconciliation: 2026-10-25 (liquidity references only; allocation balances not remeasured)
 
 ## Purpose
 
@@ -53,7 +53,7 @@ Primary PancakeSwap V2 TSL/USDT pool:
 
 0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1
 
-### Subsequent Published Lock Evidence
+### Historical initial lock evidence
 
 The project liquidity-lock record, also included in the evidence dossier updated 2026-09-04, reports:
 
@@ -67,6 +67,18 @@ The project liquidity-lock record, also included in the evidence dossier updated
 - [BscScan lock transaction](https://bscscan.com/tx/0xfdf1400e4543c61e2536b5889d2c05f5b0b33729824ea021c9f9694a0f705aa8).
 
 These are dated published evidence figures, not a fresh measurement of live lock status or current LP supply. Verify the certificate and transaction directly for current conditions. The percentage concerns LP tokens of this pair, not the total TSL supply or all holder wallets. No burn is asserted. An LP lock does not guarantee token value, liquidity depth or investment safety, and it does not resolve supply concentration by itself.
+
+### Latest documented lock increase — October 24, 2026
+
+- Total locked after the increase: **3825.729533816538905289 LP**.
+- Net LP added to the existing Mudra lock: **2773.514245869304823563 LP**, after a **0.5% LP fee**.
+- Certificate snapshot read on October 24: **3825.7295 locked LP / 6155.5009 total LP = 62.15%** (rounded).
+- Unchanged unlock time: **September 4, 2027 at 22:16:01 UTC / September 5, 2027 at 01:46:01 Asia/Tehran**.
+- [Successful lock-increase transaction](https://bscscan.com/tx/0xee04516fd634bbffec3c90b57918884aaa000ac1bba305d202366147649ab66f).
+- [Subsequent LP allowance revocation](https://bscscan.com/tx/0x726ecb6bde0bcbbaa55c19ee07c5673f152620e87741af610e99621ce8fb4aa8), October 24 at 19:07:28 UTC. Revocation did not withdraw locked LP or change its amount or unlock time.
+- [Full liquidity-lock record and receipts](https://github.com/TSLcrypto/tsl/blob/main/docs/TSL-LIQUIDITY-LOCK-RECORD.md).
+
+These figures are dated evidence, not a fresh measurement of current lock coverage. The initial **99.02%** figure is historical; coverage changes with LP supply. An LP lock does not prevent token sales or guarantee price, liquidity depth or investment returns.
 
 ## Planned Transparency Improvements
 
