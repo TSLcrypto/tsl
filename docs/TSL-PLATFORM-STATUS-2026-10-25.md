@@ -2,7 +2,7 @@
 
 **Original report:** October 25, 2026 (Asia/Tehran).  
 **Blockspot and CoinMarketCap verification updates:** October 26, 2026 (Asia/Tehran). Other service observations retain their individual dates.  
-**Google Search Console update:** October 27, 2026 (Asia/Tehran).
+**Google Search Console and CoinGecko acknowledgement updates:** October 27, 2026 (Asia/Tehran).
 
 **Scope:** A dated summary of the latest recorded observations, submissions and correspondence. This is not a claim that every external page or inbox was checked again at publication time. Pending entries remain unconfirmed until a subsequent reply or published change is verified.
 
@@ -46,7 +46,7 @@ The [complete liquidity-lock record](TSL-LIQUIDITY-LOCK-RECORD.md) provides the 
 | DexPaprika | October 25 review showed a generic token icon and missing metadata. | Logo and metadata correction requested through the CoinPaprika correspondence above. | Publication of the official logo and metadata has not been confirmed. |
 | [Blockspot](https://blockspot.io/coin/tsl/) | October 26: token classification, Binance Smart Chain network, correct TSL contract, 18 decimals, BscScan explorer, Worldwide (Decentralized) location and BEP-20 description are published. The existing logo and price remain visible. | Record **58152** was submitted October 25. Public metadata corrections are now verified; this does not imply a new staff reply. | Exact pool mapping remains unconfirmed: the market table names PancakeSwap V2 (BSC), USDT/TSL, but exposes no pool address or pool-specific link. |
 | CoinCodex | Live market-data tracking from the designated pool has not been confirmed. | Latest known incoming reply: Marko, October 16 at 18:15:31 Tehran, said he would check live tracking. Approved follow-up sent October 25 at **13:39:11 Tehran**, subject **RE: Listing on CoinCodex**, from info@tslcrypto.com, with the pool, logo and lock-report references. | Confirmation of live price, volume and liquidity support, data source and eligibility; clarification of September 10 free-listing guidance versus October 16 paid catalogue terms. No paid order was authorized. |
-| CoinGecko | Earlier listing request **CL0110260008** was rejected; no subsequent main-listing approval is established by this record. | Category-guidance ticket **8610**, created October 24 at 23:06 Tehran; only its automated acknowledgement is recorded. Related older tickets: 138911 / 139110. | Human guidance on the appropriate project category so a resubmission can be completed accurately. |
+| CoinGecko | Earlier listing request **CL0110260008** was rejected; no subsequent main-listing approval is established by this record. | Following the clarification of category-guidance ticket **8610**, an automated acknowledgement from support@coingecko.com created ticket **13941**, received October 27 at **00:19 Tehran**. Related older tickets: 138911 / 139110. | Human guidance on the appropriate project category so a resubmission can be completed accurately. |
 | [CoinMarketCap DexScan](https://dex.coinmarketcap.com/token/bsc/0xd12ecbd5f508106ec242881530767ff15a6a7549/) / [support ticket 1459969](https://support.coinmarketcap.com/hc/en-us/requests/1459969) | October 24 evidence documents DexScan logo, price and pool visibility. This does **not** establish acceptance into CoinMarketCap's main listings. | October 26: MG confirmed that the submission was reviewed and TSL is in the **free listing queue**. No further information is required at this stage; the team will request anything needed in the same thread. The ticket interface shows Awaiting your reply, but the staff message explicitly requires no action. | Final main-listing decision and timing remain unconfirmed. Queue placement is not listing approval; no ETA was supplied. |
 | [Trust Wallet assets PR 38091](https://github.com/trustwallet/assets/pull/38091) | Last recorded PR state: closed and unmerged. Wallet display observations do not prove acceptance of this PR. | [TSLcrypto follow-up](https://github.com/trustwallet/assets/pull/38091#issuecomment-6388806839) requests reopening and manual eligibility review with the updated report. | Maintainer response, reopening and acceptance remain unconfirmed. No payment is authorized. |
 | Moralis | A usable free Data API trial has not been confirmed; no TSL API test has been completed. | Free Data API trial requested October 25 using info@tslcrypto.com; the pricing form acknowledged receipt and said the team would email to set it up. | Actual trial activation, duration, limits and endpoint access; subsequent price / metadata testing. No paid plan is authorized. |
@@ -67,6 +67,12 @@ The [complete liquidity-lock record](TSL-LIQUIDITY-LOCK-RECORD.md) provides the 
 | [Crawler guidance](https://tslcrypto.com/robots.txt) | Publicly accessible; no crawl disallow; references the XML sitemap. | No additional access restriction was introduced. |
 
 Search Console monitoring is included in the existing daily **10:00 Asia/Tehran** follow-up. Notify only when roadmap indexing is confirmed or a new sitemap error is observed; do not repeatedly submit indexing requests. An inaccessible Search Console session is an access blocker, not evidence of a successful check.
+
+## CoinGecko category-guidance follow-up — October 27, 2026
+
+The official project mailbox received an **automated acknowledgement** from support@coingecko.com on **October 27, 2026 at 00:19 Asia/Tehran**, creating support ticket **13941** after the clarification sent regarding ticket **8610** and listing reference **CL0110260008**. The earlier October 26 message supplied general application guidance but did not resolve which business category TSL should select.
+
+**Status: awaiting a substantive reply on the appropriate TSL category or an alternative route to a standard free listing resubmission.** Ticket creation is not category guidance, approval of the application, or confirmation of listing. The acknowledgement requires no reply; no response was sent to it.
 
 ## CoinMarketCap staff update — October 26, 2026
 
