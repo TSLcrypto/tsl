@@ -1,7 +1,9 @@
-# TSL platform information and follow-up status — updated 2026-10-26
+# TSL platform information and follow-up status — updated 2026-10-27
 
 **Original report:** October 25, 2026 (Asia/Tehran).  
 **Blockspot and CoinMarketCap verification updates:** October 26, 2026 (Asia/Tehran). Other service observations retain their individual dates.  
+**Google Search Console update:** October 27, 2026 (Asia/Tehran).
+
 **Scope:** A dated summary of the latest recorded observations, submissions and correspondence. This is not a claim that every external page or inbox was checked again at publication time. Pending entries remain unconfirmed until a subsequent reply or published change is verified.
 
 ## Status definitions
@@ -52,6 +54,20 @@ The [complete liquidity-lock record](TSL-LIQUIDITY-LOCK-RECORD.md) provides the 
 | PancakeSwap V2 | Designated pool and the October 24 liquidity addition are documented in the linked transaction report. | Public trading / liquidity venue, not an outstanding listing-support decision in this report. | No price guarantee or platform endorsement is implied by pool availability. |
 | TSL website and GitHub | Official project resources and the published lock report provide the reference material sent to reviewers. The GitHub lock report includes the October 24 increase and subsequent LP allowance revocation. | References supplied in the follow-ups described above. | External providers must independently publish or confirm their own changes; this report does not claim that they have done so. |
 
+## Google Search Console — October 27, 2026
+
+**Observation and publication date:** October 27, 2026 (Asia/Tehran).
+
+| Resource | Verified state | Remaining work |
+| --- | --- | --- |
+| [XML sitemap](https://tslcrypto.com/sitemap.xml) | Submitted successfully in Search Console for the verified URL-prefix property `https://tslcrypto.com/`. Processing status: **Success**; **3 discovered URLs** (homepage, whitepaper PDF and roadmap PDF). | Discovery is not a guarantee that all URLs are indexed. Monitor for new fetch or processing errors. |
+| [Whitepaper PDF](https://tslcrypto.com/assets/whitepaper.pdf) | URL Inspection: **URL is on Google / Page is indexed**. | This establishes URL indexing, not confirmation that every latest revision is reflected in search results. |
+| [Roadmap PDF](https://tslcrypto.com/assets/roadmap.pdf) | URL Inspection: **not indexed / URL is unknown to Google**. Live test: **URL is available to Google / Page can be indexed**. The indexing request was accepted and added to the crawl queue. | Await completed indexing; no publication date or ranking is guaranteed. |
+| [Homepage and site reports](https://tslcrypto.com/) | Homepage is indexed. Live testing confirmed accessibility and the fetched HTML contained the updated platform-status and liquidity-lock reports. A homepage indexing request was accepted. | Report sections `#platform-status` and `#pool-notice` belong to the homepage, rather than separate sitemap URLs. Acceptance of the request does not prove search results already show the updates. |
+| [Crawler guidance](https://tslcrypto.com/robots.txt) | Publicly accessible; no crawl disallow; references the XML sitemap. | No additional access restriction was introduced. |
+
+Search Console monitoring is included in the existing daily **10:00 Asia/Tehran** follow-up. Notify only when roadmap indexing is confirmed or a new sitemap error is observed; do not repeatedly submit indexing requests. An inaccessible Search Console session is an access blocker, not evidence of a successful check.
+
 ## CoinMarketCap staff update — October 26, 2026
 
 In [ticket 1459969](https://support.coinmarketcap.com/hc/en-us/requests/1459969), MG confirmed that TSL is in the free listing queue after review of the submission. Free-tier timing varies with project traction and volume. No additional submission is needed now; CoinMarketCap will request further information in the same thread if necessary. No listing approval, publication date or specific endorsement of the liquidity-lock report was given. No additional reply was sent. Daily monitoring continues.
@@ -70,7 +86,7 @@ The **62.15%** certificate figure is an October 24 snapshot, not a permanent or 
 
 ## Follow-up and correspondence rules
 
-Daily follow-up is scheduled for **10:00 Asia/Tehran** for CoinGecko, CoinMarketCap, Trust Wallet, Moralis, CoinPaprika, Blockspot and CoinCodex. DexPaprika corrections are followed through the CoinPaprika ticket.
+Daily follow-up is scheduled for **10:00 Asia/Tehran** for CoinGecko, CoinMarketCap, Trust Wallet, Moralis, CoinPaprika, Blockspot, CoinCodex and Google Search Console. DexPaprika corrections are followed through the CoinPaprika ticket.
 
 Only new replies or meaningful published corrections should trigger an update. Automated acknowledgements must be distinguished from substantive staff decisions, and forwarded copies must not be counted twice. An inaccessible page or mailbox is an access blocker, not evidence of no new reply.
 
@@ -84,6 +100,7 @@ This report was first published **October 25, 2026, Asia/Tehran**, with the Bloc
 - **Corrections published, checked October 26:** Blockspot network and token details. Exact pool mapping remains unconfirmed.
 - **Corrections submitted, publication not yet confirmed:** DexPaprika logo and metadata through CoinPaprika.
 - **Awaiting a reply or decision:** CoinGecko category guidance, Trust Wallet reopening and review, CoinCodex live pricing, and Moralis trial activation.
+- **Google status verified October 27:** sitemap processed successfully with 3 discovered URLs; whitepaper and homepage indexed; roadmap accessible with an accepted indexing request, awaiting indexing.
 - **Free listing queue confirmed October 26:** CoinMarketCap; no further information currently required, no final approval or ETA.
 - DexScan or GeckoTerminal visibility does not establish acceptance into CoinMarketCap's or CoinGecko's main listings.
 - Follow-up is scheduled daily at 10:00 Asia/Tehran. Replies must be sent only from the official project email address with the owner's approval; no fee payments are authorized.
