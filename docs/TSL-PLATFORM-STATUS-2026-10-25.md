@@ -31,7 +31,7 @@
 
 ## Updated project documents
 
-English revision: **October 25, 2026**. The website PDFs and GitHub copies are identical and include the updated liquidity-lock evidence and allowance revocation receipt.
+English revision: **October 27, 2026**. The website PDFs and GitHub copies include the block-130130686 LP coverage snapshot, the unlocked October 27 addition, historical lock and revocation receipts, and the owner-declared liquidity funding and USD 100,000 expansion plan.
 
 | Document | Official website | GitHub copy |
 | --- | --- | --- |
@@ -186,3 +186,17 @@ This report was first published **October 25, 2026, Asia/Tehran**, with the Bloc
 - Follow-up is scheduled daily at 10:00 Asia/Tehran. Replies must be sent only from the official project email address with the owner's approval; no fee payments are authorized.
 
 Future reports should record the new evidence date and distinguish partial corrections from full completion.
+
+## Funding and liquidity expansion plan — October 27, 2026
+
+**Owner-declared forward-looking policy:** Proceeds received by the project from direct TSL token sales to buyers will be allocated to adding TSL liquidity. Additions require separate transactions and corresponding token inventory. This policy is not verification that all historical sale proceeds have already been added.
+
+Ordinary DEX purchases exchange assets with a pool or seller; they do not automatically mint new LP for the project. The TSL token contract has no automatic liquidity-allocation feature. Future additions should have published receipts and separately disclosed lock status.
+
+**Planned threshold:** USD 100,000 in total liquidity value (TVL) of the team-designated PancakeSwap V2 TSL/USDT pool, measured as the combined USD value of both reserves at a stated observation time. This is not a sales-proceeds, market-cap or locked-liquidity-only target. Reaching this threshold has not been verified in this report.
+
+**Planned next phase:** After the threshold is verified, evaluate and establish liquidity pairs with other tokens on BNB Smart Chain and pursue broader trading-market access and exchange outreach. Specific paired assets, allocations and dates are not finalized. PancakeSwap trading is already available; this is expansion of existing market access. Additional listings remain subject to external platform decisions, with no guaranteed acceptance, price or return.
+
+Future updates should publish dated valuation evidence, addition receipts, designated pool addresses and lock status. No additional lock or extension is promised by this plan.
+
+[English Whitepaper](https://tslcrypto.com/assets/whitepaper.pdf) · [English Roadmap](https://tslcrypto.com/assets/roadmap.pdf) — revision October 27, 2026.
