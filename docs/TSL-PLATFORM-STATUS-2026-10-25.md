@@ -53,7 +53,7 @@ The [complete liquidity-lock record](TSL-LIQUIDITY-LOCK-RECORD.md) provides the 
 | [Trust Wallet assets PR 38091](https://github.com/trustwallet/assets/pull/38091) | Last recorded PR state: closed and unmerged. Wallet display observations do not prove acceptance of this PR. | [TSLcrypto follow-up](https://github.com/trustwallet/assets/pull/38091#issuecomment-6388806839) requests reopening and manual eligibility review with the updated report. | Maintainer response, reopening and acceptance remain unconfirmed. No payment is authorized. |
 | Moralis | A usable free Data API trial has not been confirmed; no TSL API test has been completed. | Reuben's October 26 reply offered a seven-day Starter trial with 2M compute units and up to 40 requests/second, including BSC, but required a card on file before activation. A request for a trial without a card has been sent; no answer to that request was found on October 27. | Card-free eligibility and actual trial activation remain unconfirmed; offered limits are not evidence of an active entitlement. TSL price and metadata API tests remain unperformed. No card or paid plan is authorized. |
 | [GeckoTerminal designated pool](https://www.geckoterminal.com/bsc/pools/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1) | Recorded pool view displays TSL branding and market data for the designated pool. | Public market reference, not an outstanding support-ticket decision in this report. | Prices and liquidity are variable; visibility is not a CoinGecko main-listing approval. |
-| PancakeSwap V2 | Designated pool and the October 24 liquidity addition are documented in the linked transaction report. | Public trading / liquidity venue, not an outstanding listing-support decision in this report. | No price guarantee or platform endorsement is implied by pool availability. |
+| PancakeSwap V2 | Designated pool, the October 24 liquidity addition, and the October 27 unlocked addition are documented in the liquidity reports below. | Public trading / liquidity venue, not an outstanding listing-support decision in this report. | No price guarantee or platform endorsement is implied by pool availability. |
 | TSL website and GitHub | Official project resources and the published lock report provide the reference material sent to reviewers. The GitHub lock report includes the October 24 increase and subsequent LP allowance revocation. | References supplied in the follow-ups described above. | External providers must independently publish or confirm their own changes; this report does not claim that they have done so. |
 
 ## Follow-up summary and owner actions — October 27, 2026
@@ -102,6 +102,30 @@ In [ticket 1459969](https://support.coinmarketcap.com/hc/en-us/requests/1459969)
 The [public listing](https://blockspot.io/coin/tsl/) shows PancakeSwap V2 (BSC), USDT/TSL. Its exchange link opens [Blockspot's general PancakeSwap page](https://blockspot.io/exchange/pancakeswap/), not an individual pool. The displayed market row contains no pool address or pool-specific link, so an exact address match cannot be established from that public evidence.
 
 The team-designated pool remains [`0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`](https://www.geckoterminal.com/bsc/pools/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1). Matching the exchange and pair name alone does not prove Blockspot uses this pool. Status: **metadata corrections published; exact pool mapping awaiting confirmation**. This review does not validate Blockspot's circulating-supply or market-cap estimates.
+
+## Additional liquidity — October 27, 2026 (unlocked)
+
+**Verified and recorded:** October 27, 2026 (Asia/Tehran).
+
+[Successful BscScan transaction receipt](https://bscscan.com/tx/0x6ae041aaa596b6ee9ed9cb1b8263e20e910dc3d02a09c19e1918b3447aa2b1fd) — **2026-10-27 17:11:42 UTC / 20:41:42 Asia/Tehran**.
+
+Liquidity was added to the existing team-designated PancakeSwap V2 TSL/USDT pool on BNB Smart Chain, `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`.
+
+| Receipt field | Exact amount / value |
+| --- | --- |
+| Status | Success |
+| USDT transferred to the pool | 1499.156803182113591611 USDT |
+| TSL transferred to the pool | 15024.633538656637886154 TSL |
+| New Cake-LP minted to the project wallet | 4171.747485216469959364 LP |
+| LP recipient | `0xdAb105a2DE91ACC4ee2c8b2CF40C44e88b9ec3b7` |
+| Network transaction fee | 0.00000798035 BNB |
+| New LP lock status at this addition | **Unlocked; received by the project wallet, not deposited into a locker** |
+
+The prepared USDT amount was 1500; the receipt's actual transfer was 1499.156803182113591611 USDT. The exact receipt amounts above take precedence over rounded previews.
+
+**This addition is separate from the previously recorded locked liquidity.** The October 24 lock-increase record remains **3825.729533816538905289 locked LP**, with the recorded unlock time **2027-09-04 22:16:01 UTC / 2027-09-05 01:46:01 Asia/Tehran**. This October 27 transaction does not increase that lock or extend its unlock time. The owner chose to leave the new LP unlocked. This is a dated transaction record, not a claim about subsequent transfers.
+
+The historical **62.15%** (October 24) and earlier **99.02%** lock-coverage figures must not be presented as current after this addition. No new current lock-coverage percentage is asserted here; that requires a fresh check of locked LP and total LP supply at the same block.
 
 ## Liquidity evidence: retain the dates
 
