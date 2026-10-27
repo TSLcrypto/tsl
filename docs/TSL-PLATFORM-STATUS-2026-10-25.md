@@ -125,7 +125,38 @@ The prepared USDT amount was 1500; the receipt's actual transfer was 1499.156803
 
 **This addition is separate from the previously recorded locked liquidity.** The October 24 lock-increase record remains **3825.729533816538905289 locked LP**, with the recorded unlock time **2027-09-04 22:16:01 UTC / 2027-09-05 01:46:01 Asia/Tehran**. This October 27 transaction does not increase that lock or extend its unlock time. The owner chose to leave the new LP unlocked. This is a dated transaction record, not a claim about subsequent transfers.
 
-The historical **62.15%** (October 24) and earlier **99.02%** lock-coverage figures must not be presented as current after this addition. No new current lock-coverage percentage is asserted here; that requires a fresh check of locked LP and total LP supply at the same block.
+The historical **62.15%** (October 24) and earlier **99.02%** lock-coverage figures must not be presented as current after this addition. The block-pinned October 27 coverage calculation below supersedes those percentages for its stated observation block.
+
+## LP lock coverage — verified October 27, 2026
+
+**Block-pinned observation:** BNB Smart Chain block [130130686](https://bscscan.com/block/130130686), timestamp **2026-10-27 17:37:59 UTC / 21:07:59 Asia/Tehran**. Read and published October 27, 2026. Block hash: `0xdbf3c696760b39db1f53f84c597d2bc01728524923335622702f4ab1e12aebad`.
+
+**Verified Mudra-locked coverage: 37.08099981%. Outside this lock: 62.91900019%.** Percentages are rounded to eight decimal places; the LP amounts below retain all 18 token decimals.
+
+| LP classification at this block | Exact LP amount | Share of total LP supply |
+| --- | ---: | ---: |
+| Total LP supply | 10317.223249165239099674 | 100% |
+| Active Mudra lock #112541 | 3825.729533816538905289 | 37.08099981% |
+| Unlocked LP in the project wallet | 6478.037147687337328301 | 62.78857200% |
+| LP held by PancakeSwap factory feeTo | 13.456567661362865084 | 0.13042819% |
+| Zero-address minimum-liquidity balance | 0.000000000000001000 | Less than 0.00000001% |
+| Total outside the verified Mudra lock (includes the zero-address balance) | 6491.493715348700194385 | 62.91900019% |
+
+**Unlocked / outside-lock LP excluding the zero-address balance totals 6491.493715348700193385 LP (62.91900019%, rounded).** Of this, 6478.037147687337328301 LP belongs to the project wallet; the separate 13.456567661362865084 LP feeTo balance is not project-controlled liquidity and is not a claim about the fee recipient's withdrawal policy. The zero-address balance is not spendable and must not be described as freely withdrawable.
+
+The project wallet is [`0xdAb105a2DE91ACC4ee2c8b2CF40C44e88b9ec3b7`](https://bscscan.com/address/0xdAb105a2DE91ACC4ee2c8b2CF40C44e88b9ec3b7). Its balance includes the **4171.747485216469959364 LP** received in the October 27 addition and earlier unlocked LP. The factory-reported fee recipient is [`0x0ed943ce24baebf257488771759f9bf482c39706`](https://bscscan.com/address/0x0ed943ce24baebf257488771759f9bf482c39706).
+
+### Lock and calculation evidence
+
+- Pair: [`0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`](https://bscscan.com/address/0x47ea61fef003c1212fbcd3acc03208cb7a92cad1#readContract); 18 LP decimals.
+- Locker: [`0xAe7e6CAbad8d80f0b4E1C4DDE2a5dB7201eF1252`](https://bscscan.com/address/0xAe7e6CAbad8d80f0b4E1C4DDE2a5dB7201eF1252#readContract).
+- Direct, read-only JSON-RPC calls to `https://bsc-dataseed.binance.org/`, with every `eth_call` pinned to block tag `0x7c1a2fe`: pair `totalSupply()`, `decimals()`, `balanceOf(address)`, `factory()`; factory `feeTo()`; locker `lpLocksLength(pair)`, `lpLockAt(pair,0)`, `tokenLocks(112541)`.
+- Exactly one Mudra lock was returned. Its LP token and owner match the designated pool and project wallet; its amount equals the locker's LP balance: **3825.729533816538905289 LP**. The future unlock timestamp is **1820096161**, or **September 4, 2027 22:16:01 UTC / September 5, 2027 01:46:01 Asia/Tehran**.
+- The locked, project-wallet, feeTo and zero-address balances sum exactly to total supply. The dead-address and former Mudra fee-recipient LP balances were zero at this block.
+- Exact coverage formula in raw LP units: `3825729533816538905289 / 10317223249165239099674 * 100`. No rounded certificate value was used in this calculation.
+- The [Mudra certificate](https://mudra.website/?certificate=yes&type=0&lp=0x47ea61fef003c1212fbcd3acc03208cb7a92cad1), separately viewed on October 27, displayed **37.08%**, consistent with the calculation. The certificate is a live view, not a historical block query.
+
+This is a dated LP ownership and lock-coverage snapshot, not a permanent percentage, a USD valuation or a guarantee of price. Adding or removing liquidity can change coverage without changing the old locked LP amount. No new LP lock, approval or wallet transaction was performed for this calculation. Historical **62.15%** and **99.02%** figures remain dated historical evidence.
 
 ## Liquidity evidence: retain the dates
 
