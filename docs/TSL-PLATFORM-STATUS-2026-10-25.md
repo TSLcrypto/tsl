@@ -68,7 +68,7 @@ This review distinguishes waiting for a response from an outcome that has not be
 | Moralis | Response to the request for a free trial without a bank card. | Card-free activation and usable API access; API testing has not started. | None now; do not add a card or activate a paid plan. |
 | CoinPaprika / DexPaprika — 2417019 | Staff response after the automatic receipt, continuing earlier ticket 2416348. | Requested cross-platform logo / metadata synchronization and market-cap wording correction. | None now; review a proposed reply if staff requests information. |
 | CoinCodex | Reply to our October 27 response supplying the initial issuance evidence and updated documents. | Paid tracking is not activated or approved; liquidity is not included in the offer. | No fee commitment. A separate owner decision would be required before a paid order. |
-| Blockspot — record 58152 | Exact designated-pool sourcing confirmed by staff on October 27. | Independent verification of the newly reported public pool link; badge is not an audit. | No immediate action; backlink request noted for review without commitment. |
+| Blockspot — record 58152 | Exact designated-pool sourcing confirmed by staff on October 27. | Independent verification of the newly reported public pool link; badge is not an audit. | Backlink published and confirmation sent October 27 at 22:19 Tehran. Awaiting Olivia's reply and video publication; video publication is not confirmed. |
 | Google Search Console | Roadmap indexing after the accepted request; October 27 inspection still says URL unknown to Google. | Completed roadmap indexing. Sitemap Success and a passing live test are not proof of indexing. | None now; factual site and GitHub updates on verified indexing are already authorized. |
 
 New substantive replies will be accompanied by an English response draft for owner review. Sending any such response still requires approval of that draft, and email must originate from **info@tslcrypto.com**. Monitoring does not authorize fees, card entry or paid service activation. Historical visibility on DexScan and GeckoTerminal is distinct from main-listing approval.
@@ -113,7 +113,13 @@ October 27 staff confirmation: Blockspot sources TSL price and chart via CoinPap
 
 Olivia Turner's pool-source reply was received at 18:35 Tehran; the badge notice at 15:01 Tehran. The provider's own paid CoinPaprika subscription is not a charge approved by TSL. Other permissionless TSL pools exist; the project does not endorse the statement that this is the only TSL/USDT pool on BNB Smart Chain.
 
-An owner-approved reply was sent from info@tslcrypto.com to listing@blockspot.io at 21:52 Tehran in the existing thread, requesting the precise “team-designated pool” wording and supplying the updated whitepaper and liquidity-lock report. The backlink request was noted for review, without a commitment.
+An owner-approved reply was sent from info@tslcrypto.com to listing@blockspot.io at 21:52 Tehran in the existing thread, requesting the precise “team-designated pool” wording and supplying the updated whitepaper and liquidity-lock report. The backlink request was initially noted for review; it was subsequently completed as recorded below.
+
+### Blockspot backlink confirmation and pending video — October 27, 2026
+
+On October 27, 2026 at 22:19 Asia/Tehran, an owner-approved reply was sent from info@tslcrypto.com to Olivia Turner (listing@blockspot.io), in the existing thread "RE: TSL now has the Blockspot verified badge". It confirmed the published backlink in https://tslcrypto.com/#platform-status pointing to https://blockspot.io/coin/tsl/. The outgoing message was verified in Sent Items.
+
+**Status as recorded October 27, 2026: awaiting Olivia's reply and publication of the proposed TSL video. Video publication has NOT been confirmed; no published video link is recorded. The earlier offer to post a video is not evidence of publication. Daily monitoring continues at 10:00 Asia/Tehran. Any response requires the owner's approval; no fees or paid promotion are authorized.**
 
 ### CoinCodex: paid proposal, not authorized
 
