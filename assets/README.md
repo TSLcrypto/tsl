@@ -4,7 +4,7 @@ This directory contains public metadata files and English PDF documents for TSL 
 
 ## Whitepaper and roadmap
 
-The **October 25, 2026** English revisions below are identical to the official website PDFs. They incorporate the October 24 liquidity addition, the confirmed increase of the existing Mudra lock, and the LP allowance revocation receipt.
+The **October 27, 2026** English revisions include block-pinned LP coverage (37.08099981% locked; 62.91900019% outside that lock), the October 27 unlocked addition, historical receipts, and the owner-declared funding and USD 100,000 liquidity expansion plan. Keep these copies identical to the official website PDFs.
 
 | Document | Repository file | Website file |
 | --- | --- | --- |

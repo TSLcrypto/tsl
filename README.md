@@ -88,14 +88,14 @@ Liquidity, prices, holders, and trading availability are external and can change
 
 ## Whitepaper and roadmap
 
-English revision: **October 25, 2026**. These PDFs are identical to the versions published on the official website.
+English revision: **October 27, 2026**. These PDFs are identical to the versions published on the official website.
 
 | Document | GitHub copy | Official website |
 | --- | --- | --- |
 | Whitepaper | [Whitepaper PDF](assets/whitepaper.pdf) | [Download from tslcrypto.com](https://tslcrypto.com/assets/whitepaper.pdf) |
 | Roadmap | [Roadmap PDF](assets/roadmap.pdf) | [Download from tslcrypto.com](https://tslcrypto.com/assets/roadmap.pdf) |
 
-Both documents reference the designated PancakeSwap V2 pool, the October 24 liquidity addition and Mudra lock increase, and the subsequent LP allowance revocation. The **3825.729533816538905289 LP** locked and **62.15%** coverage are dated October 24 evidence, not a live coverage claim. Unlock time: **September 4, 2027 at 22:16:01 UTC**, equivalent to **September 5, 2027 at 01:46:01 Asia/Tehran**. See the [complete liquidity-lock record](docs/TSL-LIQUIDITY-LOCK-RECORD.md) for transaction receipts and verification scope.
+Both documents now include the October 27 block-130130686 snapshot: **37.08099981% locked**, **62.78857200% unlocked in the project wallet**, and **62.91900019% total outside the verified lock** (including the separately disclosed factory feeTo and non-spendable minimum-liquidity balances). They include the unlocked October 27 addition and owner-declared funding / USD 100,000 liquidity expansion plan. Both documents reference the designated PancakeSwap V2 pool, the October 24 liquidity addition and Mudra lock increase, and the subsequent LP allowance revocation. The **3825.729533816538905289 LP** locked and **62.15%** coverage are dated October 24 evidence, not a live coverage claim. Unlock time: **September 4, 2027 at 22:16:01 UTC**, equivalent to **September 5, 2027 at 01:46:01 Asia/Tehran**. See the [complete liquidity-lock record](docs/TSL-LIQUIDITY-LOCK-RECORD.md) for transaction receipts and verification scope.
 
 ## Repository scope
 
