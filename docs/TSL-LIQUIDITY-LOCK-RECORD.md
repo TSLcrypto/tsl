@@ -87,11 +87,35 @@ This revocation removes the wallet's spending permission for this LP token and s
 
 After the liquidity-lock increase, Mudra's allowance to spend Cake-LP from the owner's wallet was revoked in the successful transaction above at 22:37:28 Asia/Tehran. The network fee was 0.0000012129 BNB. This revocation does not withdraw locked liquidity or change the locked amount or unlock time.
 
+## Additional liquidity — October 27, 2026 (unlocked)
+
+**Verified and recorded:** October 27, 2026 (Asia/Tehran).
+
+[Successful BscScan transaction receipt](https://bscscan.com/tx/0x6ae041aaa596b6ee9ed9cb1b8263e20e910dc3d02a09c19e1918b3447aa2b1fd) — **2026-10-27 17:11:42 UTC / 20:41:42 Asia/Tehran**.
+
+Liquidity was added to the existing team-designated PancakeSwap V2 TSL/USDT pool on BNB Smart Chain, `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`.
+
+| Receipt field | Exact amount / value |
+| --- | --- |
+| Status | Success |
+| USDT transferred to the pool | 1499.156803182113591611 USDT |
+| TSL transferred to the pool | 15024.633538656637886154 TSL |
+| New Cake-LP minted to the project wallet | 4171.747485216469959364 LP |
+| LP recipient | `0xdAb105a2DE91ACC4ee2c8b2CF40C44e88b9ec3b7` |
+| Network transaction fee | 0.00000798035 BNB |
+| New LP lock status at this addition | **Unlocked; received by the project wallet, not deposited into a locker** |
+
+The prepared USDT amount was 1500; the receipt's actual transfer was 1499.156803182113591611 USDT. The exact receipt amounts above take precedence over rounded previews.
+
+**This addition is separate from the previously recorded locked liquidity.** The October 24 lock-increase record remains **3825.729533816538905289 locked LP**, with the recorded unlock time **2027-09-04 22:16:01 UTC / 2027-09-05 01:46:01 Asia/Tehran**. This October 27 transaction does not increase that lock or extend its unlock time. The owner chose to leave the new LP unlocked. This is a dated transaction record, not a claim about subsequent transfers.
+
+The historical **62.15%** (October 24) and earlier **99.02%** lock-coverage figures must not be presented as current after this addition. No new current lock-coverage percentage is asserted here; that requires a fresh check of locked LP and total LP supply at the same block.
+
 ## Notes
 
 This liquidity-lock record was created after Blockaid requested evidence addressing liquidity-lock or burn status for the primary TSL/USDT PancakeSwap V2 pool.
 
-The initial 99.02% figure above is historical. The liquidity addition minted LP to the owner's wallet; a separate confirmed lock-increase transaction subsequently deposited the net new LP into the existing lock, as recorded above.
+The initial 99.02% figure above is historical. The October 24 liquidity addition minted LP to the owner's wallet; a separate confirmed lock-increase transaction subsequently deposited the net new LP into the existing lock, as recorded above. The October 27 addition is separate and remained unlocked at receipt, as recorded in its own section.
 
 See the [confirmed liquidity addition and DexScan report](TSL-LIQUIDITY-UPDATE-2026-10-24.md) for the transaction and exact amounts.
 
