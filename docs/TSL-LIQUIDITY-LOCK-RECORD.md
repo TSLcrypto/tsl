@@ -168,3 +168,37 @@ Ordinary DEX purchases exchange assets with a pool or seller; they do not automa
 Future updates should publish dated valuation evidence, addition receipts, designated pool addresses and lock status. No additional lock or extension is promised by this plan.
 
 [English Whitepaper](https://tslcrypto.com/assets/whitepaper.pdf) · [English Roadmap](https://tslcrypto.com/assets/roadmap.pdf) — revision October 27, 2026.
+
+## Additional liquidity — October 31, 2026 (unlocked)
+
+**Verified October 31, 2026 (Asia/Tehran).** [Successful transaction receipt](https://bscscan.com/tx/0x24bb6a83caf0ad9a0ebf0e38a255e6fb0e21ab11dba484fd87f55c256cd5d692), block **130760898**, **2026-10-31 00:26:59 UTC / 03:56:59 Asia/Tehran**.
+
+The existing team-designated PancakeSwap V2 TSL/USDT pool received the following amounts:
+
+| Receipt field | Exact amount |
+| --- | ---: |
+| USDT transferred to the pool | 1500.000000000000000000 |
+| TSL transferred to the pool | 15007.168544096243850586 |
+| New LP minted to the project wallet | 4166.378797844169253769 |
+| Separate LP minted to the protocol fee recipient | 4.791327231459536077 |
+| Network transaction fee (BNB) | 0.00000797635 |
+
+Pool: `0x47ea61fef003c1212fbcd3acc03208cb7a92cad1`. Project wallet and new-LP recipient: `0xdAb105a2DE91ACC4ee2c8b2CF40C44e88b9ec3b7`.
+
+**The new project LP was received unlocked. It was not deposited into Mudra in this transaction.** This addition is separate from the October 24 lock and does not extend its recorded unlock time. Receipt status `0x1`, Transfer and Mint logs were independently read through BNB Chain JSON-RPC; the owner's initial BscScan screenshot showed indexing in progress.
+
+### Post-addition LP balances — October 31, 2026
+
+Read-only `totalSupply()` and `balanceOf(address)` calls were pinned to block **130761527**, **2026-10-31 00:31:42 UTC / 04:01:42 Asia/Tehran**, hash `0xbef811ead4dd55cf79340e6d4d7a0eb06c14b4e3e891deffbb375f560624ff0e`, through `https://bsc-dataseed.binance.org/`.
+
+| Classification | LP amount | Share |
+| --- | ---: | ---: |
+| Total LP supply | 14488.393374240867889520 | 100% |
+| Existing Mudra locker balance | 3825.729533816538905289 | 26.40547806% |
+| Unlocked project-wallet LP | 10644.415945531506582070 | 73.46857357% |
+| Other LP outside that locker and project wallet | 18.247894892822402161 | 0.12594837% |
+| Total outside the Mudra locker | 10662.663840424328984231 | 73.59452194% |
+
+The locker balance matches the previously documented lock #112541 amount. Its previously verified unlock time is **September 4, 2027 22:16:01 UTC / September 5, 2027 01:46:01 Asia/Tehran**. This check re-read LP balances, not the lock's internal schedule. Outside-lock LP includes protocol and minimum-liquidity balances and must not all be described as project-controlled or freely withdrawable.
+
+These percentages are a dated observation, not live coverage. The October 27 **37.08099981%**, October 24 **62.15%**, and initial **99.02%** figures remain historical only. No new lock, approval or transaction was initiated to prepare this report.

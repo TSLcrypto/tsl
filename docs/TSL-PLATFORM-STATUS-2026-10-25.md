@@ -52,3 +52,11 @@ The [October 27 addition receipt](https://bscscan.com/tx/0x6ae041aaa596b6ee9ed9c
 [October 24 lock increase](https://bscscan.com/tx/0xee04516fd634bbffec3c90b57918884aaa000ac1bba305d202366147649ab66f) · [Subsequent LP allowance revocation](https://bscscan.com/tx/0x726ecb6bde0bcbbaa55c19ee07c5673f152620e87741af610e99621ce8fb4aa8) · [Full lock record, calculation and historical evidence](TSL-LIQUIDITY-LOCK-RECORD.md).
 
 These are historical, block-pinned figures, not a live percentage or a USD valuation. Earlier **62.15%** and **99.02%** figures remain historical evidence only. The standalone lock record, receipts, whitepaper and roadmap are unchanged by this editorial consolidation.
+
+## Latest liquidity addition — October 31, 2026
+
+[Successful receipt](https://bscscan.com/tx/0x24bb6a83caf0ad9a0ebf0e38a255e6fb0e21ab11dba484fd87f55c256cd5d692): **1500 USDT + 15007.168544096243850586 TSL** added to the designated V2 pool at **03:56:59 Asia/Tehran**, block **130760898**. **4166.378797844169253769 LP** was minted to the project wallet **unlocked**, separately from the earlier Mudra lock.
+
+At block **130761527**, **04:01:42 Asia/Tehran** on October 31, total LP supply was **14488.393374240867889520**; the existing Mudra locker held **3825.729533816538905289 LP (26.40547806%)**, and **73.59452194%** was outside that locker. The project wallet held **10644.415945531506582070 unlocked LP (73.46857357%)**. Other outside-lock balances are not all project-controlled or freely withdrawable. The previously verified lock expiry remains recorded as September 4, 2027 22:16:01 UTC; this check re-read LP balances rather than the lock's internal schedule.
+
+The October 27 percentages above are historical, superseded by this dated balance snapshot. [Complete receipt and calculation evidence](TSL-LIQUIDITY-LOCK-RECORD.md#additional-liquidity--october-31-2026-unlocked). No external-service status was reverified for this update.
