@@ -1,6 +1,6 @@
 # TSL Reviewer Evidence Package
 
-Last updated: September 7, 2026
+Last updated: October 25, 2026 (liquidity-reference reconciliation; historical review dates retained)
 
 This document provides a concise verification package for exchanges, wallets, security providers, indexers, and token-listing reviewers evaluating TSL on BNB Smart Chain.
 
@@ -39,6 +39,10 @@ https://bscscan.com/address/0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1
 
 The primary TSL/USDT LP position has publicly verifiable liquidity-lock evidence.
 
+### Historical initial lock evidence
+
+The following figures describe the initial lock and are superseded by the October 24 increase recorded below.
+
 - Locked LP tokens: `1052.215287947234081726`
 - Total LP supply shown on certificate: `1062.6559`
 - Locked percentage: **99.02%**
@@ -55,6 +59,18 @@ https://bscscan.com/tx/0xfdf1400e4543c61e2536b5889d2c05f5b0b33729824ea021c9f9694
 Repository record:
 
 https://github.com/TSLcrypto/tsl/blob/main/docs/TSL-LIQUIDITY-LOCK-RECORD.md
+
+### Latest documented lock increase — October 24, 2026
+
+- Total locked after the increase: **3825.729533816538905289 LP**.
+- Net LP added to the existing Mudra lock: **2773.514245869304823563 LP**, after a **0.5% LP fee**.
+- Certificate snapshot read on October 24: **3825.7295 locked LP / 6155.5009 total LP = 62.15%** (rounded).
+- Unchanged unlock time: **September 4, 2027 at 22:16:01 UTC / September 5, 2027 at 01:46:01 Asia/Tehran**.
+- [Successful lock-increase transaction](https://bscscan.com/tx/0xee04516fd634bbffec3c90b57918884aaa000ac1bba305d202366147649ab66f).
+- [Subsequent LP allowance revocation](https://bscscan.com/tx/0x726ecb6bde0bcbbaa55c19ee07c5673f152620e87741af610e99621ce8fb4aa8), October 24 at 19:07:28 UTC. Revocation did not withdraw locked LP or change its amount or unlock time.
+- [Full liquidity-lock record and receipts](https://github.com/TSLcrypto/tsl/blob/main/docs/TSL-LIQUIDITY-LOCK-RECORD.md).
+
+These figures are dated evidence, not a fresh measurement of current lock coverage. The initial **99.02%** figure is historical; coverage changes with LP supply. An LP lock does not prevent token sales or guarantee price, liquidity depth or investment returns.
 
 ## 4. Major Wallet Allocation Transparency
 
