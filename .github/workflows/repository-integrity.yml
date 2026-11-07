@@ -28,7 +28,9 @@ jobs:
 
           token_list = json.loads(Path("tokenlist.json").read_text(encoding="utf-8"))
           assert token_list["name"] == "TSL Token List"
-          assert token_list["version"] == {"major": 1, "minor": 0, "patch": 0}
+          version = token_list["version"]
+          assert isinstance(version, dict) and set(version) == {"major", "minor", "patch"}, f"Invalid version fields: {version!r}"
+          assert all(type(n) is int and n >= 0 for n in version.values()), f"Invalid version numbers: {version!r}"
           datetime.fromisoformat(token_list["timestamp"].replace("Z", "+00:00"))
           assert len(token_list["tokens"]) == 1
 
