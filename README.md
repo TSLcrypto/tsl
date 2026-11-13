@@ -32,6 +32,8 @@ TSLCrypto (TSL) uses the TRC-20 standard, has 6 decimals and a recorded supply o
 - [SunSwap V2 TSL/USDT pool](https://sun.io/?lang=en-US#/scan/pairDetail?pairAddress=TUL4ZbkhkpiB4V2X12QADASxFiq4CeF5Cb&version=v2) — `TUL4ZbkhkpiB4V2X12QADASxFiq4CeF5Cb`
 - TRON USDT — `TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t`
 
+Token metadata: [ipfs://bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm](https://ipfs.io/ipfs/bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm). [TRON source file](contracts/tron/MasoudTRC20Custom.flat.sol) and [token logo](assets/tron/logo.png).
+
 BSC liquidity-lock records apply only to the PancakeSwap pool. [Read the whitepaper](assets/whitepaper.pdf).
 
 ## BNB Smart Chain contract properties
