@@ -2,9 +2,9 @@
 
 **Technology · Sustainability · Liquidity**
 
-TSL Crypto is the public project brand for the TSL token on BNB Smart Chain. The canonical identity of the token is its on-chain contract address.
+TSL Crypto is the public project brand for independent TSL contracts on BNB Smart Chain and TRON. Identify each asset by its network and contract address.
 
-## Official token identity
+## BNB Smart Chain token identity
 
 | Field | Value |
 | --- | --- |
@@ -24,7 +24,19 @@ TSL Crypto is the public project brand for the TSL token on BNB Smart Chain. The
 
 Always verify the full contract address before interacting with TSL. A name, symbol, logo, or social profile alone does not prove token identity.
 
-## Contract properties
+## TRON mainnet
+
+TSLCrypto (TSL) uses the TRC-20 standard, has 6 decimals and a recorded supply of 100,000,000 TSL on 13 November 2026.
+
+- [Verified TRON contract](https://tronscan.org/#/contract/TR7oJeAFikXwjndsAn4L6LfeyzneRdLj6t/code) — `TR7oJeAFikXwjndsAn4L6LfeyzneRdLj6t`
+- [SunSwap V2 TSL/USDT pool](https://sun.io/?lang=en-US#/scan/pairDetail?pairAddress=TUL4ZbkhkpiB4V2X12QADASxFiq4CeF5Cb&version=v2) — `TUL4ZbkhkpiB4V2X12QADASxFiq4CeF5Cb`
+- TRON USDT — `TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t`
+
+Token metadata: [ipfs://bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm](https://ipfs.io/ipfs/bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm). [TRON source file](contracts/tron/MasoudTRC20Custom.flat.sol) and [token logo](assets/tron/logo.png).
+
+BSC liquidity-lock records apply only to the PancakeSwap pool. [Read the whitepaper](assets/whitepaper.pdf).
+
+## BNB Smart Chain contract properties
 
 The published [`contracts/TSL.sol`](contracts/TSL.sol) source implements a minimal fixed-supply token:
 
