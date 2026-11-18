@@ -10,7 +10,7 @@ The project owner explicitly chose to preserve the public TRON token identity **
 - [Browser gateway used to read the JSON](https://bafkreicsibkujps77s5xp5djcjdslwlopt3qh4e73gak7ohl7chlxl5sau.ipfs.inbrowser.link/)
 - [Readable local JSON transcription](metadata.proposed.json): parsed field values transcribed from the browser, with formatting added. This is not claimed to be byte-identical to the IPFS object or to reproduce its CID.
 - Both `image` and `logo` reference `ipfs://bafkreib6xv75g65c7rqxrlnltlzfmbdf3eilka5nfb2bd5xz65dj2caf5q`.
-- [Referenced logo gateway](https://ipfs.io/ipfs/bafkreib6xv75g65c7rqxrlnltlzfmbdf3eilka5nfb2bd5xz65dj2caf5q): the URI was read in the JSON, but the actual image bytes and visual content were not inspected in this update. No logo binary is copied or approved here.
+- [Archived logo binary](logo.proposed.png): original PNG bytes retrieved and visually inspected on 19 November 2026 via gateway.pinata.cloud. Size: 250 x 250 pixels; 30,261 bytes. SHA-256: 3ebd7fd37ba2fc6178adab9af2560465d910b503ad287411f6f9f7469d0805ec. The SHA-256 matches the raw CID referenced by both image and logo fields. The image is archived unchanged for this proposal only; it is not approved as the canonical TSL logo.
 
 ## Identity mismatch and decision
 
