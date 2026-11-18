@@ -37,6 +37,10 @@ TSL is independent of Tether. It is not USDT and has no established dollar peg o
 
 The README previously recorded metadata CID `bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm`. This is a historical reference; the current on-chain `metaURI()` was not reread for this documentation update. Logo, banner and metadata revisions should be identified by exact file/CID and verified before replacing public identity records. No new banner or SVG identity is claimed by this update.
 
+## Separately archived metadata proposal
+
+The owner-supplied [19 November metadata proposal](proposals/tron-metadata-2026-11-19/README.md) is archived with its original field values and logo URI. Its Tetner USD / USDT name and symbol are **not adopted** as TSL's public identity. The supplied JSON was read; the image itself was not inspected. The owner requested that TSLCrypto / TSL remain unchanged. No metadata activation or on-chain transaction accompanies this archive.
+
 ## Contract behavior: source reference, not a current state attestation
 
 Reviewed repository source blob: `9294c4a66dd273e018b0826bd895760ab9d2b2bd`, path `contracts/tron/MasoudTRC20Custom.flat.sol`. Its header records TRON Solidity 0.8.30 and optimizer runs 200. The source describes a direct, non-proxy MasoudTRC20Custom deployment based on ERC20 and Ownable2Step. This review does not independently prove deployed bytecode equivalence or current administrative settings.
