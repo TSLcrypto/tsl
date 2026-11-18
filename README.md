@@ -32,9 +32,15 @@ TSLCrypto (TSL) uses the TRC-20 standard, has 6 decimals and a recorded supply o
 - [SunSwap V2 TSL/USDT pool](https://sun.io/?lang=en-US#/scan/pairDetail?pairAddress=TUL4ZbkhkpiB4V2X12QADASxFiq4CeF5Cb&version=v2) — `TUL4ZbkhkpiB4V2X12QADASxFiq4CeF5Cb`
 - TRON USDT — `TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t`
 
-Token metadata: [ipfs://bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm](https://ipfs.io/ipfs/bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm). [TRON source file](contracts/tron/MasoudTRC20Custom.flat.sol) and [token logo](assets/tron/logo.png).
+Previously recorded metadata (current on-chain URI not reverified in this update): [ipfs://bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm](https://ipfs.io/ipfs/bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm). [TRON source file](contracts/tron/MasoudTRC20Custom.flat.sol) and [token logo](assets/tron/logo.png).
 
 BSC liquidity-lock records apply only to the PancakeSwap pool. [Read the whitepaper](assets/whitepaper.pdf).
+
+## TRON documentation and dated evidence
+
+See the [TSL TRON reference record — 19 November 2026](docs/TSL-TRON-REFERENCE-2026-11-19.md) for contract controls and oracle behavior, official addresses and assets, a confirmed swap, a dated SunSwap V2 liquidity snapshot, the proportional-liquidity calculation, and wallet/indexer follow-up status. Snapshot values are not live quotes. TRON and BSC supplies, prices, permissions and listing cases are independent.
+
+The [separate metadata proposal archive](docs/proposals/tron-metadata-2026-11-19/README.md) is **not active** and does not change TSLCrypto / TSL, existing logos or production token lists.
 
 ## BNB Smart Chain contract properties
 

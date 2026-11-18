@@ -1,0 +1,15 @@
+{
+  "name": "Tetner USD",
+  "symbol": "USDT",
+  "decimals": 6,
+  "description": "This token is for use in a game called \"Masoud Tahrim\" and has no connection to Tether (USDT) on the Tron network. Enjoy the game!",
+  "image": "ipfs://bafkreib6xv75g65c7rqxrlnltlzfmbdf3eilka5nfb2bd5xz65dj2caf5q",
+  "logo": "ipfs://bafkreib6xv75g65c7rqxrlnltlzfmbdf3eilka5nfb2bd5xz65dj2caf5q",
+  "network": "TRON",
+  "standard": "TRC-20",
+  "links": {
+    "website": "https://tslcrypto.com",
+    "telegram": "https://t.me/TSLcrypt",
+    "twitter": "https://x.com/tsl_token"
+  }
+}
