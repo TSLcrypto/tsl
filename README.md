@@ -36,6 +36,10 @@ Token metadata: [ipfs://bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vh
 
 BSC liquidity-lock records apply only to the PancakeSwap pool. [Read the whitepaper](assets/whitepaper.pdf).
 
+## TRON documentation and dated evidence
+
+See the [TSL TRON reference record — 19 November 2026](docs/TSL-TRON-REFERENCE-2026-11-19.md) for contract controls and oracle behavior, official addresses and assets, a confirmed swap, a dated SunSwap V2 liquidity snapshot, the proportional-liquidity calculation, and wallet/indexer follow-up status. Snapshot values are not live quotes. TRON and BSC supplies, prices, permissions and listing cases are independent.
+
 ## BNB Smart Chain contract properties
 
 The published [`contracts/TSL.sol`](contracts/TSL.sol) source implements a minimal fixed-supply token:
