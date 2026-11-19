@@ -1,6 +1,10 @@
 # TSL public assets
 
-This directory contains public metadata files and English PDF documents for TSL on BNB Smart Chain.
+This directory contains public metadata, artwork and English PDF documents. The BNB Smart Chain files and the historical TRON artwork are separate.
+
+## TRON mainnet
+
+See the [TRON reference record](../docs/TSL-TRON-REFERENCE-2026-11-19.md#public-references-and-assets) for the verified on-chain identity and logo advisory. The URI in the [earlier TRON asset record](tsl-trc20/MetaURI.txt) and dated whitepaper is not the current on-chain URI. Do not use a name, symbol or image in place of the full TRON contract address.
 
 ## Whitepaper and roadmap
 
