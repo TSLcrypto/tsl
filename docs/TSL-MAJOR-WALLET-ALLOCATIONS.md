@@ -47,6 +47,36 @@ The figures and labels below are retained from the original 2026-09-03 record; b
 | 0xbd1263782e7d3b4f739ba8a09ee843375e573cdf | 10% | Allocation wallet; activity status pending review | Team / founder allocation | Subject to internal release policy |
 | 0xdab105a2de91acc4ee2c8b2cf40c44e88b9ec3b7 | ~9.93% | Active / deployer | Deployer / project owner | Contract deployment and project administration |
 
+## On-chain Balance Remeasurement — 19 November 2026
+
+The table above is the original 2026-09-03 allocation record. The balances below were read directly from the TSL contract (`balanceOf` / `totalSupply`) on BNB Smart Chain at **block 134529438** (2026-11-19 15:44 UTC). They supersede the approximate shares above as the current measurement.
+
+| Wallet | Label | Balance (TSL) | Share of total supply |
+|---|---|---:|---:|
+| 0x066abb08910f6faf95d04901b0eda9529cd9ca78 | Project allocation reserve | 10,000,000 | 1.0000% |
+| 0x26af782a99be79c443b845e63b96d3c878bc88f5 | Ecosystem reserve | 10,000,000 | 1.0000% |
+| 0xda3c31013d105a46d5b936cc41a696bf96a77e42 | Liquidity planning | 10,000,000 | 1.0000% |
+| 0xf384a27c9fb1d1f6f3ed5fc989515ec9b25f2735 | Community distribution | 10,000,000 | 1.0000% |
+| 0x038567b9a489c83774f0c1d368d5b4756891a46a | Development reserve | 10,000,000 | 1.0000% |
+| 0x43aa551ab2c12fd10ce46258bd7b049fd80a8abc | Marketing reserve | 10,000,000 | 1.0000% |
+| 0x81b6dad1f68548b1472881d04e64268d614db011 | Partnership reserve | 10,000,000 | 1.0000% |
+| 0xa2d30d9dac6a3b7d7bd953f94596504de89fdb0b | Treasury | 10,000,000 | 1.0000% |
+| 0xbd1263782e7d3b4f739ba8a09ee843375e573cdf | Team / founder allocation | 10,000,000 | 1.0000% |
+| 0xdab105a2de91acc4ee2c8b2cf40c44e88b9ec3b7 | Deployer / project owner | 80,563,911.86 | 8.0564% |
+| **Total in project allocation wallets** | | **170,563,911.86** | **17.0564%** |
+
+Reference balances at the same block: PancakeSwap V2 TSL/USDT pool `0x47eA61fEF003C1212FbCD3ACc03208Cb7A92CAD1` held 6,739,620.55 TSL (0.67%); the dead address held 0.398 TSL.
+
+**Change since the original record.** Each of the nine reserve wallets decreased from ~10% to 1%, and the deployer from ~9.93% to ~8.06%. According to the TSL Crypto team, the TSL moved out of these wallets (approximately 829.4 million TSL in total, ~82.9% of supply) was transferred to the project's investors. These tokens are no longer held by project allocation wallets and are treated as circulating supply below. This record does not identify individual investor addresses or describe any vesting or lock terms for those holdings.
+
+**Supply figures for data providers (block 134529438):**
+
+- Total supply: 1,000,000,000 TSL (fixed; no mint or burn function)
+- Excluded from circulating supply (project allocation wallets above): 170,563,911.86 TSL
+- Circulating supply: 829,436,088.14 TSL (82.94%)
+
+These figures can be reproduced with the read-only script [`scripts/tsl-circulating-supply.mjs`](../scripts/tsl-circulating-supply.mjs) (no private key, no transactions).
+
 ## Liquidity Status
 
 Primary PancakeSwap V2 TSL/USDT pool:
