@@ -2,7 +2,7 @@
 
 Status: **Proposal only; not approved for activation.** Recorded 19 November 2026 (Asia/Tehran).
 
-The project owner explicitly chose to preserve the public TRON token identity **TSLCrypto / TSL** and archive this supplied metadata separately. Do not ingest this folder into production token lists, wallet metadata or website asset manifests.
+The project owner explicitly chose to preserve the public TRON token identity **TSL Crypto / TSL** and archive this supplied metadata separately. Do not ingest this folder into production token lists, wallet metadata or website asset manifests.
 
 ## Provenance
 
@@ -16,7 +16,7 @@ The project owner explicitly chose to preserve the public TRON token identity **
 
 | Field | Recorded TRON identity | Supplied proposal |
 | --- | --- | --- |
-| Name | TSLCrypto | Tetner USD |
+| Name | TSL Crypto | Tetner USD |
 | Symbol | TSL | USDT |
 | Decimals | 6 | 6 |
 
@@ -24,7 +24,7 @@ The proposal describes a token for the game “Masoud Tahrim” and explicitly d
 
 The name and USDT ticker could still be confused with Tether where wallets do not display the description. The proposal is not a new canonical identity, a dollar peg, Tether affiliation, or a wallet-price integration.
 
-This archive does not call `setName`, `setSymbol` or `setMetaURI`; it does not replace the existing TSL logo or metadata. The current on-chain metadata URI was not reread here, so “not active” describes this repository proposal's publishing status, not an independently verified assertion about all external systems.
+This archive does not call `setName`, `setSymbol` or `setMetaURI`; it does not replace the existing TSL logo or metadata. Read-only verification on 19 November 2026 confirmed that the live TRON contract references a different JSON object identifying TSL Crypto / TSL. The two JSON objects reference the same image; that does not activate this proposal or endorse the image as a wallet logo.
 
 The earlier TRONSCAN Overview-only support request is separate; retaining this proposal does not submit, approve, withdraw or resend that request.
 

@@ -7,7 +7,7 @@ Record assembled: **19 November 2026 (Asia/Tehran)**. Each observation below has
 | Field | TRON asset |
 | --- | --- |
 | Project | TSL Crypto |
-| Recorded token name / symbol | TSLCrypto / TSL |
+| On-chain token name / symbol, checked 19 November 2026 | TSL Crypto / TSL |
 | Network / standard | TRON mainnet / TRC-20 |
 | Decimals | 6 (one TSL = 1,000,000 raw units) |
 | Contract | `TR7oJeAFikXwjndsAn4L6LfeyzneRdLj6t` |
@@ -29,17 +29,18 @@ TSL is independent of Tether. It is not USDT and has no established dollar peg o
 - [GeckoTerminal pool](https://www.geckoterminal.com/tron/pools/TUL4ZbkhkpiB4V2X12QADASxFiq4CeF5Cb)
 - [DEX Screener pool reference](https://dexscreener.com/tron/tul4zbkhkpib4v2x12qadasxfiq4cef5cb)
 - [Existing repository source](../contracts/tron/MasoudTRC20Custom.flat.sol)
-- [Existing repository logo](../assets/tron/logo.png)
-- [Hosted TRON logo](https://tslcrypto.com/assets/tsl-trc20/logo256.png)
+- The repository and website contain earlier TRON logo files; do not treat them as a verified wallet listing or use them to identify the token.
 - [Website](https://tslcrypto.com/) and [whitepaper](https://tslcrypto.com/assets/whitepaper.pdf)
 - [Telegram](https://t.me/TSLcrypt), [X](https://x.com/tsl_token), [GitHub](https://github.com/TSLcrypto/tsl)
 - Project contact: info@tslcrypto.com
 
-The README previously recorded metadata CID `bafkreidsyzqrpyjra5gnm23xwg3od6orcxwp46krdoohd6h7ngat4vhtnm`. This is a historical reference; the current on-chain `metaURI()` was not reread for this documentation update. Logo, banner and metadata revisions should be identified by exact file/CID and verified before replacing public identity records. No new banner or SVG identity is claimed by this update.
+On 19 November 2026, read-only calls to TRON mainnet confirmed `name() = TSL Crypto`, `symbol() = TSL`, and `decimals() = 6`. The latest and solidified nodes agreed on `metaURI()`. The metadata JSON returned the same name, symbol and decimals. Both the JSON and the referenced 250 × 250 PNG were checked against their IPFS hashes.
+
+The URI in the dated whitepaper and [earlier assets record](../assets/tsl-trc20/MetaURI.txt) is historical, not the current on-chain value. The live metadata image resembles Tether’s mark and should not be used for wallet or indexer submissions. The metadata JSON and the archived proposal are different objects, even though they reference the same image. No repository update changes on-chain metadata, establishes game functionality, or verifies wallet logo or fiat-price support. Use the chain and full address to identify TSL.
 
 ## Separately archived metadata proposal
 
-The owner-supplied [19 November metadata proposal](proposals/tron-metadata-2026-11-19/README.md) is archived with its original field values and logo URI. Its Tetner USD / USDT name and symbol are **not adopted** as TSL's public identity. The supplied JSON was read; the image itself was not inspected. The owner requested that TSLCrypto / TSL remain unchanged. No metadata activation or on-chain transaction accompanies this archive.
+The owner-supplied [19 November metadata proposal](proposals/tron-metadata-2026-11-19/README.md) is archived with its original field values and logo URI. Its Tetner USD / USDT name and symbol are **not adopted** as TSL's public identity. The supplied JSON was read; the image itself was not inspected. The owner requested that the existing TSL identity remain unchanged. No metadata activation or on-chain transaction accompanies this archive.
 
 ## Contract behavior: source reference, not a current state attestation
 
